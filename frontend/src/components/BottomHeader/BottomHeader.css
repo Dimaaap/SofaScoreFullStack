@@ -1,0 +1,65 @@
+.bottom-container {
+    background-color: #2c3ec4;
+    width: 100%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+.bottom-container ul  {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.bottom-container ul li {
+    max-width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    flex: 1 1 auto;
+    font-size: 0.8rem;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.bottom-container ul .active {
+    border-bottom: 2px solid white;
+    border-radius: 1px;
+}
+
+.bottom-container ul li .oneRow {
+    display: flex;
+    margin-left: 2%;
+}
+
+.bottom-container ul li:first-child {
+    margin-left: -3%;
+}
+
+.bottom-container ul li:not(:first-child) {
+    margin-left: -19%;
+}
+
+.bottom-container ul li:last-child {
+    display: flex;
+}
+
+.bottom-container ul li svg {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 8px;
+}
+
+.settingsBtn {
+    background-color: transparent;
+    border: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: 10%;
+}

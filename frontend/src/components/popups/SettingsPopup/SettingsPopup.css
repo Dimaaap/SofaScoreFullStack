@@ -1,0 +1,66 @@
+.settingsPopup {
+    width: 20%;
+    background: white;
+    border-radius: 20px;
+    z-index: 1000;
+    text-align: left;
+    justify-content: left;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border: 2px solid #F5F5F5;
+    overflow-y: auto;
+}
+
+.popupHeader {
+    border-bottom: 1px solid gray;
+}
+
+.popupHeader .headerList li {
+    padding: 5%;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.popupHeader .headerList li svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 2%;
+    margin-bottom: -2%;
+}
+
+.popupHeader .currLang {
+    width: 20px;
+    height: 20px;
+    margin-right: 2%;
+    margin-bottom: -2%;
+}
+
+.popupHeader .arrowSort {
+    margin-left: 45%;
+}
+
+.popupHeader .headerList li:hover {
+    background-color: #F5F5F5;
+}
+
+.popupBody {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.popupBody .radio {
+    padding-top: 4%;
+    padding-bottom: 4%;
+    font-weight: 500;
+}
+
+.popupBody .radio input {
+    margin-right: 10%;
+    height: 15px;
+    width: 15px;
+}
+
+.popupBody .coefForm {
+    padding-bottom: 1%;
+    border-bottom: 1px solid gray;
+}
