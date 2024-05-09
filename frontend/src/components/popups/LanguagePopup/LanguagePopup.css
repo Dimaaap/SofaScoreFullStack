@@ -1,0 +1,22 @@
+.language-container {
+    min-height: 500px;
+}
+
+.language-container ul li {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 2%;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.language-container ul li span {
+    display: inline-block;
+    margin-bottom: 1%;
+}
+
+.language-container ul li img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}

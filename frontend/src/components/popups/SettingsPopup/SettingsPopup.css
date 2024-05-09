@@ -5,10 +5,13 @@
     z-index: 1000;
     text-align: left;
     justify-content: left;
-    padding-top: 1%;
+    padding-top: 0.3%;
     padding-bottom: 1%;
     border: 2px solid #F5F5F5;
+    max-height: 450px;
     overflow-y: auto;
+    position: absolute;
+    left: 70%;
 }
 
 .popupHeader {
@@ -36,7 +39,8 @@
 }
 
 .popupHeader .arrowSort {
-    margin-left: 45%;
+    margin-left: 40%;
+    margin-top: -5%;
 }
 
 .popupHeader .headerList li:hover {
@@ -55,7 +59,7 @@
 }
 
 .popupBody .radio input {
-    margin-right: 10%;
+    margin-right: 5%;
     height: 15px;
     width: 15px;
 }
@@ -63,4 +67,69 @@
 .popupBody .coefForm {
     padding-bottom: 1%;
     border-bottom: 1px solid gray;
+}
+
+.radioForm {
+    border-bottom: 1px solid gray;
+    padding-bottom: 2%;
+}
+
+.settingsItem {
+    cursor: pointer;
+}
+
+.radioForm:last-child {
+    border-bottom: none;
+}
+
+.radioForm label {
+    width: 100%;
+    display: inline-block;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    margin-bottom: -8%;
+    cursor: pointer;
+}
+
+.radioForm label:hover {
+    background: #F5F5F5;
+}
+
+#lastLabel {
+    border-right: 1px solid darkgray;
+    padding-right: 21%;
+    display: flex;
+    padding-top: 6%;
+}
+
+.verticalLine {
+    width: 1.5px;
+    height: 25px;
+    margin-left: -50%;
+    margin-right: 5%;
+    margin-top: 6%;
+    background-color: darkgray;
+}
+
+.arrowBtn {
+    background: transparent;
+    border: none;
+    margin-top: 50%;
+    padding: 0;
+    padding-bottom: -1px;
+    border-radius: 5px;
+}
+
+.arrowBtn:hover {
+    background-color: hsl(233, 100%, 69%);
+    fill: hsl(233, 76%, 34%);
+    transition: background-color 0.5s ease;
+}
+
+.arrowBtn svg {
+    fill: hsl(233, 90.5%, 53.8%);
+}
+
+.inputField:last-child {
+    display: flex;
 }

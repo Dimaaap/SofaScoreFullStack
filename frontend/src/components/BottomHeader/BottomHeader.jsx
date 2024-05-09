@@ -17,10 +17,11 @@ import SettingsPopup from "../popups/SettingsPopup/SettingsPopup";
 
 const BottomHeader = () => {
     const [active, setActive] = useState('soccer')
+    const [settingsModal, setSettingsModal] = useState(false);
   return (
     <>
         <div className="bottom-container">
-        <ul class="sports-container">
+        <ul className="sports-container">
             <li className={`sport ${active === "soccer" ? 'active': ''}`}
             onClick={() => setActive("soccer")}>
                 <GiSoccerBall color="white" />
@@ -74,13 +75,13 @@ const BottomHeader = () => {
                 </span>
             </li>
             <li>
-                <button className="settingsBtn">
+                <button className="settingsBtn" onClick={() => setSettingsModal(!settingsModal)}>
                     <IoMdSettings color="white"/>
                 </button>
             </li>
         </ul>
         </div>
-        <SettingsPopup />
+        { settingsModal && <SettingsPopup /> }
     </>
   )
 }
