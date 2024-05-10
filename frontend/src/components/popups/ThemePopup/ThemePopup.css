@@ -1,0 +1,23 @@
+.theme-popup {
+    position: absolute;
+    z-index: 1002;
+    top: 137%;
+    left: 34%;
+    background: white;
+    -webkit-box-shadow: -1px -1px 7px -2px #000000; 
+    box-shadow: -1px -1px 7px -2px #000000;
+    border-radius: 10px;
+    width: 150px;
+}
+
+.theme-popup li {
+    cursor: pointer;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.theme-popup li:hover {
+    background: #F5F5F5;
+}
