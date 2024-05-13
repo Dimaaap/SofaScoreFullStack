@@ -18,6 +18,11 @@
     padding-right: 8%;
 }
 
+.theme-popup .active-li {
+    background: #F5F5F5;
+    color: hsl(233, 90.5%, 53.8%);
+}
+
 .theme-popup li:hover {
     background: #F5F5F5;
 }

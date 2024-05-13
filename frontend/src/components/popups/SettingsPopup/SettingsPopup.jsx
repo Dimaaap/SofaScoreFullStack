@@ -11,6 +11,7 @@ const SettingsPopup = () => {
     const [currFlag, setCurrFlag] = useState(ua_logo);
     const [langPopup, setLangPopup] = useState(false);
     const [themePopup, setThemePopup] = useState(false);
+    const [darkTheme, setDarkTheme] = useState("amoled");
   return (
     <div className="settingsPopup">
       <div className="popupHeader">
@@ -81,10 +82,11 @@ const SettingsPopup = () => {
                 </label>
             </div>
             <div className="radio inputField">
-                { themePopup && <ThemePopup /> }
+                { themePopup && <ThemePopup setTheme={setDarkTheme}
+                currTheme={darkTheme}/> }
                 <label id='lastLabel'>
                     <input type="radio" value="dark" name="theme" />
-                    Темна (Нічна)
+                    Темна ({darkTheme === "amoled" ? "Амолед" : "Нічна"})
                 </label>
                 <div className="verticalLine"></div>
                 <div className="btnContainer">
@@ -98,7 +100,6 @@ const SettingsPopup = () => {
                     </button>
                 </div>
             </div>
-           
         </form>
       </div>
     </div>

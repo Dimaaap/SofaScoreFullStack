@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./BottomHeader.css";
 import { GiSoccerBall } from "react-icons/gi"
 import { FaBasketball } from "react-icons/fa6";
@@ -22,20 +23,26 @@ const BottomHeader = () => {
     <>
         <div className="bottom-container">
         <ul className="sports-container">
-            <li className={`sport ${active === "soccer" ? 'active': ''}`}
-            onClick={() => setActive("soccer")}>
-                <GiSoccerBall color="white" />
-                Футбол
-            </li>
+                <li className={`sport ${active === "soccer" ? 'active': ''}`}
+                onClick={() => setActive("soccer")}>
+                    <Link to="/">
+                        <GiSoccerBall color="white" />
+                        Футбол
+                    </Link>
+                </li>
             <li className={`sport ${active === "basketball" ? 'active': ''}`}
             onClick={() => setActive("basketball")}>
-                <FaBasketball color="white" />
-                Баскетбол
+                <Link to="/basketball">
+                    <FaBasketball color="white" />
+                    Баскетбол
+                </Link>
             </li>
             <li className={`sport ${active === "tennis" ? 'active': ''}`}
             onClick={() => setActive("tennis")}>
-                <MdOutlineSportsTennis color="white" />
-                Теніс
+                <Link to="/tennis">
+                    <MdOutlineSportsTennis color="white" />
+                    Теніс
+                </Link>
             </li>
             <li className={`sport ${active === "ping-pong" ? 'active': ''}`}
             onClick={() => setActive("ping-pong")}>
