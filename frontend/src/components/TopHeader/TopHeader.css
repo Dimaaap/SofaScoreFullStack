@@ -5,6 +5,7 @@
     padding-left: 100px;
     padding-right: 100px;
     height: 80px;
+    overflow:hidden;
 }
 
 .container {
@@ -21,7 +22,7 @@
 
 .search-form {
   flex: 1;
-  margin-left: -50%;
+  margin-left: -40%;
   margin-top: -1.5%;
 }
 
@@ -57,7 +58,7 @@
   display: flex;
   align-items: center;
   margin-top: -1%;
-  margin-left: -10%;
+  margin-left: -62%;
   min-width: 550px;
 }
 

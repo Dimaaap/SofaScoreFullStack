@@ -23,6 +23,15 @@ small {
     height: 100%;
 }
 
+#main-container .calendar-section {
+    width: 70%;
+    padding-left: 30%;
+}
+
+#left-section {
+    flex: 1.2;
+}
+
 .section {
     flex: 1;
     text-align: center;

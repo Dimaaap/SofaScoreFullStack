@@ -3,7 +3,10 @@
 * {
   padding: 0;
   font-family: "Poppins", sans-serif;
-  overflow:hidden;
+}
+
+.container {
+  overflow-y: auto !important;
 }
 
 html {
