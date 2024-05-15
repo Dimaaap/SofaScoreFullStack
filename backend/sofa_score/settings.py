@@ -21,7 +21,8 @@ INSTALLED_APPS = [
     "rest_framework",
     "corsheaders",
 
-    "main"
+    "main",
+    "soccer"
 ]
 
 CORS_ALLOWED_ORIGINS = ["http://localhost:5173"]

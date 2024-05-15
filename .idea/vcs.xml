@@ -2,9 +2,9 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../ReactFood" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../angular-web" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../angular-web/store" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../bolt-food-clone" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
   </component>
 </project>
