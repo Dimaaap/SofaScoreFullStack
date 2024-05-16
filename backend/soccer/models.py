@@ -13,7 +13,7 @@ class PlayZones(models.Model):
 
 
 class LeaguesModels(models.Model):
-    id = models.UUIDField(primary_key=True, default=uuid4(), editable=False)
+    id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
     league_title = models.CharField(max_length=200, default="")
     icon = models.URLField(max_length=255)
     start_date = models.DateField(default="")
@@ -26,7 +26,7 @@ class LeaguesModels(models.Model):
     most_titles = models.TextField(default="")
     current_winner = models.TextField(default="")
     league_rang = models.TextField(default="")
-    average_goals = models.DecimalField(decimal_places=2, max_digits=4)
+    average_goals = models.DecimalField(decimal_places=2, max_digits=4, blank=True, null=True)
     lower_league_id = models.CharField(default="")
     similar_league_id = models.CharField(default="")
     command_count = models.IntegerField()
@@ -34,3 +34,13 @@ class LeaguesModels(models.Model):
 
     def __str__(self):
         return f"{self.league_title} {self.play_zone}"
+
+
+class Rating(models.Model):
+    rating_id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
+    rating_logo = models.URLField(max_length=255, default="")
+    rating_title = models.CharField(max_length=100, default="")
+    modified = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.rating_title

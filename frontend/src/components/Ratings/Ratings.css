@@ -1,4 +1,4 @@
-.top-leagues-container {
+.ratings-container {
     align-items: center;
     background-color: #fff;
     border: 1px solid #ddd;
@@ -8,16 +8,16 @@
     margin-top: 5%;
 }
 
-.top-leagues-container .title {
+.ratings-container .title {
     font-weight: 600;
     margin-left: -40%;
 }
 
-.top-leagues {
+.ratings {
     list-style: none;
 }
 
-.top-leagues li {
+.ratings li {
     display: flex;
     text-align: left;
     margin-bottom: 3%;
@@ -29,15 +29,16 @@
     padding-right: 5%;
 }
 
-.top-leagues li:hover {
+.ratings li:hover {
     background-color: rgb(240, 240, 240);
 }
 
-.top-leagues li span {
+.ratings li span {
     margin-right: 7%;
 }
 
-.top-leagues li img {
+
+.ratings li img {
     width: 25px;
     height: 25px;
 }

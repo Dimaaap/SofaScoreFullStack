@@ -3,6 +3,8 @@ import "./Football.css"
 import TopHeader from '../../components/TopHeader/TopHeader'
 import BottomHeader from "../../components/BottomHeader/BottomHeader"
 import MatchCalendar from '../../components/MatchCalendar/MatchCalendar'
+import TopLeages from '../../components/TopLeages/TopLeages'
+import Ratings from '../../components/Ratings/Ratings'
 
 const Football = () => {
   return (
@@ -21,6 +23,8 @@ const Football = () => {
                     <div className="section left-page" id="left-section">
                         <div className="calendar-section">
                             <MatchCalendar />
+                            <TopLeages />
+                            <Ratings />
                         </div>
                     </div>
                     <div className="section center-page">
