@@ -5,6 +5,7 @@ import BottomHeader from "../../components/BottomHeader/BottomHeader"
 import MatchCalendar from '../../components/MatchCalendar/MatchCalendar'
 import TopLeages from '../../components/TopLeages/TopLeages'
 import Ratings from '../../components/Ratings/Ratings'
+import OtherLeagues from '../../components/OtherLeagues/OtherLeagues'
 
 const Football = () => {
   return (
@@ -25,6 +26,7 @@ const Football = () => {
                             <MatchCalendar />
                             <TopLeages />
                             <Ratings />
+                            <OtherLeagues />
                         </div>
                     </div>
                     <div className="section center-page">

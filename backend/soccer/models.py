@@ -6,7 +6,7 @@ from django.db import models
 class PlayZones(models.Model):
     id = models.IntegerField(primary_key=True, editable=False)
     play_zone_title = models.CharField(max_length=50, default="")
-    play_zone_area_image = models.URLField(max_length=255)
+    play_zone_area_image = models.URLField(max_length=255, default="")
 
     def __str__(self):
         return {self.play_zone_title}
@@ -15,22 +15,20 @@ class PlayZones(models.Model):
 class LeaguesModels(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
     league_title = models.CharField(max_length=200, default="")
-    icon = models.URLField(max_length=255)
-    start_date = models.DateField(default="")
-    end_date = models.DateField(default="")
-    league_description = models.TextField(default="")
-    league_format = models.TextField(default="")
-    commands_stadiums = models.TextField(default="")
-    tv_partners = models.TextField(default="")
-    best_scorers = models.TextField(default="")
-    most_titles = models.TextField(default="")
-    current_winner = models.TextField(default="")
-    league_rang = models.TextField(default="")
-    average_goals = models.DecimalField(decimal_places=2, max_digits=4, blank=True, null=True)
-    lower_league_id = models.CharField(default="")
-    similar_league_id = models.CharField(default="")
-    command_count = models.IntegerField()
-    play_zone = models.ForeignKey(PlayZones, on_delete=models.CASCADE)
+    slug = models.SlugField(default="")
+    primary_color_hex = models.CharField(max_length=7, default="#fa5001")
+    secondary_color_hex = models.CharField(max_length=7, default="#8e0a06")
+    tier = models.IntegerField(default=1)
+    most_titles = models.IntegerField(default=1)
+    has_standings_groups = models.BooleanField(default=False)
+    has_rounds = models.BooleanField(default=False)
+    has_groups = models.BooleanField(default=False)
+    has_playoff_series = models.BooleanField(default=False)
+    has_disable_home_away_standings = models.BooleanField(default=False)
+    icon = models.URLField(max_length=255, default="")
+    start_date = models.DateField(blank=True, null=True)
+    end_date = models.DateField(blank=True, null=True)
+    play_zone = models.ForeignKey(PlayZones, on_delete=models.CASCADE, default="")
 
     def __str__(self):
         return f"{self.league_title} {self.play_zone}"
