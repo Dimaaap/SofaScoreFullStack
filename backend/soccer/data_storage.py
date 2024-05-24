@@ -4,213 +4,6 @@ import datetime
 
 @dataclass
 class DataStorage:
-    PLAY_ZONES = [
-        {
-            "id": 1,
-            "play_zone_title": "Європа",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/europe.png"
-        },
-        {
-            "id": 2,
-            "play_zone_title": "Азія",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/asia.png"
-        },
-        {
-            "id": 3,
-            "play_zone_title": "Африка",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/africa.png"
-        },
-        {
-            "id": 4,
-            "play_zone_title": "Південна Америка",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/south-america.png",
-        },
-        {
-            "id": 5,
-            "play_zone_title": "Північна & Центральна Америка",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/north-and-central-america.png"
-        },
-        {
-            "id": 6,
-            "play_zone_title": "Океанія",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/oceania.png"
-        },
-        {
-            "id": 7,
-            "play_zone_title": "Англія",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/en.png"
-        },
-        {
-            "id": 8,
-            "play_zone_title": "Іспанія",
-            "play_zone_area_image": 'https://www.sofascore.com/static/images/flags/es.png'
-        },
-        {
-            "id": 9,
-            "play_zone_title": "Німеччина",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/de.png"
-        },
-        {
-            "id": 10,
-            "play_zone_title": "Італія",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/it.png"
-        },
-        {
-            "id": 11,
-            "play_zone_title": "Франція",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/fr.png"
-        },
-        {
-            "id": 12,
-            "play_zone_title": "Нідерланди",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/nl.png"
-        },
-        {
-            "id": 13,
-            "play_zone_title": "Бразилія",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/br.png"
-        },
-        {
-            "id": 14,
-            "play_zone_title": "Україна",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ua.png"
-        },
-        {
-            "id": 15,
-            "play_zone_title": "Історія чемпіонату світу",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/international.png"
-        },
-        {
-            "id": 16,
-            "play_zone_title": "Австралія",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/au.png"
-        },
-        {
-            "id": 17,
-            "play_zone_title": "Австрія",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/at.png"
-        },
-        {
-            "id": 18,
-            "play_zone_title": "Австрія Любительська",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/at.png"
-        },
-        {
-            "id": 19,
-            "play_zone_title": "Азербайджан",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/az.png"
-        },
-        {
-            "id": 20,
-            "play_zone_title": "Албанія",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/al.png"
-        },
-        {
-            "id": 21,
-            "play_zone_title": "Алжир",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/dz.png",
-        },
-        {
-            "id": 22,
-            "play_zone_title": "Американське Самоа",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/as.png"
-        },
-        {
-            "id": 23,
-            "play_zone_title": "Ангілья",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ai.png"
-        },
-        {
-            "id": 24,
-            "play_zone_title": "Англія Любительська",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/en.png"
-        },
-        {
-            "id": 25,
-            "play_zone_title": "Ангола",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ao.png"
-        },
-        {
-            "id": 26,
-            "play_zone_title": "Андорра",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ad.png"
-        },
-        {
-            "id": 27,
-            "play_zone_title": "Антигуа і Барбуда",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ag.png"
-        },
-        {
-            "id": 28,
-            "play_zone_title": "Аргентина",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ar.png",
-        },
-        {
-            "id": 29,
-            "play_zone_title": "Аргентина Любительська",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ar.png",
-        },
-        {
-            "id": 30,
-            "play_zone_title": "Вірменія",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/am.png"
-        },
-        {
-            "id": 31,
-            "play_zone_title": "Аруба",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/aw.png",
-        },
-        {
-            "id": 32,
-            "play_zone_title": "Багами",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/bs.png"
-        },
-        {
-            "id": 33,
-            "play_zone_title": "Бангладеш",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/bd.png",
-        },
-        {
-            "id": 34,
-            "play_zone_title": "Барбадос",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/bb.png",
-        },
-        {
-            "id": 35,
-            "play_zone_title": "Бахрейн",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/bh.png"
-        },
-        {
-            "id": 36,
-            "play_zone_title": "Білорусь",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/by.png"
-        },
-        {
-            "id": 37,
-            "play_zone_title": "Беліз",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/bz.png",
-        },
-        {
-            "id": 38,
-            "play_zone_title": "Бельгія",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/be.png"
-        },
-        {
-            "id": 39,
-            "play_zone_title": "Бельгія Любительська",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/be.png"
-        },
-        {
-            "id": 40,
-            "play_zone_title": "Болгарія",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/bg.png"
-        },
-        {
-            "id": 41,
-            "play_zone_title": "Болгарія Любительська",
-            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/bg.png"
-        }
-    ]
 
     ALL_LEAGUES = [
         {
@@ -3460,6 +3253,1182 @@ class DataStorage:
             "end_date": "2024-06-30",
             "play_zone": 41
         },
+        {
+            "league_title": "División Profesional",
+            "slug": "division-profesional",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/16736/image",
+            "most_titles": 30,
+            "has_standings_groups": False,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2024-02-16",
+            "end_date": "2024-12-16",
+            "play_zone": 42
+        },
+        {
+            "league_title": "Copa Simón Bolívar",
+            "slug": "copa-simon-bolivar",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/19011/image",
+            "most_titles": 4,
+            "tier": 2,
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": True,
+            "has_playoff_series": False,
+            "start_date": "2024-04-07",
+            "end_date": "2024-12-01",
+            "play_zone": 42
+        },
+        {
+            "league_title": "Copa Division Profesional",
+            "slug": "copa-division-profesional",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/19891/image",
+            "has_standings_groups": False,
+            "has_rounds": True,
+            "has_groups": True,
+            "has_playoff_series": False,
+            "start_date": "2023-02-15",
+            "end_date": "2023-12-19",
+            "play_zone": 42
+        },
+        {
+            "league_title": "WWIN Premijer Liga",
+            "slug": "wwin-premijer-liga",
+            "primary_color_hex": "#22327d",
+            "secondary_color_hex": "#ef8812",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/222/image",
+            "most_titles": 8,
+            "tier": 1,
+            "has_standings_groups": False,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2023-07-28",
+            "end_date": "2024-06-26",
+            "play_zone": 43
+        },
+        {
+            "league_title": "Prva Liga, Federacije BiH",
+            "slug": "prva-liga-federacije-bih",
+            "primary_color_hex": "#1f599d",
+            "secondary_color_hex": "#d1aa58",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/716/image",
+            "tier": 2,
+            "has_standings_groups": False,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2023-08-12",
+            "end_date": "2024-06-09",
+            "play_zone": 43
+        },
+        {
+            "league_title": "Prva Liga, Republike Srpske",
+            "slug": "prva-liga-republike-srpske",
+            "primary_color_hex": "#9f9f9f",
+            "secondary_color_hex": "#e40001",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/715/image",
+            "most_titles": 5,
+            "tier": 2,
+            "has_standings_groups": False,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2023-08-11",
+            "end_date": "2024-06-30",
+            "play_zone": 43
+        },
+        {
+            "league_title": "Bosnia & Herzegovina Cup",
+            "slug": "bosnia-and-herzegovina-cup",
+            "primary_color_hex": "#02006",
+            "secondary_color_hex": "#d2a800",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/583/image",
+            "most_titles": 7,
+            "has_standings_groups": False,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2023-09-26",
+            "end_date": "2024-05-22",
+            "play_zone": 43
+        },
+        {
+            "league_title": "2.Liga FBiH - Centar",
+            "slug": "2-liga-fbih-centar",
+            "primary_color_hex": "#1f599d",
+            "secondary_color_hex": "#d1aa58",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/16328/image",
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2023-08-13",
+            "end_date": "2024-06-04",
+            "play_zone": 44
+        },
+        {
+            "league_title": "2.Liga FBiH - Zapad",
+            "slug": "2-liga-fbih-zapad",
+            "primary_color_hex": "#1f599d",
+            "secondary_color_hex": "#d1aa58",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/17138/image",
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2023-08-19",
+            "end_date": "2024-06-10",
+            "play_zone": 44
+        },
+        {
+            "league_title": "2.Liga FBiH - Sjever",
+            "slug": "2-liga-fbih-sjever",
+            "primary_color_hex": "#1f599d",
+            "secondary_color_hex": "#d1aa58",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/16336/image",
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2023-08-19",
+            "end_date": "2024-06-08",
+            "play_zone": 44
+        },
+        {
+            "league_title": "2.Liga FBiH - Jug",
+            "slug": "2-liga-fbih-jug",
+            "primary_color_hex": "#1f599d",
+            "secondary_color_hex": "#d1aa58",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/16345/image",
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2023-08-19",
+            "end_date": "2024-06-08",
+            "play_zone": 44
+        },
+        {
+            "league_title": "2.Liga RS - Zapad",
+            "slug": "2-liga-rs-zapad",
+            "primary_color_hex": "#9f9f9f",
+            "secondary_color_hex": "#e40001",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/16332/image",
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": True,
+            "has_playoff_series": False,
+            "start_date": "2023-08-19",
+            "end_date": "2024-06-09",
+            "play_zone": 44
+        },
+        {
+            "league_title": "2.Liga RS - Istok",
+            "slug": "2-liga-rs-istok",
+            "primary_color_hex": "https://api.sofascore.app/api/v1/unique-tournament/22108/image",
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2023-08-19",
+            "end_date": "2024-06-02",
+            "play_zone": 44
+        },
+        {
+            "league_title": "Regionalna Liga RS - Centar",
+            "slug": "regionalna-liga-rs-centar",
+            "primary_color_hex": "#2a0e74",
+            "secondary_color_hex": "#dc2a19",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/16774/image",
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": True,
+            "has_playoff_series": False,
+            "start_date": "2023-08-20",
+            "end_date": "2024-06-09",
+            "play_zone": 44
+        },
+        {
+            "league_title": "Regionalna Liga RS - Istok",
+            "slug": "regionalna-liga-rs-istok",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/20216/image",
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2023-08-20",
+            "end_date": "2024-06-11",
+            "play_zone": 44
+        },
+        {
+            "league_title": "Regionalna Liga RS - Jug",
+            "slug": "regionalna-liga-rs-jug",
+            "icon": "https://www.sofascore.com/static/images/placeholders/tournament.svg",
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2021-10-24",
+            "end_date": "2022-05-22",
+            "play_zone": 44
+        },
+        {
+            "league_title": "Regionalna Liga RS - Zapad",
+            "slug": "regionalna-liga-rs-zapad",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/20919/image",
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": True,
+            "has_playoff_series": False,
+            "start_date": "2023-08-27",
+            "end_date": "2023-06-16",
+            "play_zone": 44
+        },
+        {
+            "league_title": "Kantonalna Liga - ZDK",
+            "slug": "kantonalna-liga-zdk",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/19052/image",
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2023-08-27",
+            "end_date": "2024-06-02",
+            "play_zone": 44
+        },
+        {
+            "league_title": "1. Kantonalna liga TK",
+            "slug": "1-kantonalna-liga-tk",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/16438/image",
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2023-08-19",
+            "end_date": "2024-06-16",
+            "play_zone": 44
+        },
+        {
+            "league_title": "Kantonalna Liga SBK",
+            "slug": "kantonalna-liga-sbk",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/19532/image",
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": True,
+            "has_playoff_series": False,
+            "start_date": "2023-09-16",
+            "end_date": "2024-06-02",
+            "play_zone": 44
+        },
+        {
+            "league_title": "Kantonalna Liga Sarajevo",
+            "slug": "kantonalna-liga-sarajevo",
+            "primary_color_hex": "#531115",
+            "secondary_color_hex": "#50759D",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/20980/image",
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": True,
+            "has_playoff_series": False,
+            "start_date": "2023-09-24",
+            "end_date": "2024-06-30",
+            "play_zone": 44
+        },
+        {
+            "league_title": "Kantonalna liga USK",
+            "slug": "kantonalna-liga-usk",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/21080/image",
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2023-09-09",
+            "end_date": "2024-06-08",
+            "play_zone": 44
+        },
+        {
+            "league_title": "1.ŽNL Posavina",
+            "slug": "1-znl-posavina",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/16658/image",
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2023-08-20",
+            "end_date": "2024-06-16",
+            "play_zone": 44
+        },
+        {
+            "league_title": "2.ŽNL Posavina",
+            "slug": "2-znl-posavina",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/16754/image",
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2023-09-09",
+            "end_date": "2024-05-19",
+            "play_zone": 44
+        },
+        {
+            "league_title": "Kantonalna Liga HNK",
+            "slug": "kantonalna-liga-hnk",
+            "primary_color_hex": "#0d0063",
+            "secondary_color_hex": "#9d9d9b",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/16681/image",
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2023-09-10",
+            "end_date": "2024-06-30",
+            "play_zone": 44
+        },
+        {
+            "league_title": "MŽNL HBŽ/ZHŽ",
+            "slug": "mznl-hbzzhz",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/16882/image",
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2023-09-17",
+            "end_date": "2024-06-02",
+            "play_zone": 44
+        },
+        {
+            "league_title": "Područna liga - Banja Luka",
+            "slug": "podrucna-liga-banja-luka",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/18284/image",
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": True,
+            "has_playoff_series": False,
+            "start_date": "2023-08-26",
+            "end_date": "2024-06-09",
+            "play_zone": 44
+        },
+        {
+            "league_title": "Područna liga RS - Doboj",
+            "slug": "podrucna-liga-rs-doboj",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/20345/image",
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": True,
+            "has_playoff_series": False,
+            "start_date": "2023-09-02",
+            "end_date": "2024-05-26",
+            "play_zone": 44
+        },
+        {
+            "league_title": "Područna liga RS - Gradiška",
+            "slug": "podrucna-liga-rs-gradiska",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/20487/image",
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2023-08-20",
+            "end_date": "2024-06-16",
+            "play_zone": 44
+        },
+        {
+            "league_title": "Područna liga RS - Modriča-Šamac",
+            "slug": "podrucna-liga-rs-modrica-samac",
+            "icon": "https://www.sofascore.com/static/images/placeholders/tournament.svg",
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": True,
+            "has_playoff_series": False,
+            "start_date": "2023-09-02",
+            "end_date": "2024-06-02",
+            "play_zone": 44
+        },
+        {
+            "league_title": "Područna liga - Prijedor",
+            "slug": "podrucna-liga-prijedor",
+            "icon": "https://www.sofascore.com/static/images/placeholders/tournament.svg",
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2023-09-03",
+            "end_date": "2024-06-30",
+            "play_zone": 44
+        },
+        {
+            "league_title": "Kup Republike Srpske",
+            "slug": "kup-republike-srpske",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/20360/image",
+            "most_titles": 7,
+            "has_standings_groups": False,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2023-08-30",
+            "end_date": "2024-05-30",
+            "play_zone": 44
+        },
+        {
+            "league_title": "Kup Trebava",
+            "slug": "kup-trebava",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/20639/image",
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2023-06-22",
+            "end_date": "2023-06-24",
+            "play_zone": 44
+        },
+        {
+            "league_title": "Međuopštinska Liga RS – Doboj",
+            "slug": "meduopstinska-liga-rs-doboj",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/20717/image",
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": True,
+            "has_playoff_series": False,
+            "start_date": "2019-09-08",
+            "end_date": "2020-06-20",
+            "play_zone": 44
+        },
+        {
+            "league_title": "Kup NS USK",
+            "slug": "kup-ns-usk",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/22347/image",
+            "has_standings_groups": False,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2023-09-23",
+            "end_date": "2024-06-30",
+            "play_zone": 44
+        },
+        {
+            "league_title": "Kup FS KS",
+            "slug": "kup-fs-ks",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/22374/image",
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start-date": "2023-09-09",
+            "end_date": "2024-06-30",
+            "play_zone": 44
+        },
+        {
+            "league_title": "Kup TK",
+            "slug": "kub-tk",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/22410/image",
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2023-09-02",
+            "end_date": "2024-06-30",
+            "play_zone": 44
+        },
+        {
+            "league_title": "Kup NS ZDK",
+            "slug": "kup-ns-zdk",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/22459/image",
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": True,
+            "has_playoff_series": False,
+            "start_date": "2024-05-31",
+            "end_date": "2024-06-30",
+            "play_zone": 44
+        },
+        {
+            "league_title": "Kup NS PŽ Orašje",
+            "slug": "kup-ns-pz-orasje",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/22509/image",
+            "has_standings_groups": False,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2023-04-17",
+            "end_date": "2024-06-30",
+            "play_zone": 44
+        },
+        {
+            "league_title": "Premier League",
+            "slug": "premier-league",
+            "primary_color_hex": "#4f87be",
+            "secondary_color_hex": "#90c020",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/11420/image",
+            "most_titles": 15,
+            "tier": 1,
+            "has_standings_groups": False,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2023-09-16",
+            "end_date": "2024-06-02",
+            "play_zone": 45
+        },
+        {
+            "league_title": "Brasileirão Série B",
+            "slug": "brasileirao-serie-b",
+            "primary_color_hex": "#3F01FF",
+            "secondary_color_hex": "#c5be02",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/390/image",
+            "tier": 2,
+            "has_standings_groups": False,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2024-04-19",
+            "end_date": "2024-11-27",
+            "play_zone": 13
+        },
+        {
+            "league_title": "Brasileirão Série C",
+            "slug": "brasileirao-serie-c",
+            "primary_color_hex": "#013027",
+            "secondary_color_hex": "#c5be02",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/1281/image",
+            "tier": 3,
+            "has_standings_groups": False,
+            "has_rounds": True,
+            "has_groups": True,
+            "has_playoff_series": False,
+            "start_date": "2024-04-19",
+            "end_date": "2024-10-21",
+            "play_zone": 13
+        },
+        {
+            "league_title": "Brasileirão Série D",
+            "slug": "brasileirao-serie-d",
+            "primary_color_hex": "#debe04",
+            "secondary_color_hex": "#384ba9",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/10326/image",
+            "tier": 4,
+            "has_standings_groups": False,
+            "has_rounds": True,
+            "has_groups": True,
+            "has_playoff_series": False,
+            "start_date": "2024-04-26",
+            "end_date": "2024-09-30",
+            "play_zone": 13
+        },
+        {
+            "league_title": "Copa do Brasil",
+            "slug": "copa-do-brazil",
+            "primary_color_hex": "#34a348",
+            "seconrary_color_hex": "#f2ba1c",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/373/image",
+            "most_titles": 6,
+            "has_standings_groups": False,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2024-02-20",
+            "end_date": "2024-11-11",
+            "play_zone": 13
+        },
+        {
+            "league_title": "Supercopa do Brasil",
+            "slug": "sipercopa-do-brazil",
+            "primary_color_hex": "#ffb100",
+            "secondary_color_hex": "#072a54",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/14602/image",
+            "most_titles": 2,
+            "has_standings_groups": False,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2023-02-03",
+            "end_date": "2023-02-04",
+            "play_zone": 13
+        },
+        {
+            "league_title": "Brasileirão Série A1, Feminino",
+            "slug": "brasileirao-serie-a1-feminino",
+            "primary_color_hex": "#065eae",
+            "secondary_color_hex": "#dfc001",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/10257/image",
+            "most_titles": 5,
+            "tier": 1,
+            "has_standings_groups": False,
+            "has_rounds": True,
+            "has_groups": True,
+            "has_playoff_series": False,
+            "start_date": "2024-03-15",
+            "end_date": "2024-09-23",
+            "play_zone": 13
+        },
+        {
+            "league_title": "Brasileirão Série A2, Feminino",
+            "slug": "brasileirao-serie-a2-feminino",
+            "primary_color_hex": "#065eae",
+            "secondary_color_hex": "#dfc001",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/14732/image",
+            "most_titles": 2,
+            "tier": 2,
+            "has_standings_groups": False,
+            "has_rounds": True,
+            "has_groups": True,
+            "has_playoff_series": False,
+            "start_date": "2024-04-13",
+            "end_date": "2024-07-22",
+            "play_zone": 13
+        },
+        {
+            "league_title": "Brasileirão Série A3, Feminino",
+            "slug": "brasileirao-serie-a3-feminino",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/22272/image",
+            "most_titles": 1,
+            "tier": 3,
+            "has_standings_groups": False,
+            "has_rounds": True,
+            "has_groups": True,
+            "has_playoff_series": False,
+            "start_date": "2024-04-13",
+            "end_date": "2024-06-29",
+            "play_zone": 13
+        },
+        {
+            "league_title": "Supercopa Feminina Betano do Brasil",
+            "slug": "supercopa-feminina-betano-do-brasil",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/19917/image",
+            "most_titles": 3,
+            "has_standings_groups": False,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2024-02-09",
+            "end_date": "2024-02-19",
+            "play_zone": 13
+        },
+        {
+            "league_title": "Acreano",
+            "slug": "acreano",
+            "primary_color_hex": "#008647",
+            "secondary_color_hex": "#b4b801",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/14659/image",
+            "most_titles": 49,
+            "has_standings_groups": False,
+            "has_rounds": True,
+            "has_groups": True,
+            "has_playoff_series": False,
+            "start_date": "2024-02-17",
+            "end_date": "2024-05-02",
+            "play_zone": 13
+        },
+        {
+            "league_title": "Alagoano",
+            "slug": "alagoano",
+            "primary_color_hex": "#898d8e",
+            "secondary_color_hex": "#b8bab9",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/10294/image",
+            "most_titles": 40,
+            "has_standings_groups": False,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2024-01-20",
+            "end_date": "2024-04-12",
+            "play_zone": 13
+        },
+        {
+            "league_title": "Alagoano, Série B",
+            "slug": "alagoano-serie-b",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/20472/image",
+            "most_titles": 3,
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": True,
+            "has_playoff_series": False,
+            "start_date": "2023-01-13",
+            "end_date": "2023-04-07",
+            "play_zone": 13
+        },
+        {
+            "league_title": "Copa Alagoas",
+            "slug": "copa-alagoas",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/19813/image",
+            "most_titles": 3,
+            "has_standings_groups": False,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2024-01-31",
+            "end_date": "2024-04-04",
+            "play_zone": 13
+        },
+        {
+            "league_title": "Amapaense",
+            "slug": "amapaense",
+            "primary_color_hex": "#008518",
+            "secondary_color_hex": "#f3da18",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/13668/image",
+            "most_titles": 17,
+            "has_standings_groups": False,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2024-02-03",
+            "end_date": "2024-05-02",
+            "play_zone": 13
+        },
+        {
+            "league_title": "Amapaense, Feminino",
+            "slug": "amapaense-feminino",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/22426/image",
+            "most_titles": 8,
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": True,
+            "has_playoff_series": False,
+            "start_date": "2024-04-04",
+            "end_date": "2024-05-16",
+            "play_zone": 13
+        },
+        {
+            "league_title": "Amazonense",
+            "slug": "amazonense",
+            "primary_color-hex": "#002a9f",
+            "secondary_color_hex": "#cb0c00",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/11702/image",
+            "most_titles": 43,
+            "has_standings_groups": False,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2024-01-19",
+            "end_date": "2024-04-14",
+            "play_zone": 13
+        },
+        {
+            "league_title": "Amazonense, Série B",
+            "slug": "amazonense-serie-b",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/20749/image",
+            "most_titles": 4,
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": True,
+            "has_playoff_series": False,
+            "start_date": "2023-07-20",
+            "end_date": "2023-08-19",
+            "play_zone": 13
+        },
+        {
+            "league_title": "Amazonense, Feminino",
+            "slug": "amazonense-feminino",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/20911/image",
+            "most_titles": 8,
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": True,
+            "has_playoff_series": False,
+            "start_date": "2023-06-14",
+            "end_date": "2023-07-26",
+            "play_zone": 13
+        },
+        {
+            "league_title": "Baiano",
+            "slug": "baiano",
+            "primary_color_hex": "#2b2257",
+            "secondary_color_hex": "#ee7c17",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/374/image",
+            "most_titles": 50,
+            "has_standings_groups": False,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2024-01-13",
+            "end_date": "2024-04-08",
+            "play_zone": 13
+        },
+        {
+            "league_title": "Baiano, Série B",
+            "slug": "baianon-serie-b",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/20352/image",
+            "most_titles": 3,
+            "has_standings_groups": False,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2024-06-07",
+            "end_date": "2024-08-12",
+            "play_zone": 13
+        },
+        {
+            "league_title": "Brasiliense",
+            "slug": "brasiliense",
+            "primary_color_hex": "#ccc031",
+            "secondary_color_hex": "#0a3c90",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/11682/image",
+            "most_titles": 13,
+            "has_standings_groups": False,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2024-01-13",
+            "end_date": "2024-04-07",
+            "play_zone": 13
+        },
+        {
+            "league_title": "Brasiliense, Série B",
+            "slug": "brasiliense-serie-b",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/21009/image",
+            "most_titles": 3,
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": True,
+            "has_playoff_series": False,
+            "start_date": "2023-09-02",
+            "end_date": "2023-10-21",
+            "play_zone": 13
+        },
+        {
+            "league_title": "Brasiliense, Feminino",
+            "slug": "brasiliense-feminino",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/21066/image",
+            "most_titles": 7,
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": True,
+            "has_playoff_series": False,
+            "start_date": "2023-08-05",
+            "end_date": "2023-10-07",
+            "play_zone": 13
+        },
+        {
+            "league_title": "Capixaba",
+            "slug": "capixaba",
+            "primary_color_hex": "#1c397e",
+            "secondary_color_hex": "#e5ec71",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/14650/image",
+            "most_titles": 38,
+            "has_standings_groups": False,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2024-01-16",
+            "end_date": "2024-04-14",
+            "play_zone": 13
+        },
+        {
+            "league_title": "Capixaba, Série B",
+            "slug": "capixaba-serie-b",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/20806/image",
+            "most_titles": 3,
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": True,
+            "has_playoff_series": False,
+            "start_date": "2023-08-26",
+            "end_date": "2023-11-26",
+            "play_zone": 13
+        },
+        {
+            "league_title": "Copa Espírito Santo",
+            "slug": "copa-espirito-santo",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/20432/image",
+            "most_titles": 4,
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": True,
+            "has_playoff_series": False,
+            "start_date": "2024-04-07",
+            "end_date": "2024-08-28",
+            "play_zone": 13
+        },
+        {
+            "league_title": "Carioca",
+            "slug": "carioca",
+            "primary_color_hex": "#140533",
+            "secondary_color_hex": "#6c31e3",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/92/image",
+            "most_titles": 38,
+            "has_standings_groups": False,
+            "has_rounds": True,
+            "has_groups": False,
+            "has_playoff_series": False,
+            "start_date": "2024-01-16",
+            "end_date": "2024-04-08",
+            "play_zone": 13
+        },
+        {
+            "league_title": "Carioca, Série A2",
+            "slug": "carioca-serie-a2",
+            "primary_color_hex": "#140533",
+            "secondary_color_hex": "#6c31e3",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/18644/image",
+            "most_titles": 7,
+            "has_standings_groups": False,
+            "has_rounds": True,
+            "has_groups": True,
+            "has_playoff_series": False,
+            "start_date": "2024-05-17",
+            "end_date": "2024-08-19",
+            "play_zone": 13
+        },
+        {
+            "league_title": "Carioca, Série B2",
+            "slug": "carioca-serie-b2",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/20903/image",
+            "most_titles": 2,
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": True,
+            "has_playoff_series": False,
+            "start_date": "2023-09-17",
+            "end_date": "2023-12-03",
+            "play_zone": 13
+        },
+        {
+            "league_title": "Carioca, Série C",
+            "slug": "carioca-serie-c",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/20239/image",
+            "most_titles": 1,
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": True,
+            "has_playoff_series": False,
+            "start_date": "2024-05-12",
+            "end_date": "2024-08-04",
+            "play_zone": 13
+        }
+    ]
+
+    PLAY_ZONES = [
+        {
+            "id": 1,
+            "play_zone_title": "Європа",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/europe.png"
+        },
+        {
+            "id": 2,
+            "play_zone_title": "Азія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/asia.png"
+        },
+        {
+            "id": 3,
+            "play_zone_title": "Африка",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/africa.png"
+        },
+        {
+            "id": 4,
+            "play_zone_title": "Південна Америка",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/south-america.png",
+        },
+        {
+            "id": 5,
+            "play_zone_title": "Північна & Центральна Америка",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/north-and-central-america.png"
+        },
+        {
+            "id": 6,
+            "play_zone_title": "Океанія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/oceania.png"
+        },
+        {
+            "id": 7,
+            "play_zone_title": "Англія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/en.png"
+        },
+        {
+            "id": 8,
+            "play_zone_title": "Іспанія",
+            "play_zone_area_image": 'https://www.sofascore.com/static/images/flags/es.png'
+        },
+        {
+            "id": 9,
+            "play_zone_title": "Німеччина",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/de.png"
+        },
+        {
+            "id": 10,
+            "play_zone_title": "Італія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/it.png"
+        },
+        {
+            "id": 11,
+            "play_zone_title": "Франція",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/fr.png"
+        },
+        {
+            "id": 12,
+            "play_zone_title": "Нідерланди",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/nl.png"
+        },
+        {
+            "id": 13,
+            "play_zone_title": "Бразилія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/br.png"
+        },
+        {
+            "id": 14,
+            "play_zone_title": "Україна",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ua.png"
+        },
+        {
+            "id": 15,
+            "play_zone_title": "Історія чемпіонату світу",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/international.png"
+        },
+        {
+            "id": 16,
+            "play_zone_title": "Австралія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/au.png"
+        },
+        {
+            "id": 17,
+            "play_zone_title": "Австрія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/at.png"
+        },
+        {
+            "id": 18,
+            "play_zone_title": "Австрія Любительська",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/at.png"
+        },
+        {
+            "id": 19,
+            "play_zone_title": "Азербайджан",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/az.png"
+        },
+        {
+            "id": 20,
+            "play_zone_title": "Албанія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/al.png"
+        },
+        {
+            "id": 21,
+            "play_zone_title": "Алжир",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/dz.png",
+        },
+        {
+            "id": 22,
+            "play_zone_title": "Американське Самоа",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/as.png"
+        },
+        {
+            "id": 23,
+            "play_zone_title": "Ангілья",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ai.png"
+        },
+        {
+            "id": 24,
+            "play_zone_title": "Англія Любительська",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/en.png"
+        },
+        {
+            "id": 25,
+            "play_zone_title": "Ангола",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ao.png"
+        },
+        {
+            "id": 26,
+            "play_zone_title": "Андорра",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ad.png"
+        },
+        {
+            "id": 27,
+            "play_zone_title": "Антигуа і Барбуда",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ag.png"
+        },
+        {
+            "id": 28,
+            "play_zone_title": "Аргентина",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ar.png",
+        },
+        {
+            "id": 29,
+            "play_zone_title": "Аргентина Любительська",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ar.png",
+        },
+        {
+            "id": 30,
+            "play_zone_title": "Вірменія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/am.png"
+        },
+        {
+            "id": 31,
+            "play_zone_title": "Аруба",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/aw.png",
+        },
+        {
+            "id": 32,
+            "play_zone_title": "Багами",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/bs.png"
+        },
+        {
+            "id": 33,
+            "play_zone_title": "Бангладеш",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/bd.png",
+        },
+        {
+            "id": 34,
+            "play_zone_title": "Барбадос",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/bb.png",
+        },
+        {
+            "id": 35,
+            "play_zone_title": "Бахрейн",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/bh.png"
+        },
+        {
+            "id": 36,
+            "play_zone_title": "Білорусь",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/by.png"
+        },
+        {
+            "id": 37,
+            "play_zone_title": "Беліз",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/bz.png",
+        },
+        {
+            "id": 38,
+            "play_zone_title": "Бельгія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/be.png"
+        },
+        {
+            "id": 39,
+            "play_zone_title": "Бельгія Любительська",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/be.png"
+        },
+        {
+            "id": 40,
+            "play_zone_title": "Болгарія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/bg.png"
+        },
+        {
+            "id": 41,
+            "play_zone_title": "Болгарія Любительська",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/bg.png"
+        },
+        {
+            "id": 42,
+            "play_zone_title": "Болівія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/bo.png"
+        },
+        {
+            "id": 43,
+            "play_zone_title": "Боснія і Герцеговина",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ba.png",
+        },
+        {
+            "id": 44,
+            "play_zone_title": "Боснія і Герцеговина Любительська",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ba.png"
+        },
+        {
+            "id": 45,
+            "play_zone_title": "Ботсвана",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/bw.png"
+        },
+        {
+            "id": 46,
+            "play_zone_title": "Бразилія Любительська",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/br.png"
+        }
     ]
 
     LEAGUES = [
