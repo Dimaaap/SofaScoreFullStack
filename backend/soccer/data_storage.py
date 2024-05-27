@@ -4895,7 +4895,41 @@ class DataStorage:
             "play_zone": 13
         },
         {
-            "league_title": ""
+            "league_title": "Paulista, Segunda Divisão",
+            "slug": "paulista-segunda-divisao",
+            "primary_color_hex": "#e06033",
+            "secondary_color_hex": "#e4e448",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/22327/image",
+            "tier": 5,
+            "has_standings_groups": True,
+            "has_rounds": True,
+            "has_groups": True,
+            "has_playoff_series": False,
+            "start_date": "2024-04-20",
+            "end_date": "2024-09-15",
+            "play_zone": 13
+        },
+        {
+            "league_title": "Copa Paulista",
+            "slug": "copa-paulista",
+            "primary_color_hex": "#E63988",
+            "secondary_color_hex": "#8B5797",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/10383/image",
+            "most_titles": 3,
+            "has_standings_groups": False,
+            "has_rounds": True,
+            "has_groups": True,
+            "has_playoff_series": False,
+            "start_date": "2024-06-15",
+            "end_date": "2024-10-14",
+            "play_zone": 13
+        },
+        {
+            "league_title": "Paulista, Feminino",
+            "slug": "paulista-feminino",
+            "primary_color_hex": "#851676",
+            "secondary_color_hex": "#dfa805",
+            "icon": "https://api.sofascore.app/api/v1/unique-tournament/14448/image",
         }
     ]
 
