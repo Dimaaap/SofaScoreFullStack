@@ -11,7 +11,7 @@ class PlayZones(models.Model):
     play_zone_area_image = models.URLField(max_length=255, default="")
 
     def __str__(self):
-        return {self.play_zone_title}
+        return f"{self.play_zone_title}"
 
 
 class Countries(models.Model):
@@ -68,8 +68,8 @@ class LeaguesModels(models.Model, SubscribersMixin):
     lower_divisions = models.ManyToManyField("self", blank=True, symmetrical=False, related_name="lower_leagues")
     similar_divisions = models.ManyToManyField("self", blank=True, symmetrical=False, related_name="similar_league")
     icon = models.URLField(max_length=255, default="")
-    start_date = models.DateField(blank=True, null=True)
-    end_date = models.DateField(blank=True, null=True)
+    start_date = models.DateTimeField(blank=True, null=True)
+    end_date = models.DateTimeField(blank=True, null=True)
     play_zone = models.ForeignKey(PlayZones, on_delete=models.CASCADE, default="")
 
     def __str__(self):

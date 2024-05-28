@@ -5163,7 +5163,925 @@ class DataStorage:
             "id": 46,
             "play_zone_title": "Бразилія Любительська",
             "play_zone_area_image": "https://www.sofascore.com/static/images/flags/br.png"
+        },
+        {
+            "id": 47,
+            "play_zone_title": "Британські Віргінські острови",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/vg.png"
+        },
+        {
+            "id": 48,
+            "play_zone_title": "Бруней",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/bn.png",
+        },
+        {
+            "id": 49,
+            "play_zone_title": "Бурунді",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/bi.png"
+        },
+        {
+            "id": 50,
+            "play_zone_title": "Бутан",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/bt.png",
+        },
+        {
+            "id": 51,
+            "play_zone_title": "Вануату",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/vu.png"
+        },
+        {
+            "id": 52,
+            "play_zone_title": "Угорщина",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/hu.png"
+        },
+        {
+            "id": 53,
+            "play_zone_title": "Угорщина Любительська",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/hu.png"
+        },
+        {
+            "id": 54,
+            "play_zone_title": "Венесуела",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ve.png"
+        },
+        {
+            "id": 55,
+            "play_zone_title": "Північний Тимор",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/tl.png"
+        },
+        {
+            "id": 56,
+            "play_zone_title": "В'єтнам",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/vn.png"
+        },
+        {
+            "id": 57,
+            "play_zone_title": "Габон",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ga.png"
+        },
+        {
+            "id": 58,
+            "play_zone_title": "Гамбія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/gm.png"
+        },
+        {
+            "id": 59,
+            "play_zone_title": "Гана",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/gh.png"
+        },
+        {
+            "id": 60,
+            "play_zone_title": "Гваделупа",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/gp.png"
+        },
+        {
+            "id": 61,
+            "play_zone_title": "Гватемала",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/gt.png"
+        },
+        {
+            "id": 62,
+            "play_zone_title": "Гвінея",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/gn.png"
+        },
+        {
+            "id": 63,
+            "play_zone_title": "Німеччина",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/de.png"
+        },
+        {
+            "id": 64,
+            "play_zone_title": "Німеччина Любительська",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/de.png"
+        },
+        {
+            "id": 65,
+            "play_zone_title": "Гібралтар",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/gi.png"
+        },
+        {
+            "id": 66,
+            "play_zone_title": "Гондурас",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/hn.png"
+        },
+        {
+            "id": 67,
+            "play_zone_title": "Гонконг",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/hk.png"
+        },
+        {
+            "id": 68,
+            "play_zone_title": "Гренада",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/gd.png"
+        },
+        {
+            "id": 69,
+            "play_zone_title": "Греція",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/gr.png"
+        },
+        {
+            "id": 70,
+            "play_zone_title": "Греція Любительська",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/gr.png",
+        },
+        {
+            "id": 71,
+            "play_zone_title": "Грузія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ge.png"
+        },
+        {
+            "id": 72,
+            "play_zone_title": "Гуам",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/gu.png"
+        },
+        {
+            "id": 73,
+            "play_zone_title": "Данія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/dk.png"
+        },
+        {
+            "id": 74,
+            "play_zone_title": "Данія Любительська",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/dk.png"
+        },
+        {
+            "id": 75,
+            "play_zone_title": "Домінікана",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/do.png"
+        },
+        {
+            "id": 76,
+            "play_zone_title": "ДР Конго",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/cd.png"
+        },
+        {
+            "id": 77,
+            "play_zone_title": "Європа Любительська",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/europe.png"
+        },
+        {
+            "id": 78,
+            "play_zone_title": "Єгипет",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/eg.png"
+        },
+        {
+            "id": 79,
+            "play_zone_title": "Замбія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/zm.png"
+        },
+        {
+            "id": 80,
+            "play_zone_title": "Зімбабве",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/zw.png"
+        },
+        {
+            "id": 81,
+            "play_zone_title": "Ізраїль",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/il.png"
+        },
+        {
+            "id": 82,
+            "play_zone_title": "Індія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/in.png"
+        },
+        {
+            "id": 83,
+            "play_zone_title": "Індонезія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/id.png"
+        },
+        {
+            "id": 84,
+            "play_zone_title": "Йорданія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/jo.png"
+        },
+        {
+            "id": 85,
+            "play_zone_title": "Ірак",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/iq.png"
+        },
+        {
+            "id": 86,
+            "play_zone_title": "Іран",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ir.png"
+        },
+        {
+            "id": 87,
+            "play_zone_title": "Ірландія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ie.png"
+        },
+        {
+            "id": 88,
+            "play_zone_title": "Ісландія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/is.png"
+        },
+        {
+            "id": 89,
+            "play_zone_title": "Іспанія Любительська",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/es.png"
+        },
+        {
+            "id": 90,
+            "play_zone_title": "Італія Любительська",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/it.png"
+        },
+        {
+            "id": 91,
+            "play_zone_title": "Кабо-Верде",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/cv.png"
+        },
+        {
+            "id": 92,
+            "play_zone_title": "Казахстан",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/kz.png"
+        },
+        {
+            "id": 93,
+            "play_zone_title": "Кайманові острови",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ky.png"
+        },
+        {
+            "id": 94,
+            "play_zone_title": "Камбоджа",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/kh.png",
+        },
+        {
+            "id": 95,
+            "play_zone_title": "Камерун",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/cm.png",
+        },
+        {
+            "id": 96,
+            "play_zone_title": "Канада",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ca.png"
+        },
+        {
+            "id": 97,
+            "play_zone_title": "Катар",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/qa.png"
+        },
+        {
+            "id": 98,
+            "play_zone_title": "Кенія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ke.png"
+        },
+        {
+            "id": 99,
+            "play_zone_title": "Кіпр",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/cy.png"
+        },
+        {
+            "id": 100,
+            "play_zone_title": "Китай",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/cn.png"
+        },
+        {
+            "id": 101,
+            "play_zone_title": "Китайський Тайбей",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/tw.png"
+        },
+        {
+            "id": 102,
+            "play_zone_title": "Колумбія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/co.png"
+        },
+        {
+            "id": 103,
+            "play_zone_title": "Коморські острови",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/km.png"
+        },
+        {
+            "id": 104,
+            "play_zone_title": "Косово",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/xk.png"
+        },
+        {
+            "id": 105,
+            "play_zone_title": "Коста-Рика",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/cr.png"
+        },
+        {
+            "id": 106,
+            "play_zone_title": "Код-д'Івуар",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ci.png"
+        },
+        {
+            "id": 107,
+            "play_zone_title": "Кувейт",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/kw.png"
+        },
+        {
+            "id": 108,
+            "play_zone_title": "Кюрасао",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/cw.png"
+        },
+        {
+            "id": 109,
+            "play_zone_title": "Лаос",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/la.png"
+        },
+        {
+            "id": 110,
+            "play_zone_title": "Латвія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/lv.png"
+        },
+        {
+            "id": 111,
+            "play_zone_title": "Ліберія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/lr.png"
+        },
+        {
+            "id": 112,
+            "play_zone_title": "Ліван",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/lb.png"
+        },
+        {
+            "id": 113,
+            "play_zone_title": "Лівія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ly.png"
+        },
+        {
+            "id": 114,
+            "play_zone_title": "Литва",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/lt.png"
+        },
+        {
+            "id": 115,
+            "play_zone_title": "Ліхтенштейн",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/li.png"
+        },
+        {
+            "id": 116,
+            "play_zone_title": "Люксембург",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/lu.png"
+        },
+        {
+            "id": 117,
+            "play_zone_title": "Маврикій",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/mu.png"
+        },
+        {
+            "id": 118,
+            "play_zone_title": "Мадагаскар",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/mg.png"
+        },
+        {
+            "id": 119,
+            "play_zone_title": "Майотта",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/yt.png"
+        },
+        {
+            "id": 120,
+            "play_zone_title": "Макао",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/mo.png"
+        },
+        {
+            "id": 121,
+            "play_zone_title": "Малайзія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/my.png"
+        },
+        {
+            "id": 122,
+            "play_zone_title": "Мальта",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/mt.png"
+        },
+        {
+            "id": 123,
+            "play_zone_title": "Марокко",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ma.png"
+        },
+        {
+            "id": 124,
+            "play_zone_title": "Марокко Любительська",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ma.png",
+        },
+        {
+            "id": 125,
+            "play_zone_title": "Мартиніка",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/mq.png",
+        },
+        {
+            "id": 126,
+            "play_zone_title": "Мексика",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/mx.png"
+        },
+        {
+            "id": 127,
+            "play_zone_title": "Мексика Любительська",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/mx.png"
+        },
+        {
+            "id": 128,
+            "play_zone_title": "Світ",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/international.png"
+        },
+        {
+            "id": 129,
+            "play_zone_title": "Мозамбік",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/mz.png"
+        },
+        {
+            "id": 130,
+            "play_zone_title": "Молдова",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/md.png"
+        },
+        {
+            "id": 131,
+            "play_zone_title": "Монголія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/mn.png"
+        },
+        {
+            "id": 132,
+            "play_zone_title": "М'янма",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/mm.png"
+        },
+        {
+            "id": 133,
+            "play_zone_title": "Намібія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/na.png"
+        },
+        {
+            "id": 134,
+            "play_zone_title": "Непал",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/np.png"
+        },
+        {
+            "id": 135,
+            "play_zone_title": "Нігерія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ng.png"
+        },
+        {
+            "id": 136,
+            "play_zone_title": "Нідерланди",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/nl.png"
+        },
+        {
+            "id": 137,
+            "play_zone_title": "Нідерланди Любительська",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/nl.png"
+        },
+        {
+            "id": 138,
+            "play_zone_title": "Нікарагуа",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ni.png"
+        },
+        {
+            "id": 139,
+            "play_zone_title": "Нова Зеландія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/nz.png"
+        },
+        {
+            "id": 140,
+            "play_zone_title": "Норвегія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/no.png"
+        },
+        {
+            "id": 141,
+            "play_zone_title": "Норвегія Любительська",
+            "play_zone_area_image": 'https://www.sofascore.com/static/images/flags/no.png'
+        },
+        {
+            "id": 142,
+            "play_zone_title": "ОАЕ",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ae.png"
+        },
+        {
+            "id": 143,
+            "play_zone_title": "Океанія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/oceania.png"
+        },
+        {
+            "id": 144,
+            "play_zone_title": "Оман",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/om.png"
+        },
+        {
+            "id": 145,
+            "play_zone_title": "Острови Кука",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ck.png"
+        },
+        {
+            "id": 146,
+            "play_zone_title": "Пакистан",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/pk.png"
+        },
+        {
+            "id": 147,
+            "play_zone_title": "Палестина",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ps.png"
+        },
+        {
+            "id": 148,
+            "play_zone_title": "Панама",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/pa.png"
+        },
+        {
+            "id": 149,
+            "play_zone_title": "Папуа-Нова Гвінея",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/pg.png"
+        },
+        {
+            "id": 150,
+            "play_zone_title": "Парагвай",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/py.png"
+        },
+        {
+            "id": 151,
+            "play_zone_title": "Перу",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/pe.png"
+        },
+        {
+            "id": 152,
+            "play_zone_title": "Польща",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/pl.png"
+        },
+        {
+            "id": 153,
+            "play_zone_title": "Польща Любительська",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/pl.png"
+        },
+        {
+            "id": 154,
+            "play_zone_title": "Португалія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/pt.png"
+        },
+        {
+            "id": 155,
+            "play_zone_title": "Португалія Любительська",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/pt.png"
+        },
+        {
+            "id": 156,
+            "play_zone_title": "Республіка Конго",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/cg.png"
+        },
+        {
+            "id": 157,
+            "play_zone_title": "Росія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ru.png"
+        },
+        {
+            "id": 158,
+            "play_zone_title": "Росія Любительська",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ru.png"
+        },
+        {
+            "id": 159,
+            "play_zone_title": "Руанда",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/rw.png"
+        },
+        {
+            "id": 160,
+            "play_zone_title": "Румунія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ro.png"
+        },
+        {
+            "id": 161,
+            "play_zone_title": "Румунія Любительська",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ro.png"
+        },
+        {
+            "id": 162,
+            "play_zone_title": "Сальвадор",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/sv.png"
+        },
+        {
+            "id": 163,
+            "play_zone_title": "Самоа",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ws.png"
+        },
+        {
+            "id": 164,
+            "play_zone_title": "Сан-Марино",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/sm.png"
+        },
+        {
+            "id": 165,
+            "play_zone_title": "Сан-Томе і Прінсіпі",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/st.png"
+        },
+        {
+            "id": 166,
+            "play_zone_title": "Саудівська Аравія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/sa.png"
+        },
+        {
+            "id": 167,
+            "play_zone_title": "Північна Ірландія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/nx.png"
+        },
+        {
+            "id": 168,
+            "play_zone_title": "Північна Македонія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/mk.png"
+        },
+        {
+            "id": 169,
+            "play_zone_title": "Сенегал",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/sn.png"
+        },
+        {
+            "id": 170,
+            "play_zone_title": "Сент-Вінсент і Гренадини",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/vc.png"
+        },
+        {
+            "id": 171,
+            "play_zone_title": "Сент-Кіттс і Невіс",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/kn.png"
+        },
+        {
+            "id": 172,
+            "play_zone_title": 'Сербія',
+            "play_zone_area_image": 'https://www.sofascore.com/static/images/flags/rs.png'
+        },
+        {
+            "id": 173,
+            "play_zone_title": "Сербія Любительська",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/rs.png"
+        },
+        {
+            "id": 174,
+            "play_zone_title": "Сингапур",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/sg.png"
+        },
+        {
+            "id": 175,
+            "play_zone_title": "Сирія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/sy.png"
+        },
+        {
+            "id": 176,
+            "play_zone_title": "Словаччина",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/sk.png"
+        },
+        {
+            "id": 177,
+            "play_zone_title": "Словенія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/si.png"
+        },
+        {
+            "id": 178,
+            "play_zone_title": "Словенія Любительська",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/si.png"
+        },
+        {
+            "id": 179,
+            "play_zone_title": "Соломонові острови",
+            "play_zone_area_image": 'https://www.sofascore.com/static/images/flags/sb.png'
+        },
+        {
+            "id": 180,
+            "play_zone_title": "Сомалі",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/so.png"
+        },
+        {
+            "id": 181,
+            "play_zone_title": "Суринам",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/sr.png"
+        },
+        {
+            "id": 182,
+            "play_zone_title": "США",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/us.png"
+        },
+        {
+            "id": 183,
+            "play_zone_title": "США Любительська",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/us.png"
+        },
+        {
+            "id": 184,
+            "play_zone_title": "Сьєрра-Леоне",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/sl.png"
+        },
+        {
+            "id": 185,
+            "play_zone_title": "Таджикистан",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/tj.png"
+        },
+        {
+            "id": 186,
+            "play_zone_title": "Таїланд",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/th.png"
+        },
+        {
+            "id": 187,
+            "play_zone_title": "Таїті",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/pf.png"
+        },
+        {
+            "id": 188,
+            "play_zone_title": "Танзанія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/tz.png"
+        },
+        {
+            "id": 189,
+            "play_zone_title": "Теркс і Кайкос",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/tc.png"
+        },
+        {
+            "id": 190,
+            "play_zone_title": "Тринідад і Тобаго",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/tt.png"
+        },
+        {
+            "id": 191,
+            "play_zone_title": "Туніс",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/tn.png"
+        },
+        {
+            "id": 192,
+            "play_zone_title": "Туркменістан",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/tm.png"
+        },
+        {
+            "id": 193,
+            "play_zone_title": "Уганда",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ug.png"
+        },
+        {
+            "id": 194,
+            "play_zone_title": "Узбекистан",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/uz.png"
+        },
+        {
+            "id": 195,
+            "play_zone_title": "Україна Любительська",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ua.png"
+        },
+        {
+            "id": 196,
+            "play_zone_title": "Уругвай",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/uy.png"
+        },
+        {
+            "id": 197,
+            "play_zone_title": "Уругвай Любительська",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/uy.png"
+        },
+        {
+            "id": 198,
+            "play_zone_title": "Уельс",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/wa.png"
+        },
+        {
+            "id": 199,
+            "play_zone_title": "Фарерські острови",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/fo.png"
+        },
+        {
+            "id": 200,
+            "play_zone_title": "Фіджі",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/fj.png"
+        },
+        {
+            "id": 201,
+            "play_zone_title": "Філліппіни",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ph.png"
+        },
+        {
+            "id": 202,
+            "play_zone_title": "Фінляндія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/fi.png"
+        },
+        {
+            "id": 203,
+            "play_zone_title": 'Франція Любительська',
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/fr.png"
+        },
+        {
+            "id": 204,
+            "play_zone_title": "Хорватія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/hr.png"
+        },
+        {
+            "id": 205,
+            "play_zone_title": "Хорватія Любительська",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/hr.png"
+        },
+        {
+            "id": 206,
+            "play_zone_title": "Чад",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/td.png"
+        },
+        {
+            "id": 207,
+            "play_zone_title": "Чорногорія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/me.png"
+        },
+        {
+            "id": 208,
+            "play_zone_title": "Чорногорія Любительська",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/me.png"
+        },
+        {
+            "id": 209,
+            "play_zone_title": "Чехія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/cz.png"
+        },
+        {
+            "id": 210,
+            "play_zone_title": "Чилі",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/cl.png"
+        },
+        {
+            "id": 211,
+            "play_zone_title": "Чилі Любительська",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/cl.png"
+        },
+        {
+            "id": 212,
+            "play_zone_title": "Швейцарія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ch.png"
+        },
+        {
+            "id": 213,
+            "play_zone_title": "Швейціарія Любительська",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ch.png"
+        },
+        {
+            "id": 214,
+            "play_zone_title": "Швеція",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/se.png"
+        },
+        {
+            "id": 215,
+            "play_zone_title": "Швеція Любительська",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/se.png"
+        },
+        {
+            "id": 216,
+            "play_zone_title": "Шотландія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/sx.png"
+        },
+        {
+            "id": 217,
+            "play_zone_title": "Шотландія Любительська",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/sx.png"
+        },
+        {
+            "id": 218,
+            "play_zone_title": "Еквадор",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ec.png"
+        },
+        {
+            "id": 219,
+            "play_zone_title": "Естонія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/ee.png"
+        },
+        {
+            "id": 220,
+            "play_zone_title": "Ефіопія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/et.png"
+        },
+        {
+            "id": 221,
+            "play_zone_title": "ПАР",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/za.png"
+        },
+        {
+            "id": 222,
+            "play_zone_title": "Південна Корея",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/kr.png"
+        },
+        {
+            "id": 223,
+            "play_zone_title": "Ямайка",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/jm.png"
+        },
+        {
+            "id": 224,
+            "play_zone_title": "Японія",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/jp.png",
+        },
+        {
+            "id": 225,
+            "play_zone_title": "Японія Любительська",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/jp.png"
+        },
+        {
+            "id": 226,
+            "play_zone_title": "Есватіні",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/sz.png"
+        },
+        {
+            "id": 227,
+            "play_zone_title": "Сент Мартен",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/sw.png"
+        },
+        {
+            "id": 228,
+            "play_zone_title": "Туреччина",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/tr.png"
+        },
+        {
+            "id": 229,
+            "play_zone_title": "Американські Віргінські острови",
+            "play_zone_area_image": "https://www.sofascore.com/static/images/flags/vi.png"
         }
+
+
+
     ]
 
     LEAGUES = [

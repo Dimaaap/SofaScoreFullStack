@@ -13,6 +13,16 @@ def insert_play_zones_in_db():
         print(e)
 
 
+def insert_some_play_zones_in_db():
+    try:
+        for zone in data_storage.PLAY_ZONES:
+            if zone["id"] >= 47:
+                new_zone = PlayZones(**zone)
+                new_zone.save()
+    except Exception as e:
+        print(e)
+
+
 def insert_leagues_in_db():
     for league in data_storage.LEAGUES:
         play_zone = PlayZones.objects.get(id=league["play_zone"])

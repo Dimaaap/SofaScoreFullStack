@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import LeaguesModels, Rating
+from .models import LeaguesModels, Rating, PlayZones
 
 
 class LeaguesSerializer(serializers.ModelSerializer):
@@ -11,4 +11,10 @@ class LeaguesSerializer(serializers.ModelSerializer):
 class RatingsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Rating
+        fields = "__all__"
+
+
+class PlayZonesSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = PlayZones
         fields = "__all__"

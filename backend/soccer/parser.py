@@ -1,6 +1,7 @@
 import aiohttp
 import asyncio
 import json
+import requests
 
 
 async def fetch(session, url, results):
@@ -40,6 +41,15 @@ class SoccerParser:
             json.dump(data, tournaments, indent=self.JSON_FILE_INDENT)
 
 
+class CountriesParser:
+
+    def __init__(self):
+        self.result = requests.get("https://restcountries.com/v3.1/all")
+
+    def parse_countries(self):
+        print(self.result.json())
+
+
 def main():
-    parser = SoccerParser()
-    asyncio.run(parser.send_response_to_urls())
+    a = CountriesParser()
+    a.parse_countries()

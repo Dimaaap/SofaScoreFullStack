@@ -22,7 +22,7 @@
     padding: 1%;
     background-color: #F5F5F5;
     border-radius: 10px;
-    padding-left: 10%;
+    padding-left: 11%;
 }
 
 .search-container .input-icon {
@@ -38,6 +38,21 @@
 
 .all-leagues {
     list-style: none;
+}
+
+.all-lagues .playzone {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content {
+    flex-grow: 1;
+    margin-top: 1%;
+}
+
+.arrow-icon {
+    margin-top: 3%;
 }
 
 .all-leagues li {
