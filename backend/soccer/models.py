@@ -15,6 +15,10 @@ class PlayZones(models.Model):
 
 
 class Countries(models.Model):
+
+    class Meta:
+        ordering = ["name"]
+
     id = models.UUIDField(primary_key=True, editable=False, default=uuid4)
     name = models.CharField(max_length=100, default="")
     alpha2 = models.CharField(max_length=3, default="")

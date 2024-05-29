@@ -94,4 +94,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+GEO_DB_API_KEY = config("GEO_DB_API_KEY")
+FOOTBALL_DATA_API_KEY = config("FOOTBALL_DATA_API_KEY")
+
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
