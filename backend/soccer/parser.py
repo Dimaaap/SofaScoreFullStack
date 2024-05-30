@@ -3,6 +3,9 @@ import asyncio
 import json
 import requests
 from typing import Mapping, Iterable, Union
+from bs4 import BeautifulSoup
+
+from .exceptions import TextPropertyNotSupportedError
 
 from django.conf import settings
 
@@ -87,25 +90,50 @@ class CountriesParser:
 
 
 class ParseTeams:
-    __TEAMS_LIST_URL = "http://api.football-data.org/v4/teams"
-    __FOOTBALL_DATA_API_KEY = settings.FOOTBALL_DATA_API_KEY
+    __UEFA_TOP_DIVISION_TEAMS_URL = "https://en.wikipedia.org/wiki/List_of_top-division_football_clubs_in_UEFA_countries"
+    teams_data = []
 
     def __init__(self):
-        headers = {
-            "X-Auth-Token": self.__FOOTBALL_DATA_API_KEY
-        }
-        params = {
-            "page": 1,
-            "page_size": 5000
-        }
-        self.response = requests.get(self.__TEAMS_LIST_URL, headers=headers, params=params)
-        print(self.response.status_code)
-        self.parse_html_response()
+        self.response = requests.get(self.__UEFA_TOP_DIVISION_TEAMS_URL)
 
-    def parse_html_response(self):
+    def parse_response(self):
         response_text = self.response.text
-        print(response_text)
+        parse_text = BeautifulSoup(response_text, "lxml")
+        all_tables = parse_text.find_all("table", {"class": "wikitable"})
+        for table in all_tables:
+            all_rows = table.find_all("tr")
+            for row in all_rows[1:]:
+                team_cell = row.find("th")
+                try:
+                    team_href = team_cell.find("a").get("href")
+                except AttributeError:
+                    team_href = ""
+                try:
+                    self.__add_team_data_to_list(self.teams_data, team_href, team_cell.text)
+                except (TextPropertyNotSupportedError, AttributeError):
+                    self.teams_data.append({"team_title": ""})
+        print(self.teams_data)
+
+    def __add_team_data_to_list(self, team_data_list: list[Mapping[str, str]], team_href: str, team_cell_text: str):
+        full_team_href = self.__form_full_url_address_of_team_page(team_href)
+        team_cell_text = self.__clean_team_title(team_cell_text.strip()).rstrip()
+        team_data_list.append({"team_title": team_cell_text, "team_link": full_team_href})
+
+    def __clean_team_title(self, title: str) -> str:
+        forbidden_symbols = ("(O)", "(R)", "(C)")
+        for symbol in forbidden_symbols:
+            if symbol in title:
+                title = title.replace(symbol, "")
+        return title
+
+    def __form_full_url_address_of_team_page(self, short_url: str) -> str:
+        start_part = "https://en.wikipedia.org"
+        if short_url:
+            return f"{start_part}{short_url}"
+        else:
+            return ""
 
 
 def main():
     a = ParseTeams()
+    a.parse_response()

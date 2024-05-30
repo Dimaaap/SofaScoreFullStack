@@ -1,0 +1,2 @@
+class TextPropertyNotSupportedError(AttributeError):
+    pass
