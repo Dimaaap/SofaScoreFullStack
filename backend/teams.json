@@ -1,0 +1,3157 @@
+[
+  {
+    "team_title": "Partizani",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Partizani_Tirana"
+  },
+  {
+    "team_title": "Tirana",
+    "team_link": "https://en.wikipedia.org/wiki/KF_Tirana"
+  },
+  {
+    "team_title": "Egnatia",
+    "team_link": "https://en.wikipedia.org/wiki/KF_Egnatia"
+  },
+  {
+    "team_title": "Vllaznia",
+    "team_link": "https://en.wikipedia.org/wiki/KF_Vllaznia_Shkod%C3%ABr"
+  },
+  {
+    "team_title": "La\u00e7i",
+    "team_link": "https://en.wikipedia.org/wiki/KF_La%C3%A7i"
+  },
+  {
+    "team_title": "Teuta",
+    "team_link": "https://en.wikipedia.org/wiki/KF_Teuta_Durr%C3%ABs"
+  },
+  {
+    "team_title": "Kuk\u00ebsi",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Kuk%C3%ABsi"
+  },
+  {
+    "team_title": "Erzeni",
+    "team_link": "https://en.wikipedia.org/wiki/KF_Erzeni"
+  },
+  {
+    "team_title": "Bylis",
+    "team_link": "https://en.wikipedia.org/wiki/KF_Bylis"
+  },
+  {
+    "team_title": "Kastrioti",
+    "team_link": "https://en.wikipedia.org/wiki/KS_Kastrioti"
+  },
+  {
+    "team_title": "Atl\u00e8tic Club d'Escaldes",
+    "team_link": "https://en.wikipedia.org/wiki/Atl%C3%A8tic_Club_d%27Escaldes"
+  },
+  {
+    "team_title": "Inter Club d'Escaldes",
+    "team_link": "https://en.wikipedia.org/wiki/Inter_Club_d%27Escaldes"
+  },
+  {
+    "team_title": "FC Santa Coloma",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Santa_Coloma"
+  },
+  {
+    "team_title": "UE Santa Coloma",
+    "team_link": "https://en.wikipedia.org/wiki/UE_Santa_Coloma"
+  },
+  {
+    "team_title": "Penya Encarnada",
+    "team_link": "https://en.wikipedia.org/wiki/Penya_Encarnada_d%27Andorra"
+  },
+  {
+    "team_title": "Ordino",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Ordino"
+  },
+  {
+    "team_title": "Engordany",
+    "team_link": "https://en.wikipedia.org/wiki/UE_Engordany"
+  },
+  {
+    "team_title": "Sant Juli\u00e0",
+    "team_link": "https://en.wikipedia.org/wiki/UE_Sant_Juli%C3%A0"
+  },
+  {
+    "team_title": "Urartu",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Urartu"
+  },
+  {
+    "team_title": "Pyunik",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Pyunik"
+  },
+  {
+    "team_title": "Ararat-Armenia",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Ararat-Armenia"
+  },
+  {
+    "team_title": "Alashkert",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Alashkert"
+  },
+  {
+    "team_title": "Van",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Van"
+  },
+  {
+    "team_title": "Ararat Yerevan",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Ararat_Yerevan"
+  },
+  {
+    "team_title": "Shirak",
+    "team_link": "https://en.wikipedia.org/wiki/Shirak_SC"
+  },
+  {
+    "team_title": "Noah",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Noah"
+  },
+  {
+    "team_title": "BKMA",
+    "team_link": "https://en.wikipedia.org/wiki/BKMA_Yerevan"
+  },
+  {
+    "team_title": "Lernayin Artsakh",
+    "team_link": "https://en.wikipedia.org/wiki/Lernayin_Artsakh_FC"
+  },
+  {
+    "team_title": "Red Bull Salzburg",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Red_Bull_Salzburg"
+  },
+  {
+    "team_title": "Sturm Graz",
+    "team_link": "https://en.wikipedia.org/wiki/SK_Sturm_Graz"
+  },
+  {
+    "team_title": "LASK",
+    "team_link": "https://en.wikipedia.org/wiki/LASK"
+  },
+  {
+    "team_title": "Rapid Wien",
+    "team_link": "https://en.wikipedia.org/wiki/SK_Rapid_Wien"
+  },
+  {
+    "team_title": "Austria Wien",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Austria_Wien"
+  },
+  {
+    "team_title": "Austria Klagenfurt",
+    "team_link": "https://en.wikipedia.org/wiki/SK_Austria_Klagenfurt_(2007)"
+  },
+  {
+    "team_title": "WSG Tirol",
+    "team_link": "https://en.wikipedia.org/wiki/WSG_Tirol"
+  },
+  {
+    "team_title": "Austria Lustenau",
+    "team_link": "https://en.wikipedia.org/wiki/SC_Austria_Lustenau"
+  },
+  {
+    "team_title": "Wolfsberger AC",
+    "team_link": "https://en.wikipedia.org/wiki/Wolfsberger_AC"
+  },
+  {
+    "team_title": "Hartberg",
+    "team_link": "https://en.wikipedia.org/wiki/TSV_Hartberg"
+  },
+  {
+    "team_title": "SV Ried",
+    "team_link": "https://en.wikipedia.org/wiki/SV_Ried"
+  },
+  {
+    "team_title": "Rheindorf Altach",
+    "team_link": "https://en.wikipedia.org/wiki/SC_Rheindorf_Altach"
+  },
+  {
+    "team_title": "Red Bull Salzburg",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Red_Bull_Salzburg"
+  },
+  {
+    "team_title": "Sturm Graz",
+    "team_link": "https://en.wikipedia.org/wiki/SK_Sturm_Graz"
+  },
+  {
+    "team_title": "LASK",
+    "team_link": "https://en.wikipedia.org/wiki/LASK"
+  },
+  {
+    "team_title": "Rapid Wien",
+    "team_link": "https://en.wikipedia.org/wiki/SK_Rapid_Wien"
+  },
+  {
+    "team_title": "Austria Wien",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Austria_Wien"
+  },
+  {
+    "team_title": "Austria Klagenfurt",
+    "team_link": "https://en.wikipedia.org/wiki/SK_Austria_Klagenfurt_(2007)"
+  },
+  {
+    "team_title": "Wolfsberger AC",
+    "team_link": "https://en.wikipedia.org/wiki/Wolfsberger_AC"
+  },
+  {
+    "team_title": "Austria Lustenau",
+    "team_link": "https://en.wikipedia.org/wiki/SC_Austria_Lustenau"
+  },
+  {
+    "team_title": "WSG Tirol",
+    "team_link": "https://en.wikipedia.org/wiki/WSG_Tirol"
+  },
+  {
+    "team_title": "Hartberg",
+    "team_link": "https://en.wikipedia.org/wiki/TSV_Hartberg"
+  },
+  {
+    "team_title": "Rheindorf Altach",
+    "team_link": "https://en.wikipedia.org/wiki/SC_Rheindorf_Altach"
+  },
+  {
+    "team_title": "Ried",
+    "team_link": "https://en.wikipedia.org/wiki/SV_Ried"
+  },
+  {
+    "team_title": "Qaraba\u011f",
+    "team_link": "https://en.wikipedia.org/wiki/Qaraba%C4%9F_FK"
+  },
+  {
+    "team_title": "Sabah",
+    "team_link": "https://en.wikipedia.org/wiki/Sabah_FC_(Azerbaijan)"
+  },
+  {
+    "team_title": "Neft\u00e7i",
+    "team_link": "https://en.wikipedia.org/wiki/Neft%C3%A7i_PFK"
+  },
+  {
+    "team_title": "Gabala",
+    "team_link": "https://en.wikipedia.org/wiki/Gabala_FK"
+  },
+  {
+    "team_title": "Zira",
+    "team_link": "https://en.wikipedia.org/wiki/Zira_FK"
+  },
+  {
+    "team_title": "Turan Tovuz",
+    "team_link": "https://en.wikipedia.org/wiki/Turan_Tovuz"
+  },
+  {
+    "team_title": "Sumgayit",
+    "team_link": "https://en.wikipedia.org/wiki/Sumgayit_FK"
+  },
+  {
+    "team_title": "Kapaz",
+    "team_link": "https://en.wikipedia.org/wiki/Kapaz_PFK"
+  },
+  {
+    "team_title": "Sabail",
+    "team_link": "https://en.wikipedia.org/wiki/Sabail_FK"
+  },
+  {
+    "team_title": "Shamakhi",
+    "team_link": "https://en.wikipedia.org/wiki/Shamakhi_FK"
+  },
+  {
+    "team_title": "Shakhtyor Soligorsk",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Shakhtyor_Soligorsk"
+  },
+  {
+    "team_title": "Energetik-BGU Minsk",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Energetik-BGU_Minsk"
+  },
+  {
+    "team_title": "BATE Borisov",
+    "team_link": "https://en.wikipedia.org/wiki/FC_BATE_Borisov"
+  },
+  {
+    "team_title": "Dinamo Minsk",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Dinamo_Minsk"
+  },
+  {
+    "team_title": "Isloch Minsk Raion",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Isloch_Minsk_Raion"
+  },
+  {
+    "team_title": "Minsk",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Minsk"
+  },
+  {
+    "team_title": "Gomel",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Gomel"
+  },
+  {
+    "team_title": "Torpedo-BelAZ Zhodino",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Torpedo-BelAZ_Zhodino"
+  },
+  {
+    "team_title": "Neman Grodno",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Neman_Grodno"
+  },
+  {
+    "team_title": "Slavia Mozyr",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Slavia_Mozyr"
+  },
+  {
+    "team_title": "Slutsk",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Slutsk"
+  },
+  {
+    "team_title": "Belshina Bobruisk",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Belshina_Bobruisk"
+  },
+  {
+    "team_title": "Dynamo Brest",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Dynamo_Brest"
+  },
+  {
+    "team_title": "Arsenal Dzerzhinsk",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Arsenal_Dzerzhinsk"
+  },
+  {
+    "team_title": "Vitebsk",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Vitebsk"
+  },
+  {
+    "team_title": "Dnepr Mogilev",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Dnepr_Mogilev"
+  },
+  {
+    "team_title": "Genk (J)",
+    "team_link": "https://en.wikipedia.org/wiki/K.R.C._Genk"
+  },
+  {
+    "team_title": "Union SG",
+    "team_link": "https://en.wikipedia.org/wiki/Royale_Union_Saint-Gilloise"
+  },
+  {
+    "team_title": "Antwerp",
+    "team_link": "https://en.wikipedia.org/wiki/Royal_Antwerp_F.C."
+  },
+  {
+    "team_title": "Club Brugge",
+    "team_link": "https://en.wikipedia.org/wiki/Club_Brugge_KV"
+  },
+  {
+    "team_title": "Gent (U)",
+    "team_link": "https://en.wikipedia.org/wiki/K.A.A._Gent"
+  },
+  {
+    "team_title": "Standard Li\u00e8ge",
+    "team_link": "https://en.wikipedia.org/wiki/Standard_Li%C3%A8ge"
+  },
+  {
+    "team_title": "Westerlo",
+    "team_link": "https://en.wikipedia.org/wiki/K.V.C._Westerlo"
+  },
+  {
+    "team_title": "Cercle Brugge",
+    "team_link": "https://en.wikipedia.org/wiki/Cercle_Brugge_K.S.V."
+  },
+  {
+    "team_title": "Charleroi",
+    "team_link": "https://en.wikipedia.org/wiki/R._Charleroi_S.C."
+  },
+  {
+    "team_title": "OH Leuven",
+    "team_link": "https://en.wikipedia.org/wiki/Oud-Heverlee_Leuven"
+  },
+  {
+    "team_title": "Anderlecht",
+    "team_link": "https://en.wikipedia.org/wiki/R.S.C._Anderlecht"
+  },
+  {
+    "team_title": "Sint-Truiden",
+    "team_link": "https://en.wikipedia.org/wiki/Sint-Truidense_V.V."
+  },
+  {
+    "team_title": "Mechelen",
+    "team_link": "https://en.wikipedia.org/wiki/K.V._Mechelen"
+  },
+  {
+    "team_title": "Kortrijk",
+    "team_link": "https://en.wikipedia.org/wiki/K.V._Kortrijk"
+  },
+  {
+    "team_title": "Eupen",
+    "team_link": "https://en.wikipedia.org/wiki/K.A.S._Eupen"
+  },
+  {
+    "team_title": "Oostende",
+    "team_link": "https://en.wikipedia.org/wiki/K.V._Oostende"
+  },
+  {
+    "team_title": "Zulte Waregem",
+    "team_link": "https://en.wikipedia.org/wiki/S.V._Zulte_Waregem"
+  },
+  {
+    "team_title": "Seraing",
+    "team_link": "https://en.wikipedia.org/wiki/R.F.C._Seraing_(1922)"
+  },
+  {
+    "team_title": "Antwerp",
+    "team_link": "https://en.wikipedia.org/wiki/Royal_Antwerp_F.C."
+  },
+  {
+    "team_title": "Genk (K)",
+    "team_link": "https://en.wikipedia.org/wiki/K.R.C._Genk"
+  },
+  {
+    "team_title": "Union SG",
+    "team_link": "https://en.wikipedia.org/wiki/Royale_Union_Saint-Gilloise"
+  },
+  {
+    "team_title": "Club Brugge",
+    "team_link": "https://en.wikipedia.org/wiki/Club_Brugge_KV"
+  },
+  {
+    "team_title": "Gent (Q, F)",
+    "team_link": "https://en.wikipedia.org/wiki/K.A.A._Gent"
+  },
+  {
+    "team_title": "Cercle Brugge",
+    "team_link": "https://en.wikipedia.org/wiki/Cercle_Brugge_K.S.V."
+  },
+  {
+    "team_title": "Standard Li\u00e8ge",
+    "team_link": "https://en.wikipedia.org/wiki/Standard_Li%C3%A8ge"
+  },
+  {
+    "team_title": "Westerlo",
+    "team_link": "https://en.wikipedia.org/wiki/K.V.C._Westerlo"
+  },
+  {
+    "team_title": "Zrinjski Mostar",
+    "team_link": "https://en.wikipedia.org/wiki/H%C5%A0K_Zrinjski_Mostar"
+  },
+  {
+    "team_title": "Borac Banja Luka",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Borac_Banja_Luka"
+  },
+  {
+    "team_title": "\u017deljezni\u010dar",
+    "team_link": "https://en.wikipedia.org/wiki/FK_%C5%BDeljezni%C4%8Dar_Sarajevo"
+  },
+  {
+    "team_title": "Sarajevo",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Sarajevo"
+  },
+  {
+    "team_title": "\u0160iroki Brijeg",
+    "team_link": "https://en.wikipedia.org/wiki/NK_%C5%A0iroki_Brijeg"
+  },
+  {
+    "team_title": "Vele\u017e Mostar",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Vele%C5%BE_Mostar"
+  },
+  {
+    "team_title": "Tuzla City",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Tuzla_City"
+  },
+  {
+    "team_title": "Igman Konjic",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Igman_Konjic"
+  },
+  {
+    "team_title": "Sloga Meridian",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Sloga_Meridian"
+  },
+  {
+    "team_title": "Posu\u0161je",
+    "team_link": "https://en.wikipedia.org/wiki/H%C5%A0K_Posu%C5%A1je"
+  },
+  {
+    "team_title": "Leotar",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Leotar"
+  },
+  {
+    "team_title": "Sloboda Tuzla",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Sloboda_Tuzla"
+  },
+  {
+    "team_title": "Ludogorets Razgrad",
+    "team_link": "https://en.wikipedia.org/wiki/PFC_Ludogorets_Razgrad"
+  },
+  {
+    "team_title": "CSKA Sofia",
+    "team_link": "https://en.wikipedia.org/wiki/PFC_CSKA_Sofia"
+  },
+  {
+    "team_title": "CSKA 1948",
+    "team_link": "https://en.wikipedia.org/wiki/FC_CSKA_1948_Sofia"
+  },
+  {
+    "team_title": "Levski Sofia",
+    "team_link": "https://en.wikipedia.org/wiki/PFC_Levski_Sofia"
+  },
+  {
+    "team_title": "Cherno More",
+    "team_link": "https://en.wikipedia.org/wiki/PFC_Cherno_More_Varna"
+  },
+  {
+    "team_title": "Lokomotiv Plovdiv",
+    "team_link": "https://en.wikipedia.org/wiki/PFC_Lokomotiv_Plovdiv"
+  },
+  {
+    "team_title": "Slavia Sofia",
+    "team_link": "https://en.wikipedia.org/wiki/PFC_Slavia_Sofia"
+  },
+  {
+    "team_title": "Arda",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Arda_Kardzhali"
+  },
+  {
+    "team_title": "Lokomotiv Sofia",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Lokomotiv_1929_Sofia"
+  },
+  {
+    "team_title": "Botev Plovdiv",
+    "team_link": "https://en.wikipedia.org/wiki/Botev_Plovdiv"
+  },
+  {
+    "team_title": "Botev Vratsa",
+    "team_link": "https://en.wikipedia.org/wiki/POFC_Botev_Vratsa"
+  },
+  {
+    "team_title": "Beroe",
+    "team_link": "https://en.wikipedia.org/wiki/PFC_Beroe_Stara_Zagora"
+  },
+  {
+    "team_title": "Pirin Blagoevgrad",
+    "team_link": "https://en.wikipedia.org/wiki/OFC_Pirin_Blagoevgrad"
+  },
+  {
+    "team_title": "Hebar",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Hebar_Pazardzhik"
+  },
+  {
+    "team_title": "Septemvri Sofia",
+    "team_link": "https://en.wikipedia.org/wiki/PFC_Septemvri_Sofia"
+  },
+  {
+    "team_title": "Spartak Varna",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Spartak_Varna"
+  },
+  {
+    "team_title": "Ludogorets Razgrad",
+    "team_link": "https://en.wikipedia.org/wiki/PFC_Ludogorets_Razgrad"
+  },
+  {
+    "team_title": "CSKA Sofia",
+    "team_link": "https://en.wikipedia.org/wiki/PFC_CSKA_Sofia"
+  },
+  {
+    "team_title": "CSKA 1948",
+    "team_link": "https://en.wikipedia.org/wiki/FC_CSKA_1948_Sofia"
+  },
+  {
+    "team_title": "Levski Sofia",
+    "team_link": "https://en.wikipedia.org/wiki/PFC_Levski_Sofia"
+  },
+  {
+    "team_title": "Lokomotiv Plovdiv",
+    "team_link": "https://en.wikipedia.org/wiki/PFC_Lokomotiv_Plovdiv"
+  },
+  {
+    "team_title": "Cherno More",
+    "team_link": "https://en.wikipedia.org/wiki/PFC_Cherno_More_Varna"
+  },
+  {
+    "team_title": "Arda",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Arda_Kardzhali"
+  },
+  {
+    "team_title": "Slavia Sofia",
+    "team_link": "https://en.wikipedia.org/wiki/PFC_Slavia_Sofia"
+  },
+  {
+    "team_title": "Lokomotiv Sofia",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Lokomotiv_1929_Sofia"
+  },
+  {
+    "team_title": "Botev Plovdiv",
+    "team_link": "https://en.wikipedia.org/wiki/PFC_Botev_Plovdiv"
+  },
+  {
+    "team_title": "Pirin Blagoevgrad",
+    "team_link": "https://en.wikipedia.org/wiki/OFC_Pirin_Blagoevgrad"
+  },
+  {
+    "team_title": "Hebar",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Hebar_Pazardzhik"
+  },
+  {
+    "team_title": "Botev Vratsa",
+    "team_link": "https://en.wikipedia.org/wiki/POFC_Botev_Vratsa"
+  },
+  {
+    "team_title": "Beroe",
+    "team_link": "https://en.wikipedia.org/wiki/PFC_Beroe_Stara_Zagora"
+  },
+  {
+    "team_title": "Septemvri Sofia",
+    "team_link": "https://en.wikipedia.org/wiki/PFC_Septemvri_Sofia"
+  },
+  {
+    "team_title": "Spartak Varna",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Spartak_Varna"
+  },
+  {
+    "team_title": "Dinamo Zagreb",
+    "team_link": "https://en.wikipedia.org/wiki/GNK_Dinamo_Zagreb"
+  },
+  {
+    "team_title": "Hajduk Split",
+    "team_link": "https://en.wikipedia.org/wiki/HNK_Hajduk_Split"
+  },
+  {
+    "team_title": "Osijek",
+    "team_link": "https://en.wikipedia.org/wiki/NK_Osijek"
+  },
+  {
+    "team_title": "Rijeka",
+    "team_link": "https://en.wikipedia.org/wiki/HNK_Rijeka"
+  },
+  {
+    "team_title": "Istra 1961",
+    "team_link": "https://en.wikipedia.org/wiki/NK_Istra_1961"
+  },
+  {
+    "team_title": "Vara\u017edin",
+    "team_link": "https://en.wikipedia.org/wiki/NK_Vara%C5%BEdin_(2012)"
+  },
+  {
+    "team_title": "Lokomotiva",
+    "team_link": "https://en.wikipedia.org/wiki/NK_Lokomotiva_Zagreb"
+  },
+  {
+    "team_title": "Slaven Belupo",
+    "team_link": "https://en.wikipedia.org/wiki/NK_Slaven_Belupo"
+  },
+  {
+    "team_title": "Gorica",
+    "team_link": "https://en.wikipedia.org/wiki/HNK_Gorica"
+  },
+  {
+    "team_title": "\u0160ibenik",
+    "team_link": "https://en.wikipedia.org/wiki/HNK_%C5%A0ibenik"
+  },
+  {
+    "team_title": "APOEL",
+    "team_link": "https://en.wikipedia.org/wiki/APOEL_FC"
+  },
+  {
+    "team_title": "AEK Larnaca",
+    "team_link": "https://en.wikipedia.org/wiki/AEK_Larnaca_FC"
+  },
+  {
+    "team_title": "Aris Limassol",
+    "team_link": "https://en.wikipedia.org/wiki/Aris_Limassol_FC"
+  },
+  {
+    "team_title": "Pafos",
+    "team_link": "https://en.wikipedia.org/wiki/Pafos_FC"
+  },
+  {
+    "team_title": "Apollon Limassol",
+    "team_link": "https://en.wikipedia.org/wiki/Apollon_Limassol_FC"
+  },
+  {
+    "team_title": "Omonia",
+    "team_link": "https://en.wikipedia.org/wiki/AC_Omonia"
+  },
+  {
+    "team_title": "Nea Salamis Famagusta",
+    "team_link": "https://en.wikipedia.org/wiki/Nea_Salamis_Famagusta_FC"
+  },
+  {
+    "team_title": "AEL Limassol",
+    "team_link": "https://en.wikipedia.org/wiki/AEL_Limassol"
+  },
+  {
+    "team_title": "Anorthosis Famagusta",
+    "team_link": "https://en.wikipedia.org/wiki/Anorthosis_Famagusta_F.C."
+  },
+  {
+    "team_title": "Karmiotissa",
+    "team_link": "https://en.wikipedia.org/wiki/Karmiotissa_Polemidion_FC"
+  },
+  {
+    "team_title": "Enosis Neon Paralimni",
+    "team_link": "https://en.wikipedia.org/wiki/Enosis_Neon_Paralimni_FC"
+  },
+  {
+    "team_title": "Doxa Katokopias",
+    "team_link": "https://en.wikipedia.org/wiki/Doxa_Katokopias_FC"
+  },
+  {
+    "team_title": "Olympiakos Nicosia",
+    "team_link": "https://en.wikipedia.org/wiki/Olympiakos_Nicosia"
+  },
+  {
+    "team_title": "Akritas Chlorakas",
+    "team_link": "https://en.wikipedia.org/wiki/Akritas_Chlorakas"
+  },
+  {
+    "team_title": "Aris Limassol",
+    "team_link": "https://en.wikipedia.org/wiki/Aris_Limassol_FC"
+  },
+  {
+    "team_title": "APOEL",
+    "team_link": "https://en.wikipedia.org/wiki/APOEL_FC"
+  },
+  {
+    "team_title": "AEK Larnaca",
+    "team_link": "https://en.wikipedia.org/wiki/AEK_Larnaca_FC"
+  },
+  {
+    "team_title": "Pafos",
+    "team_link": "https://en.wikipedia.org/wiki/Pafos_FC"
+  },
+  {
+    "team_title": "Apollon Limassol",
+    "team_link": "https://en.wikipedia.org/wiki/Apollon_Limassol_FC"
+  },
+  {
+    "team_title": "Omonia",
+    "team_link": "https://en.wikipedia.org/wiki/AC_Omonia"
+  },
+  {
+    "team_title": "Sparta Prague",
+    "team_link": "https://en.wikipedia.org/wiki/AC_Sparta_Prague"
+  },
+  {
+    "team_title": "Slavia Prague",
+    "team_link": "https://en.wikipedia.org/wiki/SK_Slavia_Prague"
+  },
+  {
+    "team_title": "Viktoria Plze\u0148",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Viktoria_Plze%C5%88"
+  },
+  {
+    "team_title": "Bohemians 1905",
+    "team_link": "https://en.wikipedia.org/wiki/Bohemians_1905"
+  },
+  {
+    "team_title": "Slov\u00e1cko",
+    "team_link": "https://en.wikipedia.org/wiki/1._FC_Slov%C3%A1cko"
+  },
+  {
+    "team_title": "Sigma Olomouc",
+    "team_link": "https://en.wikipedia.org/wiki/SK_Sigma_Olomouc"
+  },
+  {
+    "team_title": "Slovan Liberec",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Slovan_Liberec"
+  },
+  {
+    "team_title": "Hradec Kr\u00e1lov\u00e9",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Hradec_Kr%C3%A1lov%C3%A9"
+  },
+  {
+    "team_title": "Mlad\u00e1 Boleslav",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Mlad%C3%A1_Boleslav"
+  },
+  {
+    "team_title": "\u010cesk\u00e9 Bud\u011bjovice",
+    "team_link": "https://en.wikipedia.org/wiki/SK_Dynamo_%C4%8Cesk%C3%A9_Bud%C4%9Bjovice"
+  },
+  {
+    "team_title": "Jablonec",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Jablonec"
+  },
+  {
+    "team_title": "Ban\u00edk Ostrava",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Ban%C3%ADk_Ostrava"
+  },
+  {
+    "team_title": "Teplice",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Teplice"
+  },
+  {
+    "team_title": "Zbrojovka Brno",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Zbrojovka_Brno"
+  },
+  {
+    "team_title": "Pardubice",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Pardubice"
+  },
+  {
+    "team_title": "Trinity Zl\u00edn",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Trinity_Zl%C3%ADn"
+  },
+  {
+    "team_title": "Sparta Prague",
+    "team_link": "https://en.wikipedia.org/wiki/AC_Sparta_Prague"
+  },
+  {
+    "team_title": "Slavia Prague",
+    "team_link": "https://en.wikipedia.org/wiki/SK_Slavia_Prague"
+  },
+  {
+    "team_title": "Viktoria Plze\u0148",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Viktoria_Plze%C5%88"
+  },
+  {
+    "team_title": "Bohemians 1905",
+    "team_link": "https://en.wikipedia.org/wiki/Bohemians_1905"
+  },
+  {
+    "team_title": "Slov\u00e1cko",
+    "team_link": "https://en.wikipedia.org/wiki/1._FC_Slov%C3%A1cko"
+  },
+  {
+    "team_title": "Sigma Olomouc",
+    "team_link": "https://en.wikipedia.org/wiki/SK_Sigma_Olomouc"
+  },
+  {
+    "team_title": "Ban\u00edk Ostrava",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Ban%C3%ADk_Ostrava"
+  },
+  {
+    "team_title": "Teplice",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Teplice"
+  },
+  {
+    "team_title": "Jablonec",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Jablonec"
+  },
+  {
+    "team_title": "Pardubice",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Pardubice"
+  },
+  {
+    "team_title": "Trinity Zl\u00edn",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Trinity_Zl%C3%ADn"
+  },
+  {
+    "team_title": "Zbrojovka Brno",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Zbrojovka_Brno"
+  },
+  {
+    "team_title": "Nordsj\u00e6lland",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Nordsj%C3%A6lland"
+  },
+  {
+    "team_title": "Copenhagen",
+    "team_link": "https://en.wikipedia.org/wiki/F.C._Copenhagen"
+  },
+  {
+    "team_title": "Viborg",
+    "team_link": "https://en.wikipedia.org/wiki/Viborg_FF"
+  },
+  {
+    "team_title": "AGF",
+    "team_link": "https://en.wikipedia.org/wiki/Aarhus_Gymnastikforening"
+  },
+  {
+    "team_title": "Randers",
+    "team_link": "https://en.wikipedia.org/wiki/Randers_FC"
+  },
+  {
+    "team_title": "Br\u00f8ndby",
+    "team_link": "https://en.wikipedia.org/wiki/Br%C3%B8ndby_IF"
+  },
+  {
+    "team_title": "Silkeborg",
+    "team_link": "https://en.wikipedia.org/wiki/Silkeborg_IF"
+  },
+  {
+    "team_title": "Midtjylland",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Midtjylland"
+  },
+  {
+    "team_title": "OB",
+    "team_link": "https://en.wikipedia.org/wiki/Odense_Boldklub"
+  },
+  {
+    "team_title": "Horsens",
+    "team_link": "https://en.wikipedia.org/wiki/AC_Horsens"
+  },
+  {
+    "team_title": "Lyngby",
+    "team_link": "https://en.wikipedia.org/wiki/Lyngby_Boldklub"
+  },
+  {
+    "team_title": "AaB",
+    "team_link": "https://en.wikipedia.org/wiki/AaB_Fodbold"
+  },
+  {
+    "team_title": "Manchester City",
+    "team_link": "https://en.wikipedia.org/wiki/Manchester_City_F.C."
+  },
+  {
+    "team_title": "Arsenal",
+    "team_link": "https://en.wikipedia.org/wiki/Arsenal_F.C."
+  },
+  {
+    "team_title": "Manchester United",
+    "team_link": "https://en.wikipedia.org/wiki/Manchester_United_F.C."
+  },
+  {
+    "team_title": "Newcastle United",
+    "team_link": "https://en.wikipedia.org/wiki/Newcastle_United_F.C."
+  },
+  {
+    "team_title": "Liverpool",
+    "team_link": "https://en.wikipedia.org/wiki/Liverpool_F.C."
+  },
+  {
+    "team_title": "Brighton & Hove Albion",
+    "team_link": "https://en.wikipedia.org/wiki/Brighton_%26_Hove_Albion_F.C."
+  },
+  {
+    "team_title": "Aston Villa",
+    "team_link": "https://en.wikipedia.org/wiki/Aston_Villa_F.C."
+  },
+  {
+    "team_title": "Tottenham Hotspur",
+    "team_link": "https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C."
+  },
+  {
+    "team_title": "Brentford",
+    "team_link": "https://en.wikipedia.org/wiki/Brentford_F.C."
+  },
+  {
+    "team_title": "Fulham",
+    "team_link": "https://en.wikipedia.org/wiki/Fulham_F.C."
+  },
+  {
+    "team_title": "Crystal Palace",
+    "team_link": "https://en.wikipedia.org/wiki/Crystal_Palace_F.C."
+  },
+  {
+    "team_title": "Chelsea",
+    "team_link": "https://en.wikipedia.org/wiki/Chelsea_F.C."
+  },
+  {
+    "team_title": "Wolverhampton Wanderers",
+    "team_link": "https://en.wikipedia.org/wiki/Wolverhampton_Wanderers_F.C."
+  },
+  {
+    "team_title": "West Ham United",
+    "team_link": "https://en.wikipedia.org/wiki/West_Ham_United_F.C."
+  },
+  {
+    "team_title": "Bournemouth",
+    "team_link": "https://en.wikipedia.org/wiki/AFC_Bournemouth"
+  },
+  {
+    "team_title": "Nottingham Forest",
+    "team_link": "https://en.wikipedia.org/wiki/Nottingham_Forest_F.C."
+  },
+  {
+    "team_title": "Everton",
+    "team_link": "https://en.wikipedia.org/wiki/Everton_F.C."
+  },
+  {
+    "team_title": "Leicester City",
+    "team_link": "https://en.wikipedia.org/wiki/Leicester_City_F.C."
+  },
+  {
+    "team_title": "Leeds United",
+    "team_link": "https://en.wikipedia.org/wiki/Leeds_United_F.C."
+  },
+  {
+    "team_title": "Southampton",
+    "team_link": "https://en.wikipedia.org/wiki/Southampton_F.C."
+  },
+  {
+    "team_title": "Flora",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Flora"
+  },
+  {
+    "team_title": "FCI Levadia",
+    "team_link": "https://en.wikipedia.org/wiki/FCI_Levadia_Tallinn"
+  },
+  {
+    "team_title": "Paide Linnameeskond",
+    "team_link": "https://en.wikipedia.org/wiki/Paide_Linnameeskond"
+  },
+  {
+    "team_title": "N\u00f5mme Kalju",
+    "team_link": "https://en.wikipedia.org/wiki/N%C3%B5mme_Kalju_FC"
+  },
+  {
+    "team_title": "Kuressaare",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Kuressaare"
+  },
+  {
+    "team_title": "Tammeka",
+    "team_link": "https://en.wikipedia.org/wiki/Tartu_JK_Tammeka"
+  },
+  {
+    "team_title": "Narva Trans",
+    "team_link": "https://en.wikipedia.org/wiki/JK_Narva_Trans"
+  },
+  {
+    "team_title": "Tallinna Kalev",
+    "team_link": "https://en.wikipedia.org/wiki/JK_Tallinna_Kalev"
+  },
+  {
+    "team_title": "Legion",
+    "team_link": "https://en.wikipedia.org/wiki/Tallinna_JK_Legion"
+  },
+  {
+    "team_title": "Vaprus",
+    "team_link": "https://en.wikipedia.org/wiki/P%C3%A4rnu_JK_Vaprus"
+  },
+  {
+    "team_title": "K\u00cd",
+    "team_link": "https://en.wikipedia.org/wiki/Klaksv%C3%ADkar_%C3%8Dtr%C3%B3ttarfelag"
+  },
+  {
+    "team_title": "V\u00edkingur",
+    "team_link": "https://en.wikipedia.org/wiki/V%C3%ADkingur_G%C3%B8ta"
+  },
+  {
+    "team_title": "Havnar B\u00f3ltfelag",
+    "team_link": "https://en.wikipedia.org/wiki/Havnar_B%C3%B3ltfelag"
+  },
+  {
+    "team_title": "B36 T\u00f3rshavn",
+    "team_link": "https://en.wikipedia.org/wiki/B36_T%C3%B3rshavn"
+  },
+  {
+    "team_title": "EB/Streymur",
+    "team_link": "https://en.wikipedia.org/wiki/EB/Streymur"
+  },
+  {
+    "team_title": "B68 Toftir",
+    "team_link": "https://en.wikipedia.org/wiki/B68_Toftir"
+  },
+  {
+    "team_title": "07 Vestur",
+    "team_link": "https://en.wikipedia.org/wiki/07_Vestur"
+  },
+  {
+    "team_title": "AB Argir",
+    "team_link": "https://en.wikipedia.org/wiki/Argja_B%C3%B3ltfelag"
+  },
+  {
+    "team_title": "NS\u00cd Runav\u00edk",
+    "team_link": "https://en.wikipedia.org/wiki/NS%C3%8D_Runav%C3%ADk"
+  },
+  {
+    "team_title": "Sk\u00e1la",
+    "team_link": "https://en.wikipedia.org/wiki/Sk%C3%A1la_%C3%8DF"
+  },
+  {
+    "team_title": "HJK",
+    "team_link": "https://en.wikipedia.org/wiki/Helsingin_Jalkapalloklubi"
+  },
+  {
+    "team_title": "KuPS",
+    "team_link": "https://en.wikipedia.org/wiki/Kuopion_Palloseura"
+  },
+  {
+    "team_title": "Honka",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Honka"
+  },
+  {
+    "team_title": "Haka",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Haka"
+  },
+  {
+    "team_title": "Inter Turku",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Inter_Turku"
+  },
+  {
+    "team_title": "SJK",
+    "team_link": "https://en.wikipedia.org/wiki/Sein%C3%A4joen_Jalkapallokerho"
+  },
+  {
+    "team_title": "Oulu",
+    "team_link": "https://en.wikipedia.org/wiki/AC_Oulu"
+  },
+  {
+    "team_title": "Ilves",
+    "team_link": "https://en.wikipedia.org/wiki/Ilves_(football)"
+  },
+  {
+    "team_title": "Mariehamn",
+    "team_link": "https://en.wikipedia.org/wiki/IFK_Mariehamn"
+  },
+  {
+    "team_title": "VPS",
+    "team_link": "https://en.wikipedia.org/wiki/Vaasan_Palloseura"
+  },
+  {
+    "team_title": "Lahti",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Lahti"
+  },
+  {
+    "team_title": "HIFK",
+    "team_link": "https://en.wikipedia.org/wiki/HIFK_Fotboll"
+  },
+  {
+    "team_title": "HJK (C, Q)",
+    "team_link": "https://en.wikipedia.org/wiki/Helsingin_Jalkapalloklubi"
+  },
+  {
+    "team_title": "KuPS (Q)",
+    "team_link": "https://en.wikipedia.org/wiki/Kuopion_Palloseura"
+  },
+  {
+    "team_title": "Honka (Q)",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Honka"
+  },
+  {
+    "team_title": "Haka",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Haka"
+  },
+  {
+    "team_title": "Inter Turku",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Inter_Turku"
+  },
+  {
+    "team_title": "SJK",
+    "team_link": "https://en.wikipedia.org/wiki/Sein%C3%A4joen_Jalkapallokerho"
+  },
+  {
+    "team_title": "Oulu",
+    "team_link": "https://en.wikipedia.org/wiki/AC_Oulu"
+  },
+  {
+    "team_title": "VPS",
+    "team_link": "https://en.wikipedia.org/wiki/Vaasan_Palloseura"
+  },
+  {
+    "team_title": "Ilves",
+    "team_link": "https://en.wikipedia.org/wiki/Ilves_(football)"
+  },
+  {
+    "team_title": "Mariehamn",
+    "team_link": "https://en.wikipedia.org/wiki/IFK_Mariehamn"
+  },
+  {
+    "team_title": "Lahti",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Lahti"
+  },
+  {
+    "team_title": "HIFK",
+    "team_link": "https://en.wikipedia.org/wiki/HIFK_Fotboll"
+  },
+  {
+    "team_title": "Paris Saint-Germain",
+    "team_link": "https://en.wikipedia.org/wiki/Paris_Saint-Germain_F.C."
+  },
+  {
+    "team_title": "Lens",
+    "team_link": "https://en.wikipedia.org/wiki/RC_Lens"
+  },
+  {
+    "team_title": "Marseille",
+    "team_link": "https://en.wikipedia.org/wiki/Olympique_de_Marseille"
+  },
+  {
+    "team_title": "Rennes",
+    "team_link": "https://en.wikipedia.org/wiki/Stade_Rennais_F.C."
+  },
+  {
+    "team_title": "Lille",
+    "team_link": "https://en.wikipedia.org/wiki/Lille_OSC"
+  },
+  {
+    "team_title": "Monaco",
+    "team_link": "https://en.wikipedia.org/wiki/AS_Monaco_FC"
+  },
+  {
+    "team_title": "Lyon",
+    "team_link": "https://en.wikipedia.org/wiki/Olympique_Lyonnais"
+  },
+  {
+    "team_title": "Clermont",
+    "team_link": "https://en.wikipedia.org/wiki/Clermont_Foot"
+  },
+  {
+    "team_title": "Nice",
+    "team_link": "https://en.wikipedia.org/wiki/OGC_Nice"
+  },
+  {
+    "team_title": "Lorient",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Lorient"
+  },
+  {
+    "team_title": "Reims",
+    "team_link": "https://en.wikipedia.org/wiki/Stade_de_Reims"
+  },
+  {
+    "team_title": "Montpellier",
+    "team_link": "https://en.wikipedia.org/wiki/Montpellier_HSC"
+  },
+  {
+    "team_title": "Toulouse",
+    "team_link": "https://en.wikipedia.org/wiki/Toulouse_FC"
+  },
+  {
+    "team_title": "Brest",
+    "team_link": "https://en.wikipedia.org/wiki/Stade_Brestois_29"
+  },
+  {
+    "team_title": "Strasbourg",
+    "team_link": "https://en.wikipedia.org/wiki/RC_Strasbourg_Alsace"
+  },
+  {
+    "team_title": "Nantes",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Nantes"
+  },
+  {
+    "team_title": "Auxerre",
+    "team_link": "https://en.wikipedia.org/wiki/AJ_Auxerre"
+  },
+  {
+    "team_title": "Ajaccio",
+    "team_link": "https://en.wikipedia.org/wiki/AC_Ajaccio"
+  },
+  {
+    "team_title": "Troyes",
+    "team_link": "https://en.wikipedia.org/wiki/ES_Troyes_AC"
+  },
+  {
+    "team_title": "Angers",
+    "team_link": "https://en.wikipedia.org/wiki/Angers_SCO"
+  },
+  {
+    "team_title": "Dinamo Tbilisi",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Dinamo_Tbilisi"
+  },
+  {
+    "team_title": "Dinamo Batumi",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Dinamo_Batumi"
+  },
+  {
+    "team_title": "Dila Gori",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Dila_Gori"
+  },
+  {
+    "team_title": "Samgurali Tsqaltubo",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Samgurali_Tsqaltubo"
+  },
+  {
+    "team_title": "Torpedo Kutaisi",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Torpedo_Kutaisi"
+  },
+  {
+    "team_title": "Saburtalo Tbilisi",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Saburtalo_Tbilisi"
+  },
+  {
+    "team_title": "Telavi",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Telavi"
+  },
+  {
+    "team_title": "Sioni Bolnisi",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Sioni_Bolnisi"
+  },
+  {
+    "team_title": "Gagra",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Gagra"
+  },
+  {
+    "team_title": "Locomotive Tbilisi",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Locomotive_Tbilisi"
+  },
+  {
+    "team_title": "Bayern Munich",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Bayern_Munich"
+  },
+  {
+    "team_title": "Borussia Dortmund",
+    "team_link": "https://en.wikipedia.org/wiki/Borussia_Dortmund"
+  },
+  {
+    "team_title": "RB Leipzig",
+    "team_link": "https://en.wikipedia.org/wiki/RB_Leipzig"
+  },
+  {
+    "team_title": "Union Berlin",
+    "team_link": "https://en.wikipedia.org/wiki/1._FC_Union_Berlin"
+  },
+  {
+    "team_title": "SC Freiburg",
+    "team_link": "https://en.wikipedia.org/wiki/SC_Freiburg"
+  },
+  {
+    "team_title": "Bayer Leverkusen",
+    "team_link": "https://en.wikipedia.org/wiki/Bayer_04_Leverkusen"
+  },
+  {
+    "team_title": "Eintracht Frankfurt",
+    "team_link": "https://en.wikipedia.org/wiki/Eintracht_Frankfurt"
+  },
+  {
+    "team_title": "VfL Wolfsburg",
+    "team_link": "https://en.wikipedia.org/wiki/VfL_Wolfsburg"
+  },
+  {
+    "team_title": "Mainz 05",
+    "team_link": "https://en.wikipedia.org/wiki/1._FSV_Mainz_05"
+  },
+  {
+    "team_title": "Borussia M\u00f6nchengladbach",
+    "team_link": "https://en.wikipedia.org/wiki/Borussia_M%C3%B6nchengladbach"
+  },
+  {
+    "team_title": "1. FC K\u00f6ln",
+    "team_link": "https://en.wikipedia.org/wiki/1._FC_K%C3%B6ln"
+  },
+  {
+    "team_title": "1899 Hoffenheim",
+    "team_link": "https://en.wikipedia.org/wiki/TSG_1899_Hoffenheim"
+  },
+  {
+    "team_title": "Werder Bremen",
+    "team_link": "https://en.wikipedia.org/wiki/SV_Werder_Bremen"
+  },
+  {
+    "team_title": "VfL Bochum",
+    "team_link": "https://en.wikipedia.org/wiki/VfL_Bochum"
+  },
+  {
+    "team_title": "FC Augsburg",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Augsburg"
+  },
+  {
+    "team_title": "VfB Stuttgart",
+    "team_link": "https://en.wikipedia.org/wiki/VfB_Stuttgart"
+  },
+  {
+    "team_title": "Schalke 04",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Schalke_04"
+  },
+  {
+    "team_title": "Hertha BSC",
+    "team_link": "https://en.wikipedia.org/wiki/Hertha_BSC"
+  },
+  {
+    "team_title": "Panathinaikos",
+    "team_link": "https://en.wikipedia.org/wiki/Panathinaikos_F.C."
+  },
+  {
+    "team_title": "AEK Athens",
+    "team_link": "https://en.wikipedia.org/wiki/AEK_Athens_F.C."
+  },
+  {
+    "team_title": "Olympiacos",
+    "team_link": "https://en.wikipedia.org/wiki/Olympiacos_F.C."
+  },
+  {
+    "team_title": "PAOK",
+    "team_link": "https://en.wikipedia.org/wiki/PAOK_FC"
+  },
+  {
+    "team_title": "Aris",
+    "team_link": "https://en.wikipedia.org/wiki/Aris_Thessaloniki_F.C."
+  },
+  {
+    "team_title": "Volos",
+    "team_link": "https://en.wikipedia.org/wiki/Volos_F.C."
+  },
+  {
+    "team_title": "Panetolikos",
+    "team_link": "https://en.wikipedia.org/wiki/Panetolikos_F.C."
+  },
+  {
+    "team_title": "Atromitos",
+    "team_link": "https://en.wikipedia.org/wiki/Atromitos_F.C."
+  },
+  {
+    "team_title": "OFI",
+    "team_link": "https://en.wikipedia.org/wiki/OFI_Crete_F.C."
+  },
+  {
+    "team_title": "Asteras Tripolis",
+    "team_link": "https://en.wikipedia.org/wiki/Asteras_Tripolis_F.C."
+  },
+  {
+    "team_title": "PAS Giannina",
+    "team_link": "https://en.wikipedia.org/wiki/PAS_Giannina_F.C."
+  },
+  {
+    "team_title": "Ionikos",
+    "team_link": "https://en.wikipedia.org/wiki/Ionikos_F.C."
+  },
+  {
+    "team_title": "Lamia",
+    "team_link": "https://en.wikipedia.org/wiki/PAS_Lamia_1964"
+  },
+  {
+    "team_title": "Levadiakos",
+    "team_link": "https://en.wikipedia.org/wiki/Levadiakos_F.C."
+  },
+  {
+    "team_title": "Ferencv\u00e1ros",
+    "team_link": "https://en.wikipedia.org/wiki/Ferencv%C3%A1rosi_TC"
+  },
+  {
+    "team_title": "Kecskem\u00e9t",
+    "team_link": "https://en.wikipedia.org/wiki/Kecskem%C3%A9ti_TE"
+  },
+  {
+    "team_title": "Debrecen",
+    "team_link": "https://en.wikipedia.org/wiki/Debreceni_VSC"
+  },
+  {
+    "team_title": "Pusk\u00e1s Akad\u00e9mia",
+    "team_link": "https://en.wikipedia.org/wiki/Pusk%C3%A1s_Akad%C3%A9mia_FC"
+  },
+  {
+    "team_title": "Paks",
+    "team_link": "https://en.wikipedia.org/wiki/Paksi_FC"
+  },
+  {
+    "team_title": "Kisv\u00e1rda",
+    "team_link": "https://en.wikipedia.org/wiki/Kisv%C3%A1rda_FC"
+  },
+  {
+    "team_title": "Mez\u0151k\u00f6vesd",
+    "team_link": "https://en.wikipedia.org/wiki/Mez%C5%91k%C3%B6vesdi_SE"
+  },
+  {
+    "team_title": "\u00dajpest",
+    "team_link": "https://en.wikipedia.org/wiki/%C3%9Ajpest_FC"
+  },
+  {
+    "team_title": "Zalaegerszeg",
+    "team_link": "https://en.wikipedia.org/wiki/Zalaegerszegi_TE"
+  },
+  {
+    "team_title": "Feh\u00e9rv\u00e1r",
+    "team_link": "https://en.wikipedia.org/wiki/Feh%C3%A9rv%C3%A1r_FC"
+  },
+  {
+    "team_title": "Budapest Honv\u00e9d",
+    "team_link": "https://en.wikipedia.org/wiki/Budapest_Honv%C3%A9d_FC"
+  },
+  {
+    "team_title": "Vasas",
+    "team_link": "https://en.wikipedia.org/wiki/Vasas_SC"
+  },
+  {
+    "team_title": "V\u00edkingur Reykjav\u00edk",
+    "team_link": "https://en.wikipedia.org/wiki/Knattspyrnuf%C3%A9lagi%C3%B0_V%C3%ADkingur"
+  },
+  {
+    "team_title": "Valur",
+    "team_link": "https://en.wikipedia.org/wiki/Valur_(men%27s_football)"
+  },
+  {
+    "team_title": "Brei\u00f0ablik",
+    "team_link": "https://en.wikipedia.org/wiki/Brei%C3%B0ablik_men%27s_football"
+  },
+  {
+    "team_title": "Stjarnan",
+    "team_link": "https://en.wikipedia.org/wiki/Stjarnan_men%27s_football"
+  },
+  {
+    "team_title": "FH",
+    "team_link": "https://en.wikipedia.org/wiki/FH_men%27s_football"
+  },
+  {
+    "team_title": "KR",
+    "team_link": "https://en.wikipedia.org/wiki/Knattspyrnuf%C3%A9lag_Reykjav%C3%ADkur"
+  },
+  {
+    "team_title": "KA",
+    "team_link": "https://en.wikipedia.org/wiki/Knattspyrnuf%C3%A9lag_Akureyrar"
+  },
+  {
+    "team_title": "HK",
+    "team_link": "https://en.wikipedia.org/wiki/Handknattleiksf%C3%A9lag_K%C3%B3pavogs"
+  },
+  {
+    "team_title": "Fylkir",
+    "team_link": "https://en.wikipedia.org/wiki/Fylkir"
+  },
+  {
+    "team_title": "Fram",
+    "team_link": "https://en.wikipedia.org/wiki/Knattspyrnuf%C3%A9lagi%C3%B0_Fram"
+  },
+  {
+    "team_title": "\u00cdBV",
+    "team_link": "https://en.wikipedia.org/wiki/%C3%8DBV_men%27s_football"
+  },
+  {
+    "team_title": "Keflav\u00edk",
+    "team_link": "https://en.wikipedia.org/wiki/Knattspyrnudeild_Keflav%C3%ADk"
+  },
+  {
+    "team_title": "Brei\u00f0ablik",
+    "team_link": "https://en.wikipedia.org/wiki/Brei%C3%B0ablik_men%27s_football"
+  },
+  {
+    "team_title": "FH",
+    "team_link": "https://en.wikipedia.org/wiki/FH_men%27s_football"
+  },
+  {
+    "team_title": "Fram",
+    "team_link": "https://en.wikipedia.org/wiki/Knattspyrnuf%C3%A9lagi%C3%B0_Fram"
+  },
+  {
+    "team_title": "Fylkir",
+    "team_link": "https://en.wikipedia.org/wiki/Fylkir"
+  },
+  {
+    "team_title": "HK",
+    "team_link": "https://en.wikipedia.org/wiki/Handknattleiksf%C3%A9lag_K%C3%B3pavogs"
+  },
+  {
+    "team_title": "\u00cdBV",
+    "team_link": "https://en.wikipedia.org/wiki/%C3%8DBV_men%27s_football"
+  },
+  {
+    "team_title": "KA",
+    "team_link": "https://en.wikipedia.org/wiki/Knattspyrnuf%C3%A9lag_Akureyrar"
+  },
+  {
+    "team_title": "Keflav\u00edk",
+    "team_link": "https://en.wikipedia.org/wiki/Knattspyrnudeild_Keflav%C3%ADk"
+  },
+  {
+    "team_title": "KR",
+    "team_link": "https://en.wikipedia.org/wiki/Knattspyrnuf%C3%A9lag_Reykjav%C3%ADkur"
+  },
+  {
+    "team_title": "Stjarnan",
+    "team_link": "https://en.wikipedia.org/wiki/Stjarnan_men%27s_football"
+  },
+  {
+    "team_title": "Valur",
+    "team_link": "https://en.wikipedia.org/wiki/Valur_(men%27s_football)"
+  },
+  {
+    "team_title": "V\u00edkingur Reykjav\u00edk",
+    "team_link": "https://en.wikipedia.org/wiki/Knattspyrnuf%C3%A9lagi%C3%B0_V%C3%ADkingur"
+  },
+  {
+    "team_title": "Maccabi Haifa",
+    "team_link": "https://en.wikipedia.org/wiki/Maccabi_Haifa_F.C."
+  },
+  {
+    "team_title": "Hapoel Be'er Sheva",
+    "team_link": "https://en.wikipedia.org/wiki/Hapoel_Be%27er_Sheva_F.C."
+  },
+  {
+    "team_title": "Maccabi Tel Aviv",
+    "team_link": "https://en.wikipedia.org/wiki/Maccabi_Tel_Aviv_F.C."
+  },
+  {
+    "team_title": "Maccabi Netanya",
+    "team_link": "https://en.wikipedia.org/wiki/Maccabi_Netanya_F.C."
+  },
+  {
+    "team_title": "Hapoel Jerusalem",
+    "team_link": "https://en.wikipedia.org/wiki/Hapoel_Jerusalem_F.C."
+  },
+  {
+    "team_title": "Ashdod",
+    "team_link": "https://en.wikipedia.org/wiki/F.C._Ashdod"
+  },
+  {
+    "team_title": "Beitar Jerusalem",
+    "team_link": "https://en.wikipedia.org/wiki/Beitar_Jerusalem_F.C."
+  },
+  {
+    "team_title": "Hapoel Haifa",
+    "team_link": "https://en.wikipedia.org/wiki/Hapoel_Haifa_F.C."
+  },
+  {
+    "team_title": "Bnei Sakhnin",
+    "team_link": "https://en.wikipedia.org/wiki/Bnei_Sakhnin_F.C."
+  },
+  {
+    "team_title": "Hapoel Hadera",
+    "team_link": "https://en.wikipedia.org/wiki/Hapoel_Hadera_F.C."
+  },
+  {
+    "team_title": "Hapoel Tel Aviv",
+    "team_link": "https://en.wikipedia.org/wiki/Hapoel_Tel_Aviv_F.C."
+  },
+  {
+    "team_title": "Maccabi Bnei Reineh",
+    "team_link": "https://en.wikipedia.org/wiki/Maccabi_Bnei_Reineh_F.C."
+  },
+  {
+    "team_title": "Ironi Kiryat Shmona",
+    "team_link": "https://en.wikipedia.org/wiki/Hapoel_Ironi_Kiryat_Shmona_F.C."
+  },
+  {
+    "team_title": "Sektzia Ness Ziona",
+    "team_link": "https://en.wikipedia.org/wiki/Sektzia_Ness_Ziona_F.C."
+  },
+  {
+    "team_title": "Napoli",
+    "team_link": "https://en.wikipedia.org/wiki/SSC_Napoli"
+  },
+  {
+    "team_title": "Lazio",
+    "team_link": "https://en.wikipedia.org/wiki/SS_Lazio"
+  },
+  {
+    "team_title": "Inter Milan",
+    "team_link": "https://en.wikipedia.org/wiki/Inter_Milan"
+  },
+  {
+    "team_title": "Milan",
+    "team_link": "https://en.wikipedia.org/wiki/AC_Milan"
+  },
+  {
+    "team_title": "Atalanta",
+    "team_link": "https://en.wikipedia.org/wiki/Atalanta_BC"
+  },
+  {
+    "team_title": "Roma",
+    "team_link": "https://en.wikipedia.org/wiki/AS_Roma"
+  },
+  {
+    "team_title": "Juventus",
+    "team_link": "https://en.wikipedia.org/wiki/Juventus_FC"
+  },
+  {
+    "team_title": "Fiorentina",
+    "team_link": "https://en.wikipedia.org/wiki/ACF_Fiorentina"
+  },
+  {
+    "team_title": "Bologna",
+    "team_link": "https://en.wikipedia.org/wiki/Bologna_FC_1909"
+  },
+  {
+    "team_title": "Torino",
+    "team_link": "https://en.wikipedia.org/wiki/Torino_FC"
+  },
+  {
+    "team_title": "Monza",
+    "team_link": "https://en.wikipedia.org/wiki/AC_Monza"
+  },
+  {
+    "team_title": "Udinese",
+    "team_link": "https://en.wikipedia.org/wiki/Udinese_Calcio"
+  },
+  {
+    "team_title": "Sassuolo",
+    "team_link": "https://en.wikipedia.org/wiki/US_Sassuolo_Calcio"
+  },
+  {
+    "team_title": "Empoli",
+    "team_link": "https://en.wikipedia.org/wiki/Empoli_FC"
+  },
+  {
+    "team_title": "Salernitana",
+    "team_link": "https://en.wikipedia.org/wiki/US_Salernitana_1919"
+  },
+  {
+    "team_title": "Lecce",
+    "team_link": "https://en.wikipedia.org/wiki/US_Lecce"
+  },
+  {
+    "team_title": "Spezia",
+    "team_link": "https://en.wikipedia.org/wiki/Spezia_Calcio"
+  },
+  {
+    "team_title": "Hellas Verona",
+    "team_link": "https://en.wikipedia.org/wiki/Hellas_Verona_FC"
+  },
+  {
+    "team_title": "Cremonese",
+    "team_link": "https://en.wikipedia.org/wiki/US_Cremonese"
+  },
+  {
+    "team_title": "Sampdoria",
+    "team_link": "https://en.wikipedia.org/wiki/UC_Sampdoria"
+  },
+  {
+    "team_title": "RFS",
+    "team_link": "https://en.wikipedia.org/wiki/FK_RFS"
+  },
+  {
+    "team_title": "Valmiera",
+    "team_link": "https://en.wikipedia.org/wiki/Valmiera_FC"
+  },
+  {
+    "team_title": "Liep\u0101ja",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Liep%C4%81ja"
+  },
+  {
+    "team_title": "Riga",
+    "team_link": "https://en.wikipedia.org/wiki/Riga_FC"
+  },
+  {
+    "team_title": "Spartaks J\u016brmala",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Spartaks_J%C5%ABrmala"
+  },
+  {
+    "team_title": "Daugavpils",
+    "team_link": "https://en.wikipedia.org/wiki/BFC_Daugavpils"
+  },
+  {
+    "team_title": "Metta",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Metta"
+  },
+  {
+    "team_title": "Noah Jurmala",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Noah_Jurmala"
+  },
+  {
+    "team_title": "Ventspils",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Ventspils"
+  },
+  {
+    "team_title": "\u017dalgiris",
+    "team_link": "https://en.wikipedia.org/wiki/FK_%C5%BDalgiris"
+  },
+  {
+    "team_title": "Kauno \u017dalgiris",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Kauno_%C5%BDalgiris"
+  },
+  {
+    "team_title": "Panev\u0117\u017eys",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Panev%C4%97%C5%BEys"
+  },
+  {
+    "team_title": "Hegelmann",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Hegelmann"
+  },
+  {
+    "team_title": "Riteriai",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Riteriai"
+  },
+  {
+    "team_title": "S\u016bduva",
+    "team_link": "https://en.wikipedia.org/wiki/FK_S%C5%ABduva"
+  },
+  {
+    "team_title": "\u0160iauliai",
+    "team_link": "https://en.wikipedia.org/wiki/FA_%C5%A0iauliai"
+  },
+  {
+    "team_title": "Banga",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Banga_Garg%C5%BEdai"
+  },
+  {
+    "team_title": "D\u017eiugas",
+    "team_link": "https://en.wikipedia.org/wiki/FC_D%C5%BEiugas_Tel%C5%A1iai"
+  },
+  {
+    "team_title": "Jonava",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Jonava"
+  },
+  {
+    "team_title": "Swift Hesperange (C, Q)",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Swift_Hesperange"
+  },
+  {
+    "team_title": "Progr\u00e8s Niederkorn (Q)",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Progr%C3%A8s_Niederkorn"
+  },
+  {
+    "team_title": "F91 Dudelange (Q)",
+    "team_link": "https://en.wikipedia.org/wiki/F91_Dudelange"
+  },
+  {
+    "team_title": "Union Titus P\u00e9tange",
+    "team_link": "https://en.wikipedia.org/wiki/Union_Titus_P%C3%A9tange"
+  },
+  {
+    "team_title": "Differdange 03",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Differdange_03"
+  },
+  {
+    "team_title": "Mondorf-les-Bains",
+    "team_link": "https://en.wikipedia.org/wiki/US_Mondorf-les-Bains"
+  },
+  {
+    "team_title": "Jeunesse Esch",
+    "team_link": "https://en.wikipedia.org/wiki/Jeunesse_Esch"
+  },
+  {
+    "team_title": "Racing Union",
+    "team_link": "https://en.wikipedia.org/wiki/Racing_FC_Union_Luxembourg"
+  },
+  {
+    "team_title": "UNA Strassen",
+    "team_link": "https://en.wikipedia.org/wiki/FC_UNA_Strassen"
+  },
+  {
+    "team_title": "Wiltz 71",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Wiltz_71"
+  },
+  {
+    "team_title": "Victoria Rosport",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Victoria_Rosport"
+  },
+  {
+    "team_title": "Mondercange",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Mondercange"
+  },
+  {
+    "team_title": "Fola Esch",
+    "team_link": "https://en.wikipedia.org/wiki/CS_Fola_Esch"
+  },
+  {
+    "team_title": "UN K\u00e4erj\u00e9ng 97",
+    "team_link": "https://en.wikipedia.org/wiki/UN_K%C3%A4erj%C3%A9ng_97"
+  },
+  {
+    "team_title": "Etzella Ettelbruck",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Etzella_Ettelbruck"
+  },
+  {
+    "team_title": "Hostert",
+    "team_link": "https://en.wikipedia.org/wiki/US_Hostert"
+  },
+  {
+    "team_title": "Budu\u0107nost",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Budu%C4%87nost_Podgorica"
+  },
+  {
+    "team_title": "Sutjeska",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Sutjeska_Nik%C5%A1i%C4%87"
+  },
+  {
+    "team_title": "Arsenal",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Arsenal_Tivat"
+  },
+  {
+    "team_title": "De\u010di\u0107",
+    "team_link": "https://en.wikipedia.org/wiki/FK_De%C4%8Di%C4%87"
+  },
+  {
+    "team_title": "Jedinstvo",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Jedinstvo_Bijelo_Polje"
+  },
+  {
+    "team_title": "Petrovac",
+    "team_link": "https://en.wikipedia.org/wiki/OFK_Petrovac"
+  },
+  {
+    "team_title": "Jezero",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Jezero"
+  },
+  {
+    "team_title": "Mornar",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Mornar"
+  },
+  {
+    "team_title": "Rudar",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Rudar_Pljevlja"
+  },
+  {
+    "team_title": "Iskra",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Iskra_Danilovgrad"
+  },
+  {
+    "team_title": "Feyenoord",
+    "team_link": "https://en.wikipedia.org/wiki/Feyenoord"
+  },
+  {
+    "team_title": "PSV Eindhoven",
+    "team_link": "https://en.wikipedia.org/wiki/PSV_Eindhoven"
+  },
+  {
+    "team_title": "Ajax",
+    "team_link": "https://en.wikipedia.org/wiki/AFC_Ajax"
+  },
+  {
+    "team_title": "AZ",
+    "team_link": "https://en.wikipedia.org/wiki/AZ_Alkmaar"
+  },
+  {
+    "team_title": "Twente",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Twente"
+  },
+  {
+    "team_title": "Sparta Rotterdam",
+    "team_link": "https://en.wikipedia.org/wiki/Sparta_Rotterdam"
+  },
+  {
+    "team_title": "Utrecht",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Utrecht"
+  },
+  {
+    "team_title": "Heerenveen",
+    "team_link": "https://en.wikipedia.org/wiki/SC_Heerenveen"
+  },
+  {
+    "team_title": "RKC Waalwijk",
+    "team_link": "https://en.wikipedia.org/wiki/RKC_Waalwijk"
+  },
+  {
+    "team_title": "Vitesse",
+    "team_link": "https://en.wikipedia.org/wiki/SBV_Vitesse"
+  },
+  {
+    "team_title": "Go Ahead Eagles",
+    "team_link": "https://en.wikipedia.org/wiki/Go_Ahead_Eagles"
+  },
+  {
+    "team_title": "NEC",
+    "team_link": "https://en.wikipedia.org/wiki/NEC_Nijmegen"
+  },
+  {
+    "team_title": "Fortuna Sittard",
+    "team_link": "https://en.wikipedia.org/wiki/Fortuna_Sittard"
+  },
+  {
+    "team_title": "Volendam",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Volendam"
+  },
+  {
+    "team_title": "Excelsior",
+    "team_link": "https://en.wikipedia.org/wiki/Excelsior_Rotterdam"
+  },
+  {
+    "team_title": "Emmen",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Emmen"
+  },
+  {
+    "team_title": "Cambuur",
+    "team_link": "https://en.wikipedia.org/wiki/SC_Cambuur"
+  },
+  {
+    "team_title": "Groningen",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Groningen"
+  },
+  {
+    "team_title": "Struga",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Struga"
+  },
+  {
+    "team_title": "Shkupi",
+    "team_link": "https://en.wikipedia.org/wiki/KF_Shkupi"
+  },
+  {
+    "team_title": "Shk\u00ebndija",
+    "team_link": "https://en.wikipedia.org/wiki/KF_Shk%C3%ABndija"
+  },
+  {
+    "team_title": "Sileks",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Sileks"
+  },
+  {
+    "team_title": "Bregalnica",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Bregalnica_%C5%A0tip"
+  },
+  {
+    "team_title": "Tikvesh",
+    "team_link": "https://en.wikipedia.org/wiki/GFK_Tikvesh"
+  },
+  {
+    "team_title": "Makedonija G.P.",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Makedonija_G.P."
+  },
+  {
+    "team_title": "Rabotni\u010dki",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Rabotni%C4%8Dki"
+  },
+  {
+    "team_title": "Akademija Pandev",
+    "team_link": "https://en.wikipedia.org/wiki/FC_AP_Brera"
+  },
+  {
+    "team_title": "Skopje",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Skopje"
+  },
+  {
+    "team_title": "Pobeda",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Pobeda_(2010)"
+  },
+  {
+    "team_title": "Renova (D, R)",
+    "team_link": "https://en.wikipedia.org/wiki/KF_Renova"
+  },
+  {
+    "team_title": "Larne",
+    "team_link": "https://en.wikipedia.org/wiki/Larne_F.C."
+  },
+  {
+    "team_title": "Linfield",
+    "team_link": "https://en.wikipedia.org/wiki/Linfield_F.C."
+  },
+  {
+    "team_title": "Glentoran",
+    "team_link": "https://en.wikipedia.org/wiki/Glentoran_F.C."
+  },
+  {
+    "team_title": "Cliftonville",
+    "team_link": "https://en.wikipedia.org/wiki/Cliftonville_F.C."
+  },
+  {
+    "team_title": "Crusaders",
+    "team_link": "https://en.wikipedia.org/wiki/Crusaders_F.C."
+  },
+  {
+    "team_title": "Coleraine",
+    "team_link": "https://en.wikipedia.org/wiki/Coleraine_F.C."
+  },
+  {
+    "team_title": ""
+  },
+  {
+    "team_title": "Glenavon",
+    "team_link": "https://en.wikipedia.org/wiki/Glenavon_F.C."
+  },
+  {
+    "team_title": "Carrick Rangers",
+    "team_link": "https://en.wikipedia.org/wiki/Carrick_Rangers_F.C."
+  },
+  {
+    "team_title": "Ballymena United",
+    "team_link": "https://en.wikipedia.org/wiki/Ballymena_United_F.C."
+  },
+  {
+    "team_title": "Newry City",
+    "team_link": "https://en.wikipedia.org/wiki/Newry_City_A.F.C."
+  },
+  {
+    "team_title": "Dungannon Swifts",
+    "team_link": "https://en.wikipedia.org/wiki/Dungannon_Swifts_F.C."
+  },
+  {
+    "team_title": "Portadown",
+    "team_link": "https://en.wikipedia.org/wiki/Portadown_F.C."
+  },
+  {
+    "team_title": "Molde",
+    "team_link": "https://en.wikipedia.org/wiki/Molde_FK"
+  },
+  {
+    "team_title": "Bod\u00f8/Glimt",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Bod%C3%B8/Glimt"
+  },
+  {
+    "team_title": "Rosenborg",
+    "team_link": "https://en.wikipedia.org/wiki/Rosenborg_BK"
+  },
+  {
+    "team_title": "Lillestr\u00f8m",
+    "team_link": "https://en.wikipedia.org/wiki/Lillestr%C3%B8m_SK"
+  },
+  {
+    "team_title": "Odd",
+    "team_link": "https://en.wikipedia.org/wiki/Odds_BK"
+  },
+  {
+    "team_title": "V\u00e5lerenga",
+    "team_link": "https://en.wikipedia.org/wiki/V%C3%A5lerenga_Fotball"
+  },
+  {
+    "team_title": "Troms\u00f8",
+    "team_link": "https://en.wikipedia.org/wiki/Troms%C3%B8_IL"
+  },
+  {
+    "team_title": "Sarpsborg 08",
+    "team_link": "https://en.wikipedia.org/wiki/Sarpsborg_08_FF"
+  },
+  {
+    "team_title": "Aalesund",
+    "team_link": "https://en.wikipedia.org/wiki/Aalesunds_FK"
+  },
+  {
+    "team_title": "Haugesund",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Haugesund"
+  },
+  {
+    "team_title": "Viking",
+    "team_link": "https://en.wikipedia.org/wiki/Viking_FK"
+  },
+  {
+    "team_title": "Str\u00f8msgodset",
+    "team_link": "https://en.wikipedia.org/wiki/Str%C3%B8msgodset_Toppfotball"
+  },
+  {
+    "team_title": "HamKam",
+    "team_link": "https://en.wikipedia.org/wiki/Hamarkameratene"
+  },
+  {
+    "team_title": "Sandefjord",
+    "team_link": "https://en.wikipedia.org/wiki/Sandefjord_Fotball"
+  },
+  {
+    "team_title": "Kristiansund",
+    "team_link": "https://en.wikipedia.org/wiki/Kristiansund_BK"
+  },
+  {
+    "team_title": "Jerv",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Jerv"
+  },
+  {
+    "team_title": "Rak\u00f3w Cz\u0119stochowa",
+    "team_link": "https://en.wikipedia.org/wiki/Rak%C3%B3w_Cz%C4%99stochowa"
+  },
+  {
+    "team_title": "Legia Warsaw",
+    "team_link": "https://en.wikipedia.org/wiki/Legia_Warsaw"
+  },
+  {
+    "team_title": "Lech Pozna\u0144",
+    "team_link": "https://en.wikipedia.org/wiki/Lech_Pozna%C5%84"
+  },
+  {
+    "team_title": "Pogo\u0144 Szczecin",
+    "team_link": "https://en.wikipedia.org/wiki/Pogo%C5%84_Szczecin"
+  },
+  {
+    "team_title": "Piast Gliwice",
+    "team_link": "https://en.wikipedia.org/wiki/Piast_Gliwice"
+  },
+  {
+    "team_title": "G\u00f3rnik Zabrze",
+    "team_link": "https://en.wikipedia.org/wiki/G%C3%B3rnik_Zabrze"
+  },
+  {
+    "team_title": "Cracovia",
+    "team_link": "https://en.wikipedia.org/wiki/MKS_Cracovia"
+  },
+  {
+    "team_title": "Warta Pozna\u0144",
+    "team_link": "https://en.wikipedia.org/wiki/Warta_Pozna%C5%84"
+  },
+  {
+    "team_title": "Zag\u0142\u0119bie Lubin",
+    "team_link": "https://en.wikipedia.org/wiki/Zag%C5%82%C4%99bie_Lubin"
+  },
+  {
+    "team_title": "Radomiak Radom",
+    "team_link": "https://en.wikipedia.org/wiki/Radomiak_Radom"
+  },
+  {
+    "team_title": "Stal Mielec",
+    "team_link": "https://en.wikipedia.org/wiki/Stal_Mielec"
+  },
+  {
+    "team_title": "Widzew \u0141\u00f3d\u017a",
+    "team_link": "https://en.wikipedia.org/wiki/Widzew_%C5%81%C3%B3d%C5%BA"
+  },
+  {
+    "team_title": "Korona Kielce",
+    "team_link": "https://en.wikipedia.org/wiki/Korona_Kielce"
+  },
+  {
+    "team_title": "Jagiellonia Bia\u0142ystok",
+    "team_link": "https://en.wikipedia.org/wiki/Jagiellonia_Bia%C5%82ystok"
+  },
+  {
+    "team_title": "\u015al\u0105sk Wroc\u0142aw",
+    "team_link": "https://en.wikipedia.org/wiki/%C5%9Al%C4%85sk_Wroc%C5%82aw"
+  },
+  {
+    "team_title": "Wis\u0142a P\u0142ock",
+    "team_link": "https://en.wikipedia.org/wiki/Wis%C5%82a_P%C5%82ock"
+  },
+  {
+    "team_title": "Lechia Gda\u0144sk",
+    "team_link": "https://en.wikipedia.org/wiki/Lechia_Gda%C5%84sk"
+  },
+  {
+    "team_title": "Mied\u017a Legnica",
+    "team_link": "https://en.wikipedia.org/wiki/Mied%C5%BA_Legnica"
+  },
+  {
+    "team_title": "Benfica",
+    "team_link": "https://en.wikipedia.org/wiki/S.L._Benfica"
+  },
+  {
+    "team_title": "Porto",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Porto"
+  },
+  {
+    "team_title": "Braga",
+    "team_link": "https://en.wikipedia.org/wiki/S.C._Braga"
+  },
+  {
+    "team_title": "Sporting CP",
+    "team_link": "https://en.wikipedia.org/wiki/Sporting_CP"
+  },
+  {
+    "team_title": "Arouca",
+    "team_link": "https://en.wikipedia.org/wiki/F.C._Arouca"
+  },
+  {
+    "team_title": "Vit\u00f3ria de Guimar\u00e3es",
+    "team_link": "https://en.wikipedia.org/wiki/Vit%C3%B3ria_S.C."
+  },
+  {
+    "team_title": "Chaves",
+    "team_link": "https://en.wikipedia.org/wiki/G.D._Chaves"
+  },
+  {
+    "team_title": "Famalic\u00e3o",
+    "team_link": "https://en.wikipedia.org/wiki/F.C._Famalic%C3%A3o"
+  },
+  {
+    "team_title": "Boavista",
+    "team_link": "https://en.wikipedia.org/wiki/Boavista_F.C."
+  },
+  {
+    "team_title": "Casa Pia",
+    "team_link": "https://en.wikipedia.org/wiki/Casa_Pia_A.C."
+  },
+  {
+    "team_title": "Vizela",
+    "team_link": "https://en.wikipedia.org/wiki/F.C._Vizela"
+  },
+  {
+    "team_title": "Rio Ave",
+    "team_link": "https://en.wikipedia.org/wiki/Rio_Ave_F.C."
+  },
+  {
+    "team_title": "Gil Vicente",
+    "team_link": "https://en.wikipedia.org/wiki/Gil_Vicente_F.C."
+  },
+  {
+    "team_title": "Estoril",
+    "team_link": "https://en.wikipedia.org/wiki/G.D._Estoril_Praia"
+  },
+  {
+    "team_title": "Portimonense",
+    "team_link": "https://en.wikipedia.org/wiki/Portimonense_S.C."
+  },
+  {
+    "team_title": "Mar\u00edtimo",
+    "team_link": "https://en.wikipedia.org/wiki/C.S._Mar%C3%ADtimo"
+  },
+  {
+    "team_title": "Pa\u00e7os de Ferreira",
+    "team_link": "https://en.wikipedia.org/wiki/F.C._Pa%C3%A7os_de_Ferreira"
+  },
+  {
+    "team_title": "Santa Clara",
+    "team_link": "https://en.wikipedia.org/wiki/C.D._Santa_Clara"
+  },
+  {
+    "team_title": "Shamrock Rovers",
+    "team_link": "https://en.wikipedia.org/wiki/Shamrock_Rovers_F.C."
+  },
+  {
+    "team_title": "Derry City",
+    "team_link": "https://en.wikipedia.org/wiki/Derry_City_F.C."
+  },
+  {
+    "team_title": "St Patrick's Athletic",
+    "team_link": "https://en.wikipedia.org/wiki/St_Patrick%27s_Athletic_F.C."
+  },
+  {
+    "team_title": "Shelbourne",
+    "team_link": "https://en.wikipedia.org/wiki/Shelbourne_F.C."
+  },
+  {
+    "team_title": "Dundalk",
+    "team_link": "https://en.wikipedia.org/wiki/Dundalk_F.C."
+  },
+  {
+    "team_title": "Bohemians",
+    "team_link": "https://en.wikipedia.org/wiki/Bohemian_F.C."
+  },
+  {
+    "team_title": "Drogheda United",
+    "team_link": "https://en.wikipedia.org/wiki/Drogheda_United_F.C."
+  },
+  {
+    "team_title": "Sligo Rovers",
+    "team_link": "https://en.wikipedia.org/wiki/Sligo_Rovers_F.C."
+  },
+  {
+    "team_title": "Cork City",
+    "team_link": "https://en.wikipedia.org/wiki/Cork_City_F.C."
+  },
+  {
+    "team_title": "UCD",
+    "team_link": "https://en.wikipedia.org/wiki/University_College_Dublin_A.F.C."
+  },
+  {
+    "team_title": "Farul Constan\u021ba",
+    "team_link": "https://en.wikipedia.org/wiki/FCV_Farul_Constan%C8%9Ba"
+  },
+  {
+    "team_title": "CFR Cluj",
+    "team_link": "https://en.wikipedia.org/wiki/CFR_Cluj"
+  },
+  {
+    "team_title": "FCSB",
+    "team_link": "https://en.wikipedia.org/wiki/FCSB"
+  },
+  {
+    "team_title": "Universitatea Craiova",
+    "team_link": "https://en.wikipedia.org/wiki/CS_Universitatea_Craiova"
+  },
+  {
+    "team_title": "Rapid Bucure\u0219ti",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Rapid_Bucure%C8%99ti"
+  },
+  {
+    "team_title": "Sepsi OSK",
+    "team_link": "https://en.wikipedia.org/wiki/Sepsi_OSK_Sf%C3%A2ntu_Gheorghe"
+  },
+  {
+    "team_title": "FC U Craiova 1948",
+    "team_link": "https://en.wikipedia.org/wiki/FC_U_Craiova_1948"
+  },
+  {
+    "team_title": "Petrolul Ploie\u0219ti",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Petrolul_Ploie%C8%99ti"
+  },
+  {
+    "team_title": "Universitatea Cluj",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Universitatea_Cluj"
+  },
+  {
+    "team_title": "Voluntari",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Voluntari"
+  },
+  {
+    "team_title": "Boto\u0219ani",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Boto%C8%99ani"
+  },
+  {
+    "team_title": "Chindia T\u00e2rgovi\u0219te",
+    "team_link": "https://en.wikipedia.org/wiki/AFC_Chindia_T%C3%A2rgovi%C8%99te"
+  },
+  {
+    "team_title": "Hermannstadt",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Hermannstadt"
+  },
+  {
+    "team_title": "Arge\u0219 Pite\u0219ti",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Arge%C8%99_Pite%C8%99ti"
+  },
+  {
+    "team_title": "UTA Arad",
+    "team_link": "https://en.wikipedia.org/wiki/FC_UTA_Arad"
+  },
+  {
+    "team_title": "Mioveni",
+    "team_link": "https://en.wikipedia.org/wiki/CS_Mioveni"
+  },
+  {
+    "team_title": "Farul Constan\u021ba",
+    "team_link": "https://en.wikipedia.org/wiki/FCV_Farul_Constan%C8%9Ba"
+  },
+  {
+    "team_title": "FCSB",
+    "team_link": "https://en.wikipedia.org/wiki/FCSB"
+  },
+  {
+    "team_title": "CFR Cluj",
+    "team_link": "https://en.wikipedia.org/wiki/CFR_Cluj"
+  },
+  {
+    "team_title": "Universitatea Craiova",
+    "team_link": "https://en.wikipedia.org/wiki/CS_Universitatea_Craiova"
+  },
+  {
+    "team_title": "Rapid Bucure\u0219ti",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Rapid_Bucure%C8%99ti"
+  },
+  {
+    "team_title": "Sepsi OSK",
+    "team_link": "https://en.wikipedia.org/wiki/Sepsi_OSK_Sf%C3%A2ntu_Gheorghe"
+  },
+  {
+    "team_title": "FC U Craiova 1948",
+    "team_link": "https://en.wikipedia.org/wiki/FC_U_Craiova_1948"
+  },
+  {
+    "team_title": "Petrolul Ploie\u0219ti",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Petrolul_Ploie%C8%99ti"
+  },
+  {
+    "team_title": "Voluntari",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Voluntari"
+  },
+  {
+    "team_title": "Universitatea Cluj",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Universitatea_Cluj"
+  },
+  {
+    "team_title": "Hermannstadt",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Hermannstadt"
+  },
+  {
+    "team_title": "Boto\u0219ani",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Boto%C8%99ani"
+  },
+  {
+    "team_title": "UTA Arad",
+    "team_link": "https://en.wikipedia.org/wiki/FC_UTA_Arad"
+  },
+  {
+    "team_title": "Arge\u0219 Pite\u0219ti",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Arge%C8%99_Pite%C8%99ti"
+  },
+  {
+    "team_title": "Chindia T\u00e2rgovi\u0219te",
+    "team_link": "https://en.wikipedia.org/wiki/AFC_Chindia_T%C3%A2rgovi%C8%99te"
+  },
+  {
+    "team_title": "Mioveni",
+    "team_link": "https://en.wikipedia.org/wiki/CS_Mioveni"
+  },
+  {
+    "team_title": "Zenit Saint Petersburg",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Zenit_Saint_Petersburg"
+  },
+  {
+    "team_title": "CSKA Moscow",
+    "team_link": "https://en.wikipedia.org/wiki/PFC_CSKA_Moscow"
+  },
+  {
+    "team_title": "Spartak Moscow",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Spartak_Moscow"
+  },
+  {
+    "team_title": "Rostov",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Rostov"
+  },
+  {
+    "team_title": "Akhmat Grozny",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Akhmat_Grozny"
+  },
+  {
+    "team_title": "Krasnodar",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Krasnodar"
+  },
+  {
+    "team_title": "Orenburg",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Orenburg"
+  },
+  {
+    "team_title": "Lokomotiv Moscow",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Lokomotiv_Moscow"
+  },
+  {
+    "team_title": "Dynamo Moscow",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Dynamo_Moscow"
+  },
+  {
+    "team_title": "Sochi",
+    "team_link": "https://en.wikipedia.org/wiki/PFC_Sochi"
+  },
+  {
+    "team_title": "Ural Yekaterinburg",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Ural_Yekaterinburg"
+  },
+  {
+    "team_title": "Krylia Sovetov Samara",
+    "team_link": "https://en.wikipedia.org/wiki/PFC_Krylia_Sovetov_Samara"
+  },
+  {
+    "team_title": "Pari Nizhny Novgorod",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Pari_Nizhny_Novgorod"
+  },
+  {
+    "team_title": "Fakel Voronezh",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Fakel_Voronezh"
+  },
+  {
+    "team_title": "Khimki",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Khimki"
+  },
+  {
+    "team_title": "Torpedo Moscow",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Torpedo_Moscow"
+  },
+  {
+    "team_title": "Tre Penne",
+    "team_link": "https://en.wikipedia.org/wiki/S.P._Tre_Penne"
+  },
+  {
+    "team_title": "Cosmos",
+    "team_link": "https://en.wikipedia.org/wiki/S.S._Cosmos"
+  },
+  {
+    "team_title": "La Fiorita",
+    "team_link": "https://en.wikipedia.org/wiki/S.P._La_Fiorita"
+  },
+  {
+    "team_title": "Virtus",
+    "team_link": "https://en.wikipedia.org/wiki/A.C._Virtus"
+  },
+  {
+    "team_title": "Tre Fiori",
+    "team_link": "https://en.wikipedia.org/wiki/Tre_Fiori_F.C."
+  },
+  {
+    "team_title": "Libertas",
+    "team_link": "https://en.wikipedia.org/wiki/A.C._Libertas"
+  },
+  {
+    "team_title": "Folgore",
+    "team_link": "https://en.wikipedia.org/wiki/S.S._Folgore_Falciano_Calcio"
+  },
+  {
+    "team_title": "Murata",
+    "team_link": "https://en.wikipedia.org/wiki/S.S._Murata"
+  },
+  {
+    "team_title": "Juvenes/Dogana",
+    "team_link": "https://en.wikipedia.org/wiki/A.C._Juvenes/Dogana"
+  },
+  {
+    "team_title": "Domagnano",
+    "team_link": "https://en.wikipedia.org/wiki/F.C._Domagnano"
+  },
+  {
+    "team_title": "Faetano",
+    "team_link": "https://en.wikipedia.org/wiki/S.C._Faetano"
+  },
+  {
+    "team_title": "Pennarossa",
+    "team_link": "https://en.wikipedia.org/wiki/S.S._Pennarossa"
+  },
+  {
+    "team_title": "San Giovanni",
+    "team_link": "https://en.wikipedia.org/wiki/A.S._San_Giovanni"
+  },
+  {
+    "team_title": "Fiorentino",
+    "team_link": "https://en.wikipedia.org/wiki/F.C._Fiorentino"
+  },
+  {
+    "team_title": "Cailungo",
+    "team_link": "https://en.wikipedia.org/wiki/S.P._Cailungo"
+  },
+  {
+    "team_title": "Celtic",
+    "team_link": "https://en.wikipedia.org/wiki/Celtic_F.C."
+  },
+  {
+    "team_title": "Rangers",
+    "team_link": "https://en.wikipedia.org/wiki/Rangers_F.C."
+  },
+  {
+    "team_title": "Aberdeen",
+    "team_link": "https://en.wikipedia.org/wiki/Aberdeen_F.C."
+  },
+  {
+    "team_title": "Heart of Midlothian",
+    "team_link": "https://en.wikipedia.org/wiki/Heart_of_Midlothian_F.C."
+  },
+  {
+    "team_title": "Hibernian",
+    "team_link": "https://en.wikipedia.org/wiki/Hibernian_F.C."
+  },
+  {
+    "team_title": "St Mirren",
+    "team_link": "https://en.wikipedia.org/wiki/St_Mirren_F.C."
+  },
+  {
+    "team_title": ""
+  },
+  {
+    "team_title": "Motherwell",
+    "team_link": "https://en.wikipedia.org/wiki/Motherwell_F.C."
+  },
+  {
+    "team_title": "Livingston",
+    "team_link": "https://en.wikipedia.org/wiki/Livingston_F.C."
+  },
+  {
+    "team_title": "St Johnstone",
+    "team_link": "https://en.wikipedia.org/wiki/St_Johnstone_F.C."
+  },
+  {
+    "team_title": "Kilmarnock",
+    "team_link": "https://en.wikipedia.org/wiki/Kilmarnock_F.C."
+  },
+  {
+    "team_title": "Ross County",
+    "team_link": "https://en.wikipedia.org/wiki/Ross_County_F.C."
+  },
+  {
+    "team_title": "Dundee United",
+    "team_link": "https://en.wikipedia.org/wiki/Dundee_United_F.C."
+  },
+  {
+    "team_title": "Red Star Belgrade",
+    "team_link": "https://en.wikipedia.org/wiki/Red_Star_Belgrade"
+  },
+  {
+    "team_title": "Partizan",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Partizan"
+  },
+  {
+    "team_title": "\u010cukari\u010dki",
+    "team_link": "https://en.wikipedia.org/wiki/FK_%C4%8Cukari%C4%8Dki"
+  },
+  {
+    "team_title": "Vojvodina",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Vojvodina"
+  },
+  {
+    "team_title": "TSC",
+    "team_link": "https://en.wikipedia.org/wiki/FK_TSC"
+  },
+  {
+    "team_title": "Radnik Surdulica",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Radnik_Surdulica"
+  },
+  {
+    "team_title": "Mladost Lu\u010dani",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Mladost_Lu%C4%8Dani"
+  },
+  {
+    "team_title": "Proleter Novi Sad",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Proleter_Novi_Sad"
+  },
+  {
+    "team_title": "Metalac",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Metalac_Gornji_Milanovac"
+  },
+  {
+    "team_title": "Spartak Subotica",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Spartak_Subotica"
+  },
+  {
+    "team_title": "Napredak Kru\u0161evac",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Napredak_Kru%C5%A1evac"
+  },
+  {
+    "team_title": "Novi Pazar",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Novi_Pazar"
+  },
+  {
+    "team_title": "Radni\u010dki Ni\u0161",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Radni%C4%8Dki_Ni%C5%A1"
+  },
+  {
+    "team_title": "Vo\u017edovac",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Vo%C5%BEdovac"
+  },
+  {
+    "team_title": "Rad",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Rad"
+  },
+  {
+    "team_title": "Javor-Matis",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Javor_Ivanjica"
+  },
+  {
+    "team_title": "In\u0111ija",
+    "team_link": "https://en.wikipedia.org/wiki/FK_In%C4%91ija"
+  },
+  {
+    "team_title": "Zlatibor",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Zlatibor_%C4%8Cajetina"
+  },
+  {
+    "team_title": "Ma\u010dva",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Ma%C4%8Dva_%C5%A0abac"
+  },
+  {
+    "team_title": "Ba\u010dka",
+    "team_link": "https://en.wikipedia.org/wiki/OFK_Ba%C4%8Dka"
+  },
+  {
+    "team_title": "DAC Dunajsk\u00e1 Streda",
+    "team_link": "https://en.wikipedia.org/wiki/FC_DAC_1904_Dunajsk%C3%A1_Streda"
+  },
+  {
+    "team_title": "Slovan Bratislava",
+    "team_link": "https://en.wikipedia.org/wiki/%C5%A0K_Slovan_Bratislava"
+  },
+  {
+    "team_title": "Spartak Trnava",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Spartak_Trnava"
+  },
+  {
+    "team_title": "Podbrezov\u00e1",
+    "team_link": "https://en.wikipedia.org/wiki/FK_%C5%BDeleziarne_Podbrezov%C3%A1"
+  },
+  {
+    "team_title": "\u017dilina",
+    "team_link": "https://en.wikipedia.org/wiki/M%C5%A0K_%C5%BDilina"
+  },
+  {
+    "team_title": "Dukla Bansk\u00e1 Bystrica",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Dukla_Bansk%C3%A1_Bystrica"
+  },
+  {
+    "team_title": "Ru\u017eomberok",
+    "team_link": "https://en.wikipedia.org/wiki/MFK_Ru%C5%BEomberok"
+  },
+  {
+    "team_title": "Zempl\u00edn Michalovce",
+    "team_link": "https://en.wikipedia.org/wiki/MFK_Zempl%C3%ADn_Michalovce"
+  },
+  {
+    "team_title": "Zlat\u00e9 Moravce",
+    "team_link": "https://en.wikipedia.org/wiki/FC_ViOn_Zlat%C3%A9_Moravce"
+  },
+  {
+    "team_title": "Tren\u010d\u00edn",
+    "team_link": "https://en.wikipedia.org/wiki/AS_Tren%C4%8D%C3%ADn"
+  },
+  {
+    "team_title": "Skalica",
+    "team_link": "https://en.wikipedia.org/wiki/MFK_Skalica"
+  },
+  {
+    "team_title": "Tatran Liptovsk\u00fd Mikul\u00e1\u0161",
+    "team_link": "https://en.wikipedia.org/wiki/MFK_Tatran_Liptovsk%C3%BD_Mikul%C3%A1%C5%A1"
+  },
+  {
+    "team_title": "Slovan Bratislava",
+    "team_link": "https://en.wikipedia.org/wiki/%C5%A0K_Slovan_Bratislava"
+  },
+  {
+    "team_title": "DAC Dunajsk\u00e1 Streda",
+    "team_link": "https://en.wikipedia.org/wiki/FC_DAC_1904_Dunajsk%C3%A1_Streda"
+  },
+  {
+    "team_title": "Spartak Trnava",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Spartak_Trnava"
+  },
+  {
+    "team_title": "Podbrezov\u00e1",
+    "team_link": "https://en.wikipedia.org/wiki/FK_%C5%BDeleziarne_Podbrezov%C3%A1"
+  },
+  {
+    "team_title": "Dukla Bansk\u00e1 Bystrica",
+    "team_link": "https://en.wikipedia.org/wiki/FK_Dukla_Bansk%C3%A1_Bystrica"
+  },
+  {
+    "team_title": "\u017dilina",
+    "team_link": "https://en.wikipedia.org/wiki/M%C5%A0K_%C5%BDilina"
+  },
+  {
+    "team_title": "Ru\u017eomberok",
+    "team_link": "https://en.wikipedia.org/wiki/MFK_Ru%C5%BEomberok"
+  },
+  {
+    "team_title": "Skalica",
+    "team_link": "https://en.wikipedia.org/wiki/MFK_Skalica"
+  },
+  {
+    "team_title": "Tren\u010d\u00edn",
+    "team_link": "https://en.wikipedia.org/wiki/AS_Tren%C4%8D%C3%ADn"
+  },
+  {
+    "team_title": "Zempl\u00edn Michalovce",
+    "team_link": "https://en.wikipedia.org/wiki/MFK_Zempl%C3%ADn_Michalovce"
+  },
+  {
+    "team_title": "Zlat\u00e9 Moravce",
+    "team_link": "https://en.wikipedia.org/wiki/FC_ViOn_Zlat%C3%A9_Moravce"
+  },
+  {
+    "team_title": "Tatran Liptovsk\u00fd Mikul\u00e1\u0161",
+    "team_link": "https://en.wikipedia.org/wiki/MFK_Tatran_Liptovsk%C3%BD_Mikul%C3%A1%C5%A1"
+  },
+  {
+    "team_title": "Olimpija Ljubljana",
+    "team_link": "https://en.wikipedia.org/wiki/NK_Olimpija_Ljubljana"
+  },
+  {
+    "team_title": "Celje",
+    "team_link": "https://en.wikipedia.org/wiki/NK_Celje"
+  },
+  {
+    "team_title": "Maribor",
+    "team_link": "https://en.wikipedia.org/wiki/NK_Maribor"
+  },
+  {
+    "team_title": "Dom\u017eale",
+    "team_link": "https://en.wikipedia.org/wiki/NK_Dom%C5%BEale"
+  },
+  {
+    "team_title": "Mura",
+    "team_link": "https://en.wikipedia.org/wiki/N%C5%A0_Mura"
+  },
+  {
+    "team_title": "Koper",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Koper"
+  },
+  {
+    "team_title": "Radomlje",
+    "team_link": "https://en.wikipedia.org/wiki/NK_Radomlje"
+  },
+  {
+    "team_title": "Bravo",
+    "team_link": "https://en.wikipedia.org/wiki/NK_Bravo"
+  },
+  {
+    "team_title": "Gorica",
+    "team_link": "https://en.wikipedia.org/wiki/ND_Gorica"
+  },
+  {
+    "team_title": "Tabor Se\u017eana",
+    "team_link": "https://en.wikipedia.org/wiki/NK_Tabor_Se%C5%BEana"
+  },
+  {
+    "team_title": "Barcelona",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Barcelona"
+  },
+  {
+    "team_title": "Real Madrid",
+    "team_link": "https://en.wikipedia.org/wiki/Real_Madrid_CF"
+  },
+  {
+    "team_title": "Atl\u00e9tico Madrid",
+    "team_link": "https://en.wikipedia.org/wiki/Atl%C3%A9tico_Madrid"
+  },
+  {
+    "team_title": "Real Sociedad",
+    "team_link": "https://en.wikipedia.org/wiki/Real_Sociedad"
+  },
+  {
+    "team_title": "Villarreal",
+    "team_link": "https://en.wikipedia.org/wiki/Villarreal_CF"
+  },
+  {
+    "team_title": "Real Betis",
+    "team_link": "https://en.wikipedia.org/wiki/Real_Betis"
+  },
+  {
+    "team_title": "Osasuna",
+    "team_link": "https://en.wikipedia.org/wiki/CA_Osasuna"
+  },
+  {
+    "team_title": "Athletic Bilbao",
+    "team_link": "https://en.wikipedia.org/wiki/Athletic_Bilbao"
+  },
+  {
+    "team_title": "Mallorca",
+    "team_link": "https://en.wikipedia.org/wiki/RCD_Mallorca"
+  },
+  {
+    "team_title": "Girona",
+    "team_link": "https://en.wikipedia.org/wiki/Girona_FC"
+  },
+  {
+    "team_title": "Rayo Vallecano",
+    "team_link": "https://en.wikipedia.org/wiki/Rayo_Vallecano"
+  },
+  {
+    "team_title": "Sevilla",
+    "team_link": "https://en.wikipedia.org/wiki/Sevilla_FC"
+  },
+  {
+    "team_title": "Celta Vigo",
+    "team_link": "https://en.wikipedia.org/wiki/RC_Celta_de_Vigo"
+  },
+  {
+    "team_title": "C\u00e1diz",
+    "team_link": "https://en.wikipedia.org/wiki/C%C3%A1diz_CF"
+  },
+  {
+    "team_title": "Getafe",
+    "team_link": "https://en.wikipedia.org/wiki/Getafe_CF"
+  },
+  {
+    "team_title": "Valencia",
+    "team_link": "https://en.wikipedia.org/wiki/Valencia_CF"
+  },
+  {
+    "team_title": "Almer\u00eda",
+    "team_link": "https://en.wikipedia.org/wiki/UD_Almer%C3%ADa"
+  },
+  {
+    "team_title": "Valladolid",
+    "team_link": "https://en.wikipedia.org/wiki/Real_Valladolid"
+  },
+  {
+    "team_title": "Espanyol",
+    "team_link": "https://en.wikipedia.org/wiki/RCD_Espanyol"
+  },
+  {
+    "team_title": "Elche",
+    "team_link": "https://en.wikipedia.org/wiki/Elche_CF"
+  },
+  {
+    "team_title": "Malm\u00f6 FF",
+    "team_link": "https://en.wikipedia.org/wiki/Malm%C3%B6_FF"
+  },
+  {
+    "team_title": "IF Elfsborg",
+    "team_link": "https://en.wikipedia.org/wiki/IF_Elfsborg"
+  },
+  {
+    "team_title": "BK H\u00e4cken",
+    "team_link": "https://en.wikipedia.org/wiki/BK_H%C3%A4cken"
+  },
+  {
+    "team_title": "Djurg\u00e5rdens IF",
+    "team_link": "https://en.wikipedia.org/wiki/Djurg%C3%A5rdens_IF_Fotboll"
+  },
+  {
+    "team_title": "IFK V\u00e4rnamo",
+    "team_link": "https://en.wikipedia.org/wiki/IFK_V%C3%A4rnamo"
+  },
+  {
+    "team_title": "Kalmar FF",
+    "team_link": "https://en.wikipedia.org/wiki/Kalmar_FF"
+  },
+  {
+    "team_title": "Hammarby IF",
+    "team_link": "https://en.wikipedia.org/wiki/Hammarby_Fotboll"
+  },
+  {
+    "team_title": "IK Sirius",
+    "team_link": "https://en.wikipedia.org/wiki/IK_Sirius_Fotboll"
+  },
+  {
+    "team_title": "IFK Norrk\u00f6ping",
+    "team_link": "https://en.wikipedia.org/wiki/IFK_Norrk%C3%B6ping"
+  },
+  {
+    "team_title": "Mj\u00e4llby AIF",
+    "team_link": "https://en.wikipedia.org/wiki/Mj%C3%A4llby_AIF"
+  },
+  {
+    "team_title": "AIK",
+    "team_link": "https://en.wikipedia.org/wiki/AIK_Fotboll"
+  },
+  {
+    "team_title": "Halmstads BK",
+    "team_link": "https://en.wikipedia.org/wiki/Halmstads_BK"
+  },
+  {
+    "team_title": "IFK G\u00f6teborg",
+    "team_link": "https://en.wikipedia.org/wiki/IFK_G%C3%B6teborg"
+  },
+  {
+    "team_title": "IF Brommapojkarna",
+    "team_link": "https://en.wikipedia.org/wiki/IF_Brommapojkarna"
+  },
+  {
+    "team_title": "Degerfors IF",
+    "team_link": "https://en.wikipedia.org/wiki/Degerfors_IF"
+  },
+  {
+    "team_title": "Varbergs BoIS",
+    "team_link": "https://en.wikipedia.org/wiki/Varbergs_BoIS"
+  },
+  {
+    "team_title": "Young Boys",
+    "team_link": "https://en.wikipedia.org/wiki/BSC_Young_Boys"
+  },
+  {
+    "team_title": "Servette",
+    "team_link": "https://en.wikipedia.org/wiki/Servette_FC"
+  },
+  {
+    "team_title": "Lugano",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Lugano"
+  },
+  {
+    "team_title": "Luzern",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Luzern"
+  },
+  {
+    "team_title": "Basel",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Basel"
+  },
+  {
+    "team_title": "St. Gallen",
+    "team_link": "https://en.wikipedia.org/wiki/FC_St._Gallen"
+  },
+  {
+    "team_title": "Grasshopper",
+    "team_link": "https://en.wikipedia.org/wiki/Grasshopper_Club_Z%C3%BCrich"
+  },
+  {
+    "team_title": "Z\u00fcrich",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Z%C3%BCrich"
+  },
+  {
+    "team_title": "Winterthur",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Winterthur"
+  },
+  {
+    "team_title": "Sion",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Sion"
+  },
+  {
+    "team_title": "Galatasaray",
+    "team_link": "https://en.wikipedia.org/wiki/Galatasaray_S.K._(football)"
+  },
+  {
+    "team_title": "Fenerbah\u00e7e",
+    "team_link": "https://en.wikipedia.org/wiki/Fenerbah%C3%A7e_S.K._(football)"
+  },
+  {
+    "team_title": "Be\u015fikta\u015f",
+    "team_link": "https://en.wikipedia.org/wiki/Be%C5%9Fikta%C5%9F_J.K."
+  },
+  {
+    "team_title": "Adana Demirspor",
+    "team_link": "https://en.wikipedia.org/wiki/Adana_Demirspor"
+  },
+  {
+    "team_title": "\u0130stanbul Ba\u015fak\u015fehir",
+    "team_link": "https://en.wikipedia.org/wiki/%C4%B0stanbul_Ba%C5%9Fak%C5%9Fehir_F.K."
+  },
+  {
+    "team_title": "Trabzonspor",
+    "team_link": "https://en.wikipedia.org/wiki/Trabzonspor"
+  },
+  {
+    "team_title": "Fatih Karag\u00fcmr\u00fck",
+    "team_link": "https://en.wikipedia.org/wiki/Fatih_Karag%C3%BCmr%C3%BCk_S.K."
+  },
+  {
+    "team_title": "Konyaspor",
+    "team_link": "https://en.wikipedia.org/wiki/Konyaspor"
+  },
+  {
+    "team_title": "Kayserispor",
+    "team_link": "https://en.wikipedia.org/wiki/Kayserispor"
+  },
+  {
+    "team_title": "Kas\u0131mpa\u015fa",
+    "team_link": "https://en.wikipedia.org/wiki/Kas%C4%B1mpa%C5%9Fa_S.K."
+  },
+  {
+    "team_title": "Ankarag\u00fcc\u00fc",
+    "team_link": "https://en.wikipedia.org/wiki/MKE_Ankarag%C3%BCc%C3%BC"
+  },
+  {
+    "team_title": "\u0130stanbulspor",
+    "team_link": "https://en.wikipedia.org/wiki/%C4%B0stanbulspor"
+  },
+  {
+    "team_title": "Antalyaspor",
+    "team_link": "https://en.wikipedia.org/wiki/Antalyaspor"
+  },
+  {
+    "team_title": "Sivasspor",
+    "team_link": "https://en.wikipedia.org/wiki/Sivasspor"
+  },
+  {
+    "team_title": "Alanyaspor",
+    "team_link": "https://en.wikipedia.org/wiki/Alanyaspor"
+  },
+  {
+    "team_title": "Giresunspor",
+    "team_link": "https://en.wikipedia.org/wiki/Giresunspor"
+  },
+  {
+    "team_title": "\u00dcmraniyespor",
+    "team_link": "https://en.wikipedia.org/wiki/%C3%9Cmraniyespor"
+  },
+  {
+    "team_title": "Gaziantep",
+    "team_link": "https://en.wikipedia.org/wiki/Gaziantep_F.K."
+  },
+  {
+    "team_title": "Hatayspor",
+    "team_link": "https://en.wikipedia.org/wiki/Hatayspor"
+  },
+  {
+    "team_title": "Shakhtar Donetsk",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Shakhtar_Donetsk"
+  },
+  {
+    "team_title": "Dnipro-1",
+    "team_link": "https://en.wikipedia.org/wiki/SC_Dnipro-1"
+  },
+  {
+    "team_title": "Zorya Luhansk",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Zorya_Luhansk"
+  },
+  {
+    "team_title": "Dynamo Kyiv",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Dynamo_Kyiv"
+  },
+  {
+    "team_title": "Vorskla Poltava",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Vorskla_Poltava"
+  },
+  {
+    "team_title": "Oleksandriya",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Oleksandriya"
+  },
+  {
+    "team_title": "Kryvbas Kryvyi Rih",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Kryvbas_Kryvyi_Rih_(2020)"
+  },
+  {
+    "team_title": "Mynai",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Mynai"
+  },
+  {
+    "team_title": "Kolos Kovalivka",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Kolos_Kovalivka"
+  },
+  {
+    "team_title": "Chornomorets Odesa",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Chornomorets_Odesa"
+  },
+  {
+    "team_title": "Rukh Lviv",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Rukh_Lviv"
+  },
+  {
+    "team_title": "Metalist 1925 Kharkiv",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Metalist_1925_Kharkiv"
+  },
+  {
+    "team_title": "Veres Rivne",
+    "team_link": "https://en.wikipedia.org/wiki/NK_Veres_Rivne"
+  },
+  {
+    "team_title": "Inhulets Petrove",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Inhulets_Petrove"
+  },
+  {
+    "team_title": "Metalist Kharkiv",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Metalist_Kharkiv"
+  },
+  {
+    "team_title": "Lviv",
+    "team_link": "https://en.wikipedia.org/wiki/FC_Lviv"
+  },
+  {
+    "team_title": ""
+  },
+  {
+    "team_title": ""
+  },
+  {
+    "team_title": "The New Saints",
+    "team_link": "https://en.wikipedia.org/wiki/The_New_Saints_F.C."
+  },
+  {
+    "team_title": "Connah's Quay Nomads",
+    "team_link": "https://en.wikipedia.org/wiki/Connah%27s_Quay_Nomads_F.C."
+  },
+  {
+    "team_title": "Penybont",
+    "team_link": "https://en.wikipedia.org/wiki/Penybont_F.C."
+  },
+  {
+    "team_title": "Cardiff Metropolitan University",
+    "team_link": "https://en.wikipedia.org/wiki/Cardiff_Metropolitan_University_F.C."
+  },
+  {
+    "team_title": "Bala Town",
+    "team_link": "https://en.wikipedia.org/wiki/Bala_Town_F.C."
+  },
+  {
+    "team_title": "Newtown",
+    "team_link": "https://en.wikipedia.org/wiki/Newtown_A.F.C."
+  },
+  {
+    "team_title": ""
+  },
+  {
+    "team_title": "Haverfordwest County",
+    "team_link": "https://en.wikipedia.org/wiki/Haverfordwest_County_A.F.C."
+  },
+  {
+    "team_title": "Pontypridd United",
+    "team_link": "https://en.wikipedia.org/wiki/Pontypridd_United_A.F.C."
+  },
+  {
+    "team_title": "Caernarfon Town",
+    "team_link": "https://en.wikipedia.org/wiki/Caernarfon_Town_F.C."
+  },
+  {
+    "team_title": "Aberystwyth Town",
+    "team_link": "https://en.wikipedia.org/wiki/Aberystwyth_Town_F.C."
+  },
+  {
+    "team_title": "Flint Town United",
+    "team_link": "https://en.wikipedia.org/wiki/Flint_Town_United_F.C."
+  },
+  {
+    "team_title": "Airbus UK Broughton",
+    "team_link": "https://en.wikipedia.org/wiki/Airbus_UK_Broughton_F.C."
+  }
+]

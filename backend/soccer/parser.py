@@ -8,6 +8,7 @@ from bs4 import BeautifulSoup
 from .exceptions import TextPropertyNotSupportedError
 
 from django.conf import settings
+from django.template.defaultfilters import slugify
 
 
 class SoccerParser:
@@ -91,6 +92,7 @@ class CountriesParser:
 
 class ParseTeams:
     __UEFA_TOP_DIVISION_TEAMS_URL = "https://en.wikipedia.org/wiki/List_of_top-division_football_clubs_in_UEFA_countries"
+    FILE_NAME = "teams.json"
     teams_data = []
 
     def __init__(self):
@@ -112,7 +114,11 @@ class ParseTeams:
                     self.__add_team_data_to_list(self.teams_data, team_href, team_cell.text)
                 except (TextPropertyNotSupportedError, AttributeError):
                     self.teams_data.append({"team_title": ""})
-        print(self.teams_data)
+        self.__write_data_into_file()
+
+    def __write_data_into_file(self):
+        with open(self.FILE_NAME, "w") as teams:
+            json.dump(self.teams_data, teams, indent=2)
 
     def __add_team_data_to_list(self, team_data_list: list[Mapping[str, str]], team_href: str, team_cell_text: str):
         full_team_href = self.__form_full_url_address_of_team_page(team_href)
@@ -120,7 +126,7 @@ class ParseTeams:
         team_data_list.append({"team_title": team_cell_text, "team_link": full_team_href})
 
     def __clean_team_title(self, title: str) -> str:
-        forbidden_symbols = ("(O)", "(R)", "(C)")
+        forbidden_symbols = ("(O)", "(R)", "(C)", "(U)")
         for symbol in forbidden_symbols:
             if symbol in title:
                 title = title.replace(symbol, "")
@@ -134,6 +140,43 @@ class ParseTeams:
             return ""
 
 
+class ParseEachTeamData:
+    FILE_NAME = ParseTeams.FILE_NAME
+
+    def open_file_with_teams(self):
+        with open(self.FILE_NAME, "r") as teams:
+            teams_content = json.load(teams)
+        self.parse_team_additional_data(teams_content)
+
+    def parse_team_additional_data(self, teams_content):
+        team_additional_data = []
+        for i in teams_content:
+            team_data = {}
+            if i["team_link"]:
+                team_page_link = i["team_link"]
+                res = requests.get(team_page_link).text
+                html_text = BeautifulSoup(res, "lxml")
+                info_table = html_text.find("table", {"class": "vcard"})
+                if info_table:
+                    team_name = info_table.find("caption").text
+                    team_data["name"] = team_name
+                    league = self.get_info_about_team_league(info_table)
+                    print(league)
+                    team_data["slug"] = self.create_slug(team_name)
+                    team_data["gender"] = "M"
+                    team_data["national"] = False
+
+    def create_image_full_url(self, short_url: str) -> str:
+        return f"https:{short_url}"
+
+    def get_info_about_team_league(self, info_table):
+        league = info_table.find_all("tr")[10]
+        return league
+
+    def create_slug(self, title: str) -> str:
+        return slugify(title)
+
+
 def main():
-    a = ParseTeams()
-    a.parse_response()
+    a = ParseEachTeamData()
+    a.open_file_with_teams()
