@@ -15,7 +15,6 @@ class PlayZones(models.Model):
 
 
 class Countries(models.Model):
-
     class Meta:
         ordering = ["name"]
 
@@ -25,6 +24,36 @@ class Countries(models.Model):
 
     def __str__(self):
         return f"{self.name} {self.alpha2}"
+
+
+class Cities(models.Model):
+    id = models.UUIDField(primary_key=True, editable=False, default=uuid4)
+    name = models.CharField(max_length=120, default="", blank=True)
+    country = models.ForeignKey(Countries, on_delete=models.CASCADE, default="", blank=True)
+
+    def __str__(self):
+        return self.name
+
+
+class Managers(models.Model):
+    id = models.UUIDField(primary_key=True, editable=False, default=uuid4)
+    name = models.CharField(max_length=200, default="", blank=True)
+    slug = models.SlugField(max_length=200, default="", blank=True)
+    short_name = models.CharField(max_length=140, default="", blank=True)
+    country = models.ForeignKey(Countries, on_delete=models.CASCADE, default="", blank=True)
+
+    def __str__(self):
+        return self.name
+
+
+class Stadiums(models.Model):
+    id = models.UUIDField(primary_key=True, editable=False, default=uuid4)
+    name = models.CharField(max_length=150, default="", blank=True)
+    capacity = models.IntegerField(default=0, blank=True)
+    city = models.ForeignKey(Cities, on_delete=models.CASCADE, default="", blank=True)
+
+    def __str__(self):
+        return f"{self.name}{self.capacity}"
 
 
 class Teams(models.Model, SubscribersMixin):
@@ -40,6 +69,10 @@ class Teams(models.Model, SubscribersMixin):
     subscribers_count = models.PositiveIntegerField(default=0)
     name_code = models.CharField(max_length=3, default="")
     disabled = models.BooleanField(default=False)
+    manager = models.ForeignKey(Managers, on_delete=models.CASCADE, blank=True, default="")
+    city = models.ForeignKey(Cities, on_delete=models.CASCADE, blank=True, default="")
+    stadium = models.ForeignKey(Stadiums, on_delete=models.CASCADE, blank=True, default="")
+    foundation_timestamp = models.CharField(max_length=50, default="", blank=True)
     national = models.BooleanField(default=False)
     team_color_primary = models.CharField(max_length=7, default="#ffffff")
     team_color_secondary = models.CharField(max_length=7, default="#ffffff")

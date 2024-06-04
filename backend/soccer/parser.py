@@ -1,6 +1,8 @@
 import aiohttp
 import asyncio
 import json
+
+import bs4
 import requests
 from typing import Mapping, Iterable, Union
 from bs4 import BeautifulSoup
@@ -142,14 +144,53 @@ class ParseTeams:
             return ""
 
 
-class ParseTeamData:
-    BASE_URL = data_storage.TEAMS_DATA_URL
-    _offset = 0
+class ParseCities:
+    BASE_URL = "https://en.wikipedia.org/wiki/Lists_of_cities_by_country"
+    cities = []
 
     def __init__(self):
-        res = requests.get(f"{self.BASE_URL}{self._offset}")
-        print(res.text)
+        self.res = requests.get(self.BASE_URL)
+        self.parse_cities_data(self.res.text)
+
+    def parse_cities_data(self, response: requests.Response):
+        parse_text = BeautifulSoup(response, "lxml")
+        self.get_list_all_countries(parse_text)
+
+    def get_list_all_countries(self, parse_text):
+        ul = parse_text.find_all("ul")
+        self.get_link_on_country(ul)
+
+    def get_link_on_country(self, countries_list):
+        countries_page_href = {}
+        for country in countries_list:
+            list_li = country.find_all("li")
+            for li in list_li:
+                b_tag = li.find("b")
+                if b_tag:
+                    cities_list_link = b_tag.find("a")
+                    full_link = self.__form_full_page_link(cities_list_link["href"])
+                    title = cities_list_link["title"]
+                    country_title = self.get_country_title_from_full_link_name(title)
+                    print(country_title)
+
+    def get_country_title_from_full_link_name(self, link_name: str):
+        banned_country = ("Somaliland", "South Sudan", "Svalbard", "Transinstria", "Vatican City", "Western Sahara",
+                          "South Ossetia")
+        link_name_list = link_name.split()
+        for i in link_name_list:
+            if i == "in":
+                link_name_list = link_name_list[link_name_list.index(i) + 1:]
+        result_string = " ".join(link_name_list)
+        if "India" in result_string:
+            result_string = "".join(result_string.split()[0])
+        if result_string in banned_country:
+            result_string = ""
+        return result_string
+
+
+    def __form_full_page_link(self, short_link: str):
+        return f"https://en.m.wikipedia.org{short_link}"
 
 
 def main():
-    a = ParseTeamData()
+    a = ParseCities()
