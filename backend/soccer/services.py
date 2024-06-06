@@ -1,7 +1,10 @@
 import json
 
-from .models import LeaguesModels, PlayZones, Rating, Countries
+from django.core.exceptions import ObjectDoesNotExist
+
+from .models import LeaguesModels, PlayZones, Rating, Countries, Cities
 from .data_storage import DataStorage
+from .parser import main
 
 data_storage = DataStorage()
 
@@ -21,6 +24,23 @@ class InserterInDb:
                 pass
         except Exception as e:
             print(e)
+
+    @staticmethod
+    def insert_cities_in_db():
+        country_cities_dict = main()
+        for country, cities in country_cities_dict.items():
+            try:
+                country_db = Countries.objects.get(name=country)
+            except ObjectDoesNotExist:
+                continue
+            except Exception as e:
+                print(e)
+            else:
+                for city in cities:
+                    new_city = Cities(name=city, country=country_db)
+                    new_city.save()
+
+
 
     @staticmethod
     def insert_play_zones_in_db():
