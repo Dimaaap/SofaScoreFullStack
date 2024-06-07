@@ -5,6 +5,7 @@ import json
 import requests
 from typing import Mapping, Iterable, Union
 from bs4 import BeautifulSoup
+from pprint import pprint
 
 from .exceptions import TextPropertyNotSupportedError
 from .data_storage import DataStorage
@@ -181,19 +182,47 @@ class ParseCities:
 
 
 class ParseStadiums:
-    BASE_URL = "https://en.wikipedia.org/wiki/List_of_association_football_stadiums_by_capacity"
+    BASE_URL = "https://en.wikipedia.org/wiki/List_of_association_football_stadiums_by_country"
 
     def __init__(self):
-        req = requests.get(self.BASE_URL)
-        self.parse_stadiums_data(req.text)
+        self.req = requests.get(self.BASE_URL).text
+        self.parse_stadiums_data(self.req)
 
     def parse_stadiums_data(self, request_text: str):
+        all_stadiums_data = []
         soup = BeautifulSoup(request_text, "lxml")
-        stadiums_table = soup.find("table", {"class": "wikitable"})
+        all_tables = soup.find_all("table", {"class": "sortable"})
+        for table in all_tables:
+            table_body = table.find("tbody")
+            table_rows = table_body.find_all("tr")
+            for row in table_rows:
+                if not row.find("td"):
+                    continue
+                else:
+                    all_row_cells = row.find_all("td")
+                    if all_row_cells[0].text.isdigit():
+                        stadium_title_pos = 1
+                    else:
+                        stadium_title_pos = 0
+                    stadium_title = all_row_cells[stadium_title_pos].text
+                    try:
+                        stadium_capacity = int(all_row_cells[stadium_title_pos + 1].text)
+                    except ValueError:
+                        try:
+                            stadium_capacity = all_row_cells[stadium_title_pos + 2].text
+                        except IndexError:
+                            stadium_capacity = None
+                        stadium_location = all_row_cells[stadium_title_pos + 1].text
+                    else:
+                        try:
+                            stadium_location = all_row_cells[stadium_title_pos + 2].text
+                        except IndexError:
+                            stadium_location = None
+                    stadium_data = {stadium_title: (stadium_location, stadium_capacity)}
+                    all_stadiums_data.append(stadium_data)
+        pprint(all_stadiums_data, indent=2)
 
 
 
 def main():
-    a = ParseCities()
-    cities = a.parse_page(a.res)
-    return cities
+    a = ParseStadiums()
