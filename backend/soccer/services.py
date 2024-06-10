@@ -2,14 +2,25 @@ import json
 
 from django.core.exceptions import ObjectDoesNotExist
 
-from .models import LeaguesModels, PlayZones, Rating, Countries, Cities
+from .models import LeaguesModels, PlayZones, Rating, Countries, Cities, Stadiums
 from .data_storage import DataStorage
-from .parser import main
+from .parser import main, ParseStadiums
 
 data_storage = DataStorage()
 
 
 class InserterInDb:
+
+    @staticmethod
+    def insert_stadiums_in_db():
+        stadiums = ParseStadiums()
+        for stadium in stadiums.all_stadiums_data:
+            list_stadium = list(*stadium.items())
+            stadium_title, stadium_info = list_stadium
+            int_stadium_capacity = convert_float_string_into_int(stadium_info.capacity)
+            new_stadium = Stadiums.objects.create(name=stadium_title,
+                                                  capacity=int_stadium_capacity, city=stadium_info.location)
+            new_stadium.save()
 
     @staticmethod
     def insert_countries_in_db():
@@ -39,8 +50,6 @@ class InserterInDb:
                 for city in cities:
                     new_city = Cities(name=city, country=country_db)
                     new_city.save()
-
-
 
     @staticmethod
     def insert_play_zones_in_db():
@@ -88,3 +97,12 @@ class InserterInDb:
         for rating in data_storage.RATINGS:
             new_rating = Rating(**rating)
             new_rating.save()
+
+
+def convert_float_string_into_int(convert_string: str) -> int:
+    number_string_clean = convert_string.replace(",", "")
+    try:
+        number_int = int(number_string_clean)
+    except ValueError:
+        number_int = 0
+    return number_int

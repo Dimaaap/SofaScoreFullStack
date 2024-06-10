@@ -6,6 +6,11 @@ import "./OtherLeagues.css"
 const OtherLeagues = () => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [country, setCountry] = useState("");
+  
+  const changeCountry = (event) => {
+    setCountry(event.target.value);
+  }
 
   useEffect(() => {
     async function fetchData(){
@@ -23,6 +28,8 @@ const OtherLeagues = () => {
     }
     fetchData()
   }, [])
+
+  const filteredData = data ? data.filter(item => item.play_zone_title.toLowerCase().includes(country.toLowerCase())): [];
     return (
     <div className="other-leagues">
       <h4 class="title">
@@ -36,10 +43,12 @@ const OtherLeagues = () => {
             <input type="search" 
             name="find" 
             placeholder="Фільтр"
+            value={country}
+            onChange={changeCountry}
             className="searchField" />
         </div>
         <ul className="all-leagues">
-          {data && data.map(item => (
+          {filteredData.map(item => (
             <li key={item.id} className="playzone">
               <span className="zone-icon">
                 <img src={item.play_zone_area_image} className="icon" />

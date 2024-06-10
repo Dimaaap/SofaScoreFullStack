@@ -1,0 +1,21 @@
+.footer {
+    text-align: left;
+    justify-content: left;
+}
+
+.top-footer {
+    padding: 0.5% 7%;
+    background: #2c3ec4;
+    color: white;
+    font-weight: 500;
+}
+
+.top-footer h6 {
+    font-size: 1.1rem;
+}
+
+.top-footer p {
+    width: 50%;
+    font-size: 0.9rem;
+    margin-top: -3%;
+}

@@ -1,11 +1,12 @@
 import aiohttp
 import asyncio
 import json
+import re
+from collections import namedtuple
 
 import requests
 from typing import Mapping, Iterable, Union
-from bs4 import BeautifulSoup
-from pprint import pprint
+from bs4 import element, BeautifulSoup
 
 from .exceptions import TextPropertyNotSupportedError
 from .data_storage import DataStorage
@@ -183,15 +184,14 @@ class ParseCities:
 
 class ParseStadiums:
     BASE_URL = "https://en.wikipedia.org/wiki/List_of_association_football_stadiums_by_country"
+    all_stadiums_data = []
+    Stadium = namedtuple("Stadium", ["location", "capacity"])
 
     def __init__(self):
         self.req = requests.get(self.BASE_URL).text
         self.parse_stadiums_data(self.req)
 
-    def parse_stadiums_data(self, request_text: str):
-        all_stadiums_data = []
-        soup = BeautifulSoup(request_text, "lxml")
-        all_tables = soup.find_all("table", {"class": "sortable"})
+    def parse_each_table(self, all_tables: element.ResultSet):
         for table in all_tables:
             table_body = table.find("tbody")
             table_rows = table_body.find_all("tr")
@@ -200,29 +200,68 @@ class ParseStadiums:
                     continue
                 else:
                     all_row_cells = row.find_all("td")
-                    if all_row_cells[0].text.isdigit():
-                        stadium_title_pos = 1
-                    else:
-                        stadium_title_pos = 0
-                    stadium_title = all_row_cells[stadium_title_pos].text
-                    try:
-                        stadium_capacity = int(all_row_cells[stadium_title_pos + 1].text)
-                    except ValueError:
-                        try:
-                            stadium_capacity = all_row_cells[stadium_title_pos + 2].text
-                        except IndexError:
-                            stadium_capacity = None
-                        stadium_location = all_row_cells[stadium_title_pos + 1].text
-                    else:
-                        try:
-                            stadium_location = all_row_cells[stadium_title_pos + 2].text
-                        except IndexError:
-                            stadium_location = None
-                    stadium_data = {stadium_title: (stadium_location, stadium_capacity)}
-                    all_stadiums_data.append(stadium_data)
-        pprint(all_stadiums_data, indent=2)
+                    stadium_data = self.__division_capacity_and_location(all_row_cells)
+                    self.all_stadiums_data.append(stadium_data)
+        return self.all_stadiums_data
 
+    def __division_capacity_and_location(self, row_cells: element.ResultSet):
+        if row_cells[0].text.isdigit():
+            stadium_title_pos = 1
+        else:
+            stadium_title_pos = 0
+        stadium_title = row_cells[stadium_title_pos].text
+        try:
+            stadium_capacity = self.__try_convert_stadium_capacity_to_int(row_cells[stadium_title_pos + 1].text)
+        except ValueError:
+            try:
+                stadium_capacity = self.__try_get_list_element(row_cells, stadium_title_pos + 2)
+            except IndexError:
+                stadium_capacity = None
+            stadium_location = row_cells[stadium_title_pos + 1].text
+        else:
+            try:
+                stadium_location = self.__try_get_list_element(row_cells, stadium_title_pos + 2)
+            except IndexError:
+                stadium_location = None
+
+        if not self.filter_number(str(stadium_capacity)) and self.filter_number(str(stadium_location)):
+            stadium_location, stadium_capacity = stadium_capacity, stadium_location
+
+        new_stadium = self.Stadium(self.clear_text(self.remove_hyperlinks(str(stadium_location))),
+                                   self.clear_text(self.remove_hyperlinks(str(stadium_capacity))))
+        stadium_data = {
+            self.clear_text(self.remove_hyperlinks(stadium_title)):
+                new_stadium
+        }
+        return stadium_data
+
+    def filter_number(self, text: str) -> bool:
+        try:
+            return re.search(r"^\d{1,3}(?:,\d{3})*$", text) is not None
+        except TypeError:
+            return True
+
+    def __try_convert_stadium_capacity_to_int(self, capacity_field: str) -> str:
+        stadium_capacity = int(capacity_field)
+        return stadium_capacity
+
+    def __try_get_list_element(self, row_cells, stadium_title_position: int) -> str:
+        stadium_capacity = str(row_cells[stadium_title_position].text)
+        return stadium_capacity
+
+    def parse_stadiums_data(self, request_text: str):
+        soup = BeautifulSoup(request_text, "lxml")
+        all_tables = soup.find_all("table", {"class": "sortable"})
+        self.parse_each_table(all_tables)
+
+    def clear_text(self, text: str):
+        return text.strip()
+
+    def remove_hyperlinks(self, text: str):
+        return re.sub(r"\[.*?\]", '', text)
 
 
 def main():
     a = ParseStadiums()
+    print(a.all_stadiums_data)
+

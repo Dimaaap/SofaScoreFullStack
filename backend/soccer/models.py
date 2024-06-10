@@ -50,7 +50,7 @@ class Stadiums(models.Model):
     id = models.UUIDField(primary_key=True, editable=False, default=uuid4)
     name = models.CharField(max_length=150, default="", blank=True)
     capacity = models.IntegerField(default=0, blank=True)
-    city = models.ForeignKey(Cities, on_delete=models.CASCADE, default="", blank=True)
+    city = models.CharField(default="", blank=True, max_length=150)
 
     def __str__(self):
         return f"{self.name}{self.capacity}"
