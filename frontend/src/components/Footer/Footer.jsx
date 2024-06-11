@@ -1,5 +1,7 @@
 import React from 'react'
 import "./Footer.css"
+import { FaFacebook, FaTiktok } from "react-icons/fa"
+import { FaXTwitter, FaInstagram } from 'react-icons/fa6'
 
 const Footer = () => {
   return (
@@ -20,12 +22,13 @@ const Footer = () => {
             </p>
         </div>
         <div className="middle-footer">
-            <div className="left-section">
+            <div className="left-section footer-section">
                 <div className="logo">
                     <a className="main-logo">
                         <svg width="158" 
                         height="24" 
-                        viewBox="0 0 158 24">
+                        viewBox="0 0 158 24"
+                        fill={"white"}>
                             <g w="158" h="24">
                                 <path fill="none" 
                                 d="M0 0h72v12H0z">
@@ -41,7 +44,104 @@ const Footer = () => {
                         </svg>
                     </a>
                 </div>
+                <div className="links-list">
+                    <a href="#" className="social-link" id="facebook">
+                        <FaFacebook size={25} color={"white"} />
+                    </a>
+                    <a href="https://x.com/SofaScoreINT" className="social-link" id="x" style={{cursor: 'pointer'}}>
+                        <FaXTwitter size={25} color={"white"} />
+                    </a>
+                    <a href="https://www.instagram.com/sofascore_official/" className="social-link" id="instagram">
+                        <FaInstagram size={25} color={"white"} />
+                    </a>
+                    <a href="https://www.tiktok.com/@sofascore_official" className="social-link" id="tik-tok">
+                        <FaTiktok size={25} color={"white"} />
+                    </a>
+                </div>
             </div>
+            <div className="center-section footer-section">
+                <div className="links-list">
+                    <h6 className="section-title">
+                        Юридичні Документи
+                    </h6>
+                    <ul className="section-ul">
+                        <li className="point">
+                            <a href="#" className="ul-link">
+                                ПОЛІТИКА КОНФІДЕНЦІЙНОСТІ
+                            </a>
+                        </li>
+                        <li className="point">
+                            <a href="#" className="ul-link">
+                                ПОЛІТИКА COOKIE
+                            </a>
+                        </li>
+                        <li className="point">
+                            <a href="#" className="ul-link">
+                                ПРАВИЛА & УМОВИ
+                            </a>
+                        </li>
+                        <li className="point">
+                            <a href="#" className="ul-link">
+                                GDPR & ЖУРНАЛІСТИКА
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div className="right-section footer-section">
+                <div className="links-list">
+                    <h6 classaName="points-title">
+                        Sofascore.com
+                    </h6>
+                    <ul className="section-ul">
+                        <li className="point">
+                            <a className="ul-link" href="#">
+                                ЗВОРОТНІЙ ЗВ'ЯЗОК
+                            </a>
+                        </li>
+                        <li className="point">
+                            <a className="ul-link" href="#">
+                                РЕКЛАМА
+                            </a>
+                        </li>
+                        <li className="point">
+                            <a className="ul-link" href="#">
+                                КОНТАКТ
+                            </a>
+                        </li>
+                        <li className="point">
+                            <a className="ul-link" href="#">
+                                SOFASCORE LIVESCORE ДОДАТОК
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div className="warning-info">
+                <svg width="24" 
+                height="24" 
+                viewBox="0 0 24 24" 
+                fill="white">
+                    <g fill="white" 
+                    fill-rule="nonzero" 
+                    mr="sm">
+                        <path 
+                        d="M12 3.5c4.69 0 8.5 3.81 8.5 8.5 0 4.69-3.81 8.5-8.5 8.5-4.69 0-8.5-3.81-8.5-8.5 0-4.69 3.81-8.5 8.5-8.5zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z">
+                            </path>
+                        <path 
+                        d="M10.1 13.42c0-.67.28-1.22 1.01-1.56-.62-.36-.84-.78-.84-1.41 0-1.12.98-1.74 2.21-1.74s2.21.62 2.21 1.74c0 .61-.22 1.03-.84 1.38.72.33 1.01.92 1.01 1.59 0 1.21-1.06 1.86-2.38 1.86-1.4 0-2.38-.66-2.38-1.86zm3.56-.09c0-.58-.5-.94-1.19-.94s-1.19.36-1.19.94.42.92 1.19.92 1.19-.33 1.19-.92zm-.17-2.79c0-.53-.39-.79-1.02-.79s-1.02.26-1.02.79c0 .56.46.82 1.02.82.52 0 1.02-.26 1.02-.82zM15.36 11.47c0-.05.04-.09.09-.09h1.46V9.74c0-.05.04-.09.09-.09h.92c.05 0 .09.04.09.09v1.64h1.45c.05 0 .09.04.09.09v.92c0 .05-.04.09-.09.09h-1.45v1.64c0 .05-.04.09-.09.09H17a.09.09 0 0 1-.09-.09v-1.64h-1.46a.09.09 0 0 1-.09-.09v-.92zm-9.89 2.74c0-.05.04-.09.09-.09h1.46v-3.35H5.56a.09.09 0 0 1-.09-.09v-.9c0-.05.04-.09.09-.09h1.06c.25 0 .41-.13.41-.41v-.39c0-.05.04-.09.09-.09h.96c.05 0 .09.04.09.09v5.23h1.44c.05 0 .09.04.09.09v.9c0 .05-.04.09-.09.09H5.56a.09.09 0 0 1-.09-.09v-.9z">
+                        </path>
+                    </g>
+                </svg>
+                <span className="title">
+                    "Коли радіть закінчуєтся - зупинись!"
+                </span>
+            </div>
+        </div>
+        <div className="bottom-footer">
+            <small className="rights-info">
+                &copy; 2024 Sofascore - Всі права захищені.
+            </small>
         </div>
     </footer>
   )
