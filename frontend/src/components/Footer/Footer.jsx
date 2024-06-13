@@ -2,6 +2,7 @@ import React from 'react'
 import "./Footer.css"
 import { FaFacebook, FaTiktok } from "react-icons/fa"
 import { FaXTwitter, FaInstagram } from 'react-icons/fa6'
+import { Link } from "react-router-dom"
 
 const Footer = () => {
   return (
@@ -81,9 +82,9 @@ const Footer = () => {
                             </a>
                         </li>
                         <li className="point">
-                            <a href="#" className="ul-link">
+                            <Link to="/gdpr-and-journalism" className="ul-link">
                                 GDPR & ЖУРНАЛІСТИКА
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>

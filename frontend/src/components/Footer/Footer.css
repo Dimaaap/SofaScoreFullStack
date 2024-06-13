@@ -72,6 +72,15 @@
     list-style-type: none;
 }
 
+.middle-footer .center-section ul li a {
+    display: inline-block;
+    width: 100%;
+}
+
+.middle-footer .center-section ul li a:hover {
+    color: rgb(221, 221, 221);
+}
+
 .middle-footer ul li {
     padding-top: 1.5%;
     padding-bottom: 1.5%;

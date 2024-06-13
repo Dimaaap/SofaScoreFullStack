@@ -1,0 +1,35 @@
+.main-content {
+    margin-top: 2%;
+    padding-top: 1%;
+    width: 80%;
+    text-align: left;
+    margin-left: 10%;
+    -webkit-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75); 
+    box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.main-content p {
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.main-content .paragraph-title {
+    font-size: 1.2rem;
+}
+
+.main-content .numeric-paragraph {
+    margin-left: 5%;
+}
+
+.main-content .inner,
+.main-content .inner-paragraph {
+    margin-left: 10%;
+}
+
+.article-footer {
+    padding-bottom: 1%;
+}
