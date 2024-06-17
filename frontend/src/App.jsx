@@ -6,6 +6,8 @@ import Tennis from './pages/Tennis/Tennis';
 import Footer from './components/Footer/Footer';
 import GDPR from './pages/GDPR/GDPR.jsx';
 import Terms from "./pages/Terms/Terms.jsx";
+import Cookies from "./pages/Cookies/Cookies.jsx"
+import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy.jsx';
 
 function App() {
 
@@ -17,6 +19,8 @@ function App() {
         <Route path="/tennis" element={<Tennis/>} />
         <Route path="/gdpr-and-journalism" element={<GDPR />} />
         <Route path="/terms-and-conditions" element={<Terms />} />
+        <Route path="/cookies-policy" element={<Cookies />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
       <Footer />
     </>

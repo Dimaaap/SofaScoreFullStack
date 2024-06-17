@@ -72,9 +72,9 @@ const Footer = () => {
                             </a>
                         </li>
                         <li className="point">
-                            <a href="#" className="ul-link">
+                            <Link to="/cookies-policy" className="ul-link">
                                 ПОЛІТИКА COOKIE
-                            </a>
+                            </Link>
                         </li>
                         <li className="point">
                             <a href="#" className="ul-link">
