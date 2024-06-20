@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import "./Football.css"
 import TopHeader from '../../components/TopHeader/TopHeader'
 import BottomHeader from "../../components/BottomHeader/BottomHeader"
@@ -6,13 +6,18 @@ import MatchCalendar from '../../components/MatchCalendar/MatchCalendar'
 import TopLeages from '../../components/TopLeages/TopLeages'
 import Ratings from '../../components/Ratings/Ratings'
 import OtherLeagues from '../../components/OtherLeagues/OtherLeagues'
+import { ModalContext } from '../../contexts/SigninContext'
+import SignInPopup from '../../components/popups/SignInPopup/SignInPopup'
 
 const Football = () => {
+
+    const { isModalOpen, toggleModal } = useContext(ModalContext);
   return (
     <>
         <TopHeader />
         <BottomHeader />
         <div className="body">
+            { isModalOpen && <SignInPopup /> }
             <small>
                 <b>
                     Рахунок футбольних матчів у реальному часі

@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
 import "./TopHeader.css";
 import logo from "../../assets/sofa_score_logo.png"
 import player from "../../assets/player.svg"
+import { ModalContext } from '../../contexts/SigninContext';
 import { FaBell } from "react-icons/fa";
 
 const TopHeader = () => {
+
+  const { toggleModal } = useContext(ModalContext);
+
   return (
     <div className="top-header">
       <div className="container">
@@ -47,7 +51,8 @@ const TopHeader = () => {
                   ОБРАНЕ
                   <FaBell color="white" />
                 </li>
-                <li className="item">
+                <li className="item" id="player-li" 
+                onClick={toggleModal}>
                   <img className="player-icon" src={player} />
                 </li>
             </ul>

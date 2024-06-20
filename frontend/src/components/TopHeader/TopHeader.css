@@ -6,6 +6,11 @@
     padding-right: 100px;
     height: 80px;
     overflow:hidden;
+    z-index: 2
+}
+
+.top-header #player-li {
+  z-index: 3;
 }
 
 .container {

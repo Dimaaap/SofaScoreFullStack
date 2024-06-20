@@ -8,11 +8,12 @@ import GDPR from './pages/GDPR/GDPR.jsx';
 import Terms from "./pages/Terms/Terms.jsx";
 import Cookies from "./pages/Cookies/Cookies.jsx"
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy.jsx';
+import { ModalProvider } from './contexts/SigninContext.jsx';
 
 function App() {
 
   return (
-    <>
+    <ModalProvider>
       <Routes>
         <Route path="/" element={<Football />} />
         <Route path="/basketball" element={<Basketball />} />
@@ -23,7 +24,7 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
       <Footer />
-    </>
+    </ModalProvider>
   )
 }
 

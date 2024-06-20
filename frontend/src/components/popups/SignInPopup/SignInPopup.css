@@ -1,0 +1,28 @@
+#signin-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+#signin-popup .popup-body {
+    background: white;
+    z-index: 4;
+    width: 80%;
+    border-radius: 10px;
+    display: flex;
+}
+
+#signin-popup .popup-body .left-section {
+    flex: 1;
+}
+
+#signin-popup .popup-body .right-section {
+    flex: 1;
+}

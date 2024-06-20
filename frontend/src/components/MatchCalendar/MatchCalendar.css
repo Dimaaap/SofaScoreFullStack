@@ -10,6 +10,8 @@
     padding-right: 5%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 200px;
+    z-index: 1;
+    position: relative;
   }
   
   .calendar-header {
@@ -43,7 +45,8 @@
   .days-of-week {
     display: flex;
     width: 115%;
-    background-color: #F5F5F5;
+    /*background-color: #F5F5F5;*/
+    background-color: transparent;
     color: darkgray;
     font-weight: 500;
     font-size: 0.8rem;
@@ -70,7 +73,7 @@
     font-size: 0.8rem;
     align-items: center;
     justify-content: center;
-    background-color: #f0f0f0;
+    background-color: transparent;
     transition: background-color 0.3s ease, color 0.3s ease;
     border-radius: 50%;
     margin: 5px 0;
@@ -78,11 +81,13 @@
   }
   
   .day.current-month {
-    background-color: #fff;
+    /*background-color: #fff;*/
+    background-color: transparent;
   }
   
   .day.other-month {
-    background-color: white;
+    /*background-color: white;*/
+    background-color: transparent;
     cursor: auto;
   }
 

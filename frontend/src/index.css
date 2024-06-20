@@ -5,6 +5,14 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  position: relative;
+}
+
+header {
+  z-index: 2;
+}
+
 .container {
   overflow-y: auto !important;
 }

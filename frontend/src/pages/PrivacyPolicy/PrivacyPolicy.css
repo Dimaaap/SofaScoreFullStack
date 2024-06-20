@@ -1,0 +1,48 @@
+.paragraph-ul {
+    margin-left: 3%;
+}
+
+.paragraph-table {
+    border-collapse: collapse;
+    margin-left: 4.5%;
+    border-radius: 20%;
+}
+
+.paragraph-table th {
+    font-weight: 600;
+}
+
+.paragraph-table th,
+.paragraph-table td {
+    padding: 1%;
+    border: 1px solid gray;
+    text-align: center;
+}
+
+.paragraph-table th {
+    background-color: #edf1f6;
+}
+
+.paragraph-table tbody tr:nth-child(even){
+    background-color: #edf1f6;
+}
+
+.paragraph-table tbody tr td:first-child {
+    width: 40%;
+}
+
+.paragraph-table tbody tr td:nth-child(2){
+    width: 20%;
+}
+
+.paragraph-table tbody tr td:last-child {
+    width: 40%;
+}
+
+#glossary-table {
+    margin-left: -1%;
+}
+
+#glossary-table tbody tr td:first-child {
+    width: 20%;
+}
