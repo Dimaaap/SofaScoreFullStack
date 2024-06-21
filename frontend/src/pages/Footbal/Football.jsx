@@ -24,7 +24,7 @@ const Football = () => {
                     і розклад на сьогодні
                 </b>
             </small>
-            <div class="container" id="main-container">
+            <div className="container" id="main-container">
                 <div className="page-content">
                     <div className="section left-page" id="left-section">
                         <div className="calendar-section">

@@ -39,7 +39,7 @@ const TopHeader = () => {
                     ПАДІННЯ КОЕФІЦІЄНТІВ
                     <svg width="24" 
                     height="24" 
-                    viewBox="0 0 24 24" class="li-icon">
+                    viewBox="0 0 24 24" className="li-icon">
                       <g fillRule="evenodd" ml="xs">
                         <path fill="white" 
                         d="M16 18L18.29 15.71 13.41 10.83 9.41 14.83 2 7.41 3.41 6 9.41 12 13.41 8 19.71 14.29 22 12 22 18z">
