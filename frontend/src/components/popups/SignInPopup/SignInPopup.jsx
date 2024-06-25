@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import "./SignInPopup.css";
-import { FcGoogle } from "react-icons/fc";
-import { FaApple } from "react-icons/fa";
+import { ModalContext } from '../../../contexts/SigninContext.jsx';
 import { FaFacebook } from 'react-icons/fa6';
-import { GoogleLogin } from '@react-oauth/google';
 import FacebookLogin from "react-facebook-login";
+import { GoogleButton } from "../../GoogleButton/GoogleButton.jsx";
 
 const SignInPopup = () => {
+
+    const { toggleModal } = useContext(ModalContext)
 
     const repsonseMessage = (response) => {
         console.log(response);
@@ -23,7 +24,7 @@ const SignInPopup = () => {
         }
         console.log(response)
     }
-
+    
   return (
     <>
         <div className="modal-overlay">
@@ -34,19 +35,19 @@ const SignInPopup = () => {
                             Ввійти в Sofascore
                         </h2>
                         <div className="btns-container">
-                            <GoogleLogin onSuccess={repsonseMessage} 
-                            onError={errorMessage} />
+                            <GoogleButton />
                             <FacebookLogin 
                             buttonStyle={{padding: "6px"}}
                             appId="776548437958234"
                             autoLoad={false}
                             fields="name,email,picture"
+                            cssClass="hidden-btn"
                             callback={handleFacebookCallback}/>
-                            <btn className="sign-with-btn">
-                                <FaApple size={23} /><span>
-                                    Зареєструватись із Apple
-                                </span>
-                            </btn>
+                            <button className="sign-with-btn"
+                            onClick={() => document.querySelector('.hidden-btn').click()}>
+                                <FaFacebook size={20} />
+                                <span>Увійти за допомогою Facebook</span>
+                            </button>
                         </div>
                         <small className="notice-info">
                             Реєструючись, ви погоджуєтесь із 
@@ -62,12 +63,15 @@ const SignInPopup = () => {
                         </small>
                     </div>
                     <div className="right-section">
-                        <iframe width="100%" height="100%"
-                        frameBorder={"0"} 
-                        allow="accelerometr; autoplay; 
-                        encrypted-media; gyroscope; picture-in-picrure">
-
-                        </iframe>
+                        <video className="sofa-score-presented-video"
+                            loop playsInline autoPlay preload='none'
+                            disablePictureInPicture>
+                                <source src="https://www.sofascore.com/static/videos/sports.mp4"></source>
+                        </video>
+                        <button type="button" className="close-modal-btn"
+                        onClick={ toggleModal }>
+                            ЗАКРИТИ
+                        </button>
                     </div>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import "./TopHeader.css";
 import logo from "../../assets/sofa_score_logo.png"
 import player from "../../assets/player.svg"
