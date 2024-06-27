@@ -4,5 +4,5 @@ from .views import *
 
 
 urlpatterns = [
-    path("google", RegisterNewUserGoogle.as_view(), name="google_login"),
+    path("google/", GoogleLogin.as_view(), name="google_login"),
 ]

@@ -4,10 +4,34 @@
   import { FcGoogle } from "react-icons/fc";
 
   export const GoogleButton = () => {
-      const login = useGoogleLogin({
-          onSuccess: tokenResponse => console.log(tokenResponse),
-          onError: error => console.log(error),
-      });
+    const login = useGoogleLogin({
+      onSuccess: async (tokenResponse) => {
+          const accessToken = tokenResponse.access_token;
+
+          try {
+              const response = await fetch('http://127.0.0.1:8000/auth/google/', {
+                  method: 'POST',
+                  headers: {
+                      'Content-Type': 'application/json',
+                  },
+                  body: JSON.stringify({ access_token: accessToken }),
+              });
+
+              if (response.ok) {
+                  const data = await response.json();
+                  console.log(data); 
+              } else {
+                  console.error('Помилка при спробі авторизації через Google:', response.statusText);
+              }
+          } catch (error) {
+              console.error('Помилка при взаємодії з сервером:', error);
+          }
+      },
+      onError: (error) => {
+          console.error('Помилка при авторизації через Google:', error);
+      },
+      scope: "profile email"
+  });
 
     return (
       <button

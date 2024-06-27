@@ -1,43 +1,36 @@
+from django.conf import settings
+from django.contrib.auth import get_user_model
+from django.core.exceptions import ObjectDoesNotExist
+
+from rest_framework import permissions
+from rest_framework.response import Response
+from rest_framework.views import APIView
 import requests
 
-from rest_framework.views import APIView
-from rest_framework.response import Response
-from rest_framework import status
-from google.oauth2 import id_token
-from django.conf import settings
-from django.contrib.auth.models import User
-from django.core.exceptions import ObjectDoesNotExist
-from rest_framework_simplejwt.tokens import RefreshToken
 
-from google.auth.transport import requests
+User = get_user_model()
 
 
-class RegisterNewUserGoogle(APIView):
+class GoogleLogin(APIView):
+    permission_classes = (permissions.AllowAny, )
 
     def post(self, request):
-        token = request.data.get("access_token")
-        if not token:
-            return Response({"error": "Missing access token"}, status=status.HTTP_400_BAD_REQUEST)
-        try:
-            id_info = id_token.verify_oauth2_token(token, requests.Request(), settings.SOCIAL_AUTH_GOOGLE_OAUTH2_KEY)
+        access_token = request.data.get("access_token")
+        response = requests.get(f"https://www.googleapis.com/oauth2/v1/userinfo?access_token={access_token}")
 
-            if id_info["iss"] not in ['accounts.google.com', 'https://accounts.google.com']:
-                raise ValueError("Wrong issuer.")
+        if response.status_code == 200:
+            data = response.json()
+            print(data)
+            email = data.get('email')
+            google_id = data.get("id")
 
             try:
-                user = User.objects.get(email=id_info["email"])
+                user = User.objects.get(email=email)
             except ObjectDoesNotExist:
-                user = User.objects.create(
-                    username=id_info["email"],
-                    email=id_info["email"],
-                    first_name=id_info.get("given_name", ""),
-                    last_name=id_info.get("family_name", "")
-                )
-                user.save()
-            refresh = RefreshToken.for_user(user)
-            return Response({
-                "refresh": str(refresh),
-                "access": str(refresh.access_token)
-            })
-        except ValueError:
-            return Response({"error": "Invalid token"}, status=status.HTTP_400_BAD_REQUEST)
+                user = User.objects.create_user(email=email, username=email)
+
+            user.google_id = google_id
+            user.save()
+            return Response({'message': 'Success user Google auth', 'user': user.username})
+        else:
+            return Response({'error': 'Failed user Google auth'}, status=response.status_code)
