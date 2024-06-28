@@ -1,11 +1,29 @@
 import json
-import requests
+import datetime
+
+from django.core.exceptions import ObjectDoesNotExist
+
+from .models import PlayZones
 
 
 def parse_leagues_dict():
     with open("tournaments.json", "r") as tournaments:
         leagues = json.load(tournaments)
     return leagues
+
+
+def try_get_play_zone_id(league: dict):
+    try:
+        play_zone_id = PlayZones.objects.get(play_zone_title=league.get("category").get("name"))
+    except ObjectDoesNotExist:
+        play_zone_id = PlayZones.objects.first()
+        print(league.get("category").get("name"))
+    return play_zone_id.id
+
+
+def convert_unix_timestamp_to_date_object(unix_time: int) -> datetime.date:
+    current_date = datetime.date.fromtimestamp(unix_time)
+    return current_date
 
 
 def get_data_from_leagues_dict():
@@ -15,6 +33,7 @@ def get_data_from_leagues_dict():
         league = league.get("uniqueTournament")
         new_league = {
             "league_title": league.get("name", ""),
+            "play_zone_id": try_get_play_zone_id(league),
             "slug": league.get("slug", ""),
             "primary_color_hex": league.get("primaryColorHex", ""),
             "secondary_color_hex": league.get("secondaryColorHex", ""),
@@ -26,8 +45,8 @@ def get_data_from_leagues_dict():
             "has_groups": league.get("hasGroups", False),
             "has_playoff_series": league.get("hasPlayoffSeries", False),
             "has_disable_home_away_standings": league.get("hasDisableHomeAwayStandings", False),
-            "start_date": league.get("startDateTimestamp", 0),
-            "end_date": league.get("endDateTimestamp", 0)
+            "start_date": convert_unix_timestamp_to_date_object(int(league.get("startDateTimestamp", "0"))),
+            "end_date": convert_unix_timestamp_to_date_object(int(league.get("endDateTimestamp", "0")))
         }
         formatted_leagues.append(new_league)
     return formatted_leagues

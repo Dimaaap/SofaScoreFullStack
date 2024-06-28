@@ -1,9 +1,12 @@
-  import React from 'react'
+  import React, { useState } from 'react'
   import "./GoogleButton.css";
   import { useGoogleLogin } from '@react-oauth/google';
   import { FcGoogle } from "react-icons/fc";
 
   export const GoogleButton = () => {
+
+    const [authStatus, setAuthStatus] = useState("unathorized");
+
     const login = useGoogleLogin({
       onSuccess: async (tokenResponse) => {
           const accessToken = tokenResponse.access_token;
@@ -19,7 +22,8 @@
 
               if (response.ok) {
                   const data = await response.json();
-                  console.log(data); 
+                  setAuthStatus(data.status);
+                  console.log(authStatus);
               } else {
                   console.error('Помилка при спробі авторизації через Google:', response.statusText);
               }

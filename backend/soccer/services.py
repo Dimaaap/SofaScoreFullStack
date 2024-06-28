@@ -4,6 +4,7 @@ from django.core.exceptions import ObjectDoesNotExist
 
 from .models import LeaguesModels, PlayZones, Rating, Countries, Cities, Stadiums
 from .data_storage import DataStorage
+from .leagues_parser import get_data_from_leagues_dict
 from .parser import main, ParseStadiums
 
 data_storage = DataStorage()
@@ -21,6 +22,13 @@ class InserterInDb:
             new_stadium = Stadiums.objects.create(name=stadium_title,
                                                   capacity=int_stadium_capacity, city=stadium_info.location)
             new_stadium.save()
+
+    @staticmethod
+    def insert_leagues_in_db_from_json():
+        all_leagues = get_data_from_leagues_dict()
+        for league in all_leagues:
+            new_league = LeaguesModels(**league)
+            new_league.save()
 
     @staticmethod
     def insert_countries_in_db():
@@ -72,19 +80,19 @@ class InserterInDb:
 
     @staticmethod
     def insert_leagues_in_db():
-        for league in data_storage.LEAGUES:
+        for league in data_storage.ALL_LEAGUES:
             play_zone = PlayZones.objects.get(id=league["play_zone"])
-            new_league = LeaguesModels(league_title=league["league_title"],
-                                       icon=league["icon"],
-                                       slug=league["slug"],
-                                       primary_color_hex=league["primary_color_hex"],
-                                       secondary_color_hex=league["secondary_color_hex"],
-                                       most_titles=league["most_titles"],
-                                       tier=league["tier"],
-                                       has_standings_groups=league["has_standings_groups"],
-                                       has_rounds=league["has_rounds"],
-                                       has_groups=league["has_groups"],
-                                       has_playoff_series=league["has_playoff_series"],
+            new_league = LeaguesModels(league_title=league.get("league_title", ""),
+                                       icon=league.get("icon", ""),
+                                       slug=league.get("slug", ""),
+                                       primary_color_hex=league.get("primary_color_hex", ""),
+                                       secondary_color_hex=league.get("secondary_color_hex", ""),
+                                       most_titles=league.get("most_titles", 0),
+                                       tier=league.get("tier", 1),
+                                       has_standings_groups=league.get("has_standings_groups", False),
+                                       has_rounds=league.get("has_rounds", False),
+                                       has_groups=league.get("has_groups", False),
+                                       has_playoff_series=league.get("has_playoff_series", False),
                                        has_disable_home_away_standings=league.get("has_disable_home_away_standings",
                                                                                   False),
                                        start_date=league["start_date"],

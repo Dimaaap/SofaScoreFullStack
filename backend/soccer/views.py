@@ -5,7 +5,7 @@ from .serializers import LeaguesSerializer, RatingsSerializer, PlayZonesSerializ
 
 
 class LeaguesList(generics.ListAPIView):
-    queryset = LeaguesModels.objects.all()
+    queryset = LeaguesModels.objects.all()[:15]
     serializer_class = LeaguesSerializer
 
 

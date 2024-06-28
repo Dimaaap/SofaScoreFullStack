@@ -1,3 +1,4 @@
+import os.path
 from pathlib import Path
 
 from decouple import config
@@ -11,7 +12,7 @@ DEBUG = config("DEBUG")
 ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
+    #'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -37,10 +38,13 @@ CORS_ALLOWED_ORIGINS = ["http://localhost:5173",
                         "http://localhost:8000"]
 
 AUTHENTICATION_BACKENDS = (
+    'user_auth.auth_backends.GoogleIDAuthBackend',
     'django.contrib.auth.backends.ModelBackend',
     'allauth.account.auth_backends.AuthenticationBackend',
     'social_core.backends.google.GoogleOAuth2',
 )
+
+AUTH_USER_MODEL = "user_auth.CustomUser"
 
 SOCIALACCOUNT_PROVIDERS = {
     "google": {
@@ -134,6 +138,9 @@ USE_I18N = True
 USE_TZ = True
 
 STATIC_URL = 'static/'
+
+MEDIA_URL = "/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 GEO_DB_API_KEY = config("GEO_DB_API_KEY")
 FOOTBALL_DATA_API_KEY = config("FOOTBALL_DATA_API_KEY")

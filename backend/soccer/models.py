@@ -7,7 +7,7 @@ from .mixins import SubscribersMixin
 
 class PlayZones(models.Model):
     id = models.IntegerField(primary_key=True, editable=False)
-    play_zone_title = models.CharField(max_length=50, default="")
+    play_zone_title = models.CharField(max_length=100, default="")
     play_zone_area_image = models.URLField(max_length=255, default="")
 
     def __str__(self):
@@ -105,8 +105,8 @@ class LeaguesModels(models.Model, SubscribersMixin):
     lower_divisions = models.ManyToManyField("self", blank=True, symmetrical=False, related_name="lower_leagues")
     similar_divisions = models.ManyToManyField("self", blank=True, symmetrical=False, related_name="similar_league")
     icon = models.URLField(max_length=255, default="")
-    start_date = models.DateTimeField(blank=True, null=True)
-    end_date = models.DateTimeField(blank=True, null=True)
+    start_date = models.DateField(blank=True, null=True)
+    end_date = models.DateField(blank=True, null=True)
     play_zone = models.ForeignKey(PlayZones, on_delete=models.CASCADE, default="")
 
     def __str__(self):
