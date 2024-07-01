@@ -4,8 +4,12 @@ import logo from "../../assets/sofa_score_logo.png"
 import player from "../../assets/player.svg"
 import { ModalContext } from '../../contexts/SigninContext';
 import { FaBell } from "react-icons/fa";
+import { AuthContext } from '../../contexts/AuthContext';
+import UserAvatar from "../../components/UserAvatar/UserAvatar.jsx"
 
 const TopHeader = () => {
+
+  const { authStatus } = useContext(AuthContext);
 
   const { toggleModal } = useContext(ModalContext);
 
@@ -53,7 +57,12 @@ const TopHeader = () => {
                 </li>
                 <li className="item" id="player-li" 
                 onClick={toggleModal}>
-                  <img className="player-icon" src={player} />
+                  { 
+                  authStatus === "authorized" ? 
+                  <UserAvatar /> : 
+                  <img className="player-icon" src={player} /> 
+                  }
+                  
                 </li>
             </ul>
         </div>
