@@ -1,17 +1,19 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import "./TopHeader.css";
 import logo from "../../assets/sofa_score_logo.png"
 import player from "../../assets/player.svg"
 import { ModalContext } from '../../contexts/SigninContext';
 import { FaBell } from "react-icons/fa";
 import { AuthContext } from '../../contexts/AuthContext';
-import UserAvatar from "../../components/UserAvatar/UserAvatar.jsx"
+import UserAvatar from "../../components/UserAvatar/UserAvatar.jsx";
+import { LogoutContext } from '../../contexts/LogoutContext.jsx';
 
 const TopHeader = () => {
 
-  const { authStatus } = useContext(AuthContext);
 
+  const { authStatus } = useContext(AuthContext);
   const { toggleModal } = useContext(ModalContext);
+  const { toggleLogout } = useContext(LogoutContext)
 
   return (
     <div className="top-header">
@@ -56,13 +58,14 @@ const TopHeader = () => {
                   <FaBell color="white" />
                 </li>
                 <li className="item" id="player-li" 
-                onClick={toggleModal}>
+                onClick={authStatus === "authorized" ? 
+                  toggleLogout : toggleModal
+                }>
                   { 
                   authStatus === "authorized" ? 
                   <UserAvatar /> : 
                   <img className="player-icon" src={player} /> 
                   }
-                  
                 </li>
             </ul>
         </div>

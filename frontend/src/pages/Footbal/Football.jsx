@@ -8,15 +8,19 @@ import Ratings from '../../components/Ratings/Ratings'
 import OtherLeagues from '../../components/OtherLeagues/OtherLeagues'
 import { ModalContext } from '../../contexts/SigninContext'
 import SignInPopup from '../../components/popups/SignInPopup/SignInPopup'
+import { LogoutContext } from '../../contexts/LogoutContext'
+import LogoutPopup from '../../components/popups/LogoutPopup/LogoutPopup'
 
 const Football = () => {
 
     const { isModalOpen, toggleModal } = useContext(ModalContext);
+    const { isLogoutOpen } = useContext(LogoutContext)
   return (
     <>
         <TopHeader />
         <BottomHeader />
         <div className="body">
+            { isLogoutOpen && <LogoutPopup /> }
             { isModalOpen && <SignInPopup /> }
             <small>
                 <b>

@@ -5,21 +5,28 @@ import player  from "../../../assets/player.svg"
 
 const LogoutPopup = () => {
   return (
-    <div className="logout-popup">
-      <div className="menu-section">
-        <span className="profile-icon">
-            <img src={player} alt="" width={15}
-            height={15}/>
-        </span>
-        Профіль
-      </div>
-      <hr />
-      <div className="menu-section">
-        <span className="profile-icon">
-            <FiLogOut size={15} />
-        </span>
-        Вийти
-      </div>
+    <div id="logout-modal">
+        <div className="modal-content">
+          <div className="modal-row">
+            <span className="img-container">
+              <img src={player} alt="" className="popup-img" 
+              width={23} height={23}/>
+            </span>
+            <span className="text-container">
+              Профіль
+            </span>
+          </div>
+          <hr />
+          <div className="modal-row">
+            <span className="img-container">
+              <FiLogOut size={23} />
+            </span>
+            <span className="text-container">
+              Вийти
+            </span>
+            
+          </div>
+        </div>
     </div>
   )
 }

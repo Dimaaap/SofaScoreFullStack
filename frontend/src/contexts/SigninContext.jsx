@@ -8,7 +8,7 @@ export const ModalProvider = ({ children }) => {
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
   };
-
+  
   return (
     <ModalContext.Provider value={{ isModalOpen, toggleModal }}>
       {children}

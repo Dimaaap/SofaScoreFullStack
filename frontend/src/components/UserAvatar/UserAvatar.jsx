@@ -28,7 +28,7 @@ const UserAvatar = () => {
 
   return (
     <div>
-      <img src={userPicture} alt="" width={25} height={25} 
+      <img src={userPicture} alt="" width={30} height={30} 
       className="user-avatar"/>
     </div>
   )
