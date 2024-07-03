@@ -10,11 +10,15 @@ import { ModalContext } from '../../contexts/SigninContext'
 import SignInPopup from '../../components/popups/SignInPopup/SignInPopup'
 import { LogoutContext } from '../../contexts/LogoutContext'
 import LogoutPopup from '../../components/popups/LogoutPopup/LogoutPopup'
+import { LogoutConfirmContext } from '../../contexts/LogoutConfirmContext'
+import LogoutConfirm from '../../components/popups/LogoutConfirm/LogoutConfirm'
 
 const Football = () => {
 
     const { isModalOpen, toggleModal } = useContext(ModalContext);
     const { isLogoutOpen } = useContext(LogoutContext)
+    const { isLogoutConfirm } = useContext(LogoutConfirmContext);
+
   return (
     <>
         <TopHeader />
@@ -22,6 +26,7 @@ const Football = () => {
         <div className="body">
             { isLogoutOpen && <LogoutPopup /> }
             { isModalOpen && <SignInPopup /> }
+            { isLogoutConfirm && <LogoutConfirm /> }
             <small>
                 <b>
                     Рахунок футбольних матчів у реальному часі

@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import "./LogoutPopup.css";
 import { FiLogOut } from "react-icons/fi";
 import player  from "../../../assets/player.svg"
+import { LogoutConfirmContext } from '../../../contexts/LogoutConfirmContext';
 
 const LogoutPopup = () => {
+
+  const { toggleLogoutConfirm } = useContext(LogoutConfirmContext);
+
+
   return (
     <div id="logout-modal">
         <div className="modal-content">
@@ -21,10 +26,10 @@ const LogoutPopup = () => {
             <span className="img-container">
               <FiLogOut size={23} />
             </span>
-            <span className="text-container">
+            <span className="text-container"
+            onClick={toggleLogoutConfirm}>
               Вийти
-            </span>
-            
+            </span> 
           </div>
         </div>
     </div>

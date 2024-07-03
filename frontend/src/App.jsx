@@ -10,22 +10,25 @@ import Cookies from "./pages/Cookies/Cookies.jsx"
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy.jsx';
 import { ModalProvider } from './contexts/SigninContext.jsx';
 import { LogoutProvider } from './contexts/LogoutContext.jsx';
+import { LogoutConfirmProvider } from './contexts/LogoutConfirmContext.jsx';
 
 function App() {
 
   return (
     <ModalProvider>
       <LogoutProvider>
-        <Routes>
-          <Route path="/" element={<Football />} />
-          <Route path="/basketball" element={<Basketball />} />
-          <Route path="/tennis" element={<Tennis/>} />
-          <Route path="/gdpr-and-journalism" element={<GDPR />} />
-          <Route path="/terms-and-conditions" element={<Terms />} />
-          <Route path="/cookies-policy" element={<Cookies />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        </Routes>
-      <Footer />
+        <LogoutConfirmProvider>
+          <Routes>
+            <Route path="/" element={<Football />} />
+            <Route path="/basketball" element={<Basketball />} />
+            <Route path="/tennis" element={<Tennis/>} />
+            <Route path="/gdpr-and-journalism" element={<GDPR />} />
+            <Route path="/terms-and-conditions" element={<Terms />} />
+            <Route path="/cookies-policy" element={<Cookies />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          </Routes>
+          <Footer />
+        </LogoutConfirmProvider>
       </LogoutProvider>
     </ModalProvider>
   )
