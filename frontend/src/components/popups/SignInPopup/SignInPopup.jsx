@@ -4,6 +4,7 @@ import { ModalContext } from '../../../contexts/SigninContext.jsx';
 import { FaFacebook } from 'react-icons/fa6';
 import FacebookLogin from "react-facebook-login";
 import { GoogleButton } from "../../GoogleButton/GoogleButton.jsx";
+import { FacebookButton }  from "../../FacebookButton/FacebookButton.jsx";
 
 const SignInPopup = () => {
 
@@ -36,18 +37,7 @@ const SignInPopup = () => {
                         </h2>
                         <div className="btns-container">
                             <GoogleButton />
-                            <FacebookLogin 
-                            buttonStyle={{padding: "6px"}}
-                            appId="776548437958234"
-                            autoLoad={false}
-                            fields="name,email,picture"
-                            cssClass="hidden-btn"
-                            callback={handleFacebookCallback}/>
-                            <button className="sign-with-btn"
-                            onClick={() => document.querySelector('.hidden-btn').click()}>
-                                <FaFacebook size={20} />
-                                <span>Увійти за допомогою Facebook</span>
-                            </button>
+                            <FacebookButton />
                         </div>
                         <small className="notice-info">
                             Реєструючись, ви погоджуєтесь із 

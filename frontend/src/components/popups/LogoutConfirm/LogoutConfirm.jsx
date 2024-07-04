@@ -1,10 +1,53 @@
 import React, { useContext } from 'react'
 import { LogoutConfirmContext } from '../../../contexts/LogoutConfirmContext'
 import "./LogoutConfirm.css";
+import { useNavigate } from "react-router-dom";
 
 const LogoutConfirm = () => {
 
     const { toggleLogoutConfirm } = useContext(LogoutConfirmContext);
+
+    const navigate = useNavigate();
+
+    const handleLogoutClick = () => {
+      const csrfToken = getCookie("csrftoken");
+
+      fetch("http://127.0.0.1:8000/auth/logout/", {
+        method: "POST",
+        credentials: "include",
+        headers: {
+          "X-CSRFToken": csrfToken
+        },
+      })
+      .then(response => response.json())
+      .then(data => {
+        if(data.status === 200){
+          localStorage.removeItem("googleId");
+          localStorage.setItem("authStatus", "unauthorized");
+          toggleLogoutConfirm();
+          navigate("/");
+          window.location.reload();
+        } else {
+          console.error("Logout failed: ", data);
+        }
+      })
+      .catch(error => console.error("Error: ", error))
+    };
+
+    const getCookie = (name) => {
+      let cookieValue = null;
+      if (document.cookie && document.cookie !== '') {
+          const cookies = document.cookie.split(';');
+          for (let i = 0; i < cookies.length; i++) {
+              const cookie = cookies[i].trim();
+              if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                  cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                  break;
+              }
+          }
+      }
+      return cookieValue;
+  };
 
   return (
     <div className="modal-overlay">
@@ -22,7 +65,8 @@ const LogoutConfirm = () => {
                     onClick={toggleLogoutConfirm}>
                         ЗАКРИТИ
                     </button>
-                    <button type="button" className="exit-btn" id="exit-btn">
+                    <button type="button" className="exit-btn" id="exit-btn"
+                    onClick={handleLogoutClick}>
                         ВИЙТИ
                     </button>
                 </div>

@@ -13,7 +13,8 @@ class CustomUser(AbstractBaseUser):
     picture = models.ImageField(upload_to="profile_pics/", null=True, blank=True)
     is_active = models.BooleanField(default=True)
     is_admin = models.BooleanField(default=False)
-    google_id = models.CharField(max_length=50, unique=True, default="")
+    google_id = models.CharField(max_length=50, default="", null=True)
+    facebook_id = models.CharField(max_length=50, default="", null=True)
     sign_in_date = models.DateTimeField(auto_now=True)
 
     objects = CustomUserManager()

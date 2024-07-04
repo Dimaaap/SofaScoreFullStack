@@ -34,8 +34,16 @@ INSTALLED_APPS = [
     "user_auth",
 ]
 
+CORS_ALLOW_CREDENTIALS = True
+
+
 CORS_ALLOWED_ORIGINS = ["http://localhost:5173",
                         "http://localhost:8000"]
+
+CORS_ALLOW_HEADERS = [
+    'content-type',
+    'x-csrftoken',
+]
 
 AUTHENTICATION_BACKENDS = (
     'user_auth.auth_backends.GoogleIDAuthBackend',

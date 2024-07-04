@@ -3,10 +3,12 @@
   import { useGoogleLogin } from '@react-oauth/google';
   import { FcGoogle } from "react-icons/fc";
   import { AuthContext } from '../../contexts/AuthContext';
+  import { ModalContext } from "../../contexts/SigninContext";
 
   export const GoogleButton = () => {
 
-    const { authStatus, setAuthStatus } = useContext(AuthContext);
+    const { setAuthStatus } = useContext(AuthContext);
+    const { toggleModal } = useContext(ModalContext);
 
     const login = useGoogleLogin({
       onSuccess: async (tokenResponse) => {
@@ -26,6 +28,7 @@
                   setAuthStatus(data.status);
                   localStorage.setItem("authStatus", data.status);
                   localStorage.setItem("googleId", data.google_id);
+                  toggleModal();
               } else {
                   console.error('Помилка при спробі авторизації через Google:', response.statusText);
               }
