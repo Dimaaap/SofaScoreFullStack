@@ -1,30 +1,12 @@
 import React, { useContext } from 'react'
 import "./SignInPopup.css";
 import { ModalContext } from '../../../contexts/SigninContext.jsx';
-import { FaFacebook } from 'react-icons/fa6';
-import FacebookLogin from "react-facebook-login";
 import { GoogleButton } from "../../GoogleButton/GoogleButton.jsx";
 import { FacebookButton }  from "../../FacebookButton/FacebookButton.jsx";
 
 const SignInPopup = () => {
 
     const { toggleModal } = useContext(ModalContext)
-
-    const repsonseMessage = (response) => {
-        console.log(response);
-    };
-
-    const errorMessage = (error) => {
-        console.log(error)
-    }
-
-    const handleFacebookCallback = (response) => {
-        if(response?.status === "unknown"){
-            console.error("Soory!", "Something went with facebook login")
-            return
-        }
-        console.log(response)
-    }
     
   return (
     <>

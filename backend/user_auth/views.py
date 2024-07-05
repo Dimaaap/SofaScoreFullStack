@@ -5,11 +5,28 @@ from rest_framework import permissions, viewsets, status
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework.views import APIView
+from rest_framework.permissions import IsAuthenticated
 import requests
 
 from .serializers import UserAvatarSerializer
+from .db_operations import *
 
 User = get_user_model()
+
+
+class UserProfileView(APIView):
+    def get(self, request, google_id):
+        try:
+            print("here")
+            user = get_data_from_model(User, "google_id", google_id)
+            user_data = {
+                "first_name": user.first_name,
+                "last_name": user.second_name,
+                "email": user.email,
+            }
+            return Response(user_data)
+        except ObjectDoesNotExist:
+            return Response({"error": "User not Found"}, status=404)
 
 
 class GoogleLogin(APIView):
@@ -25,16 +42,23 @@ class GoogleLogin(APIView):
             google_id = data.get("id")
 
             try:
-                user = User.objects.get(email=email)
+                user = get_data_from_model(User, "email", email)
             except ObjectDoesNotExist:
                 first_name, second_name, picture = (
                     data["given_name"], data["family_name"],
                     data["picture"]
                 )
-                user = User.objects.create(email=email, first_name=first_name,
-                                           second_name=second_name, picture=picture,
-                                           google_id=google_id)
-                user.save()
+                saving_dict = {
+                    "email": email, "first_name": first_name,
+                    "second_name": second_name, "picture": picture,
+                    "google_id": google_id
+                }
+                # user = User.objects.create(email=email, first_name=first_name,
+                #                            second_name=second_name, picture=picture,
+                #                            google_id=google_id)
+                # user.save()
+                create_data_in_model_with_saving(User, **saving_dict)
+
                 return Response({'message': 'User Registration', 'user': user.email, "status": "registration"})
             finally:
                 user_auth = authenticate(request, google_id=google_id)
@@ -53,6 +77,7 @@ class FacebookLogin(APIView):
 
     def post(self, request):
         access_token = request.data.get("access_token")
+        print(access_token)
         response = requests.get(f"https://graph.facebook.com/me?fields=id,name,email,first_name,last_name,picture&access_token={access_token}")
 
         if response.status_code == 200:
@@ -61,13 +86,24 @@ class FacebookLogin(APIView):
             facebook_id = data.get("id")
 
             try:
-                user = User.objects.get(email=email)
+                user = get_data_from_model(User, "email", email)
             except ObjectDoesNotExist:
                 first_name = data.get("first_name")
                 last_name = data.get("last_name")
                 picture = data.get("picture", {}).get("data", {}).get("url", {})
-                user = User.objects.create(email=email, first_name=first_name, last_name=last_name,
-                                           picture=picture, facebook_id=facebook_id)
+                creation_dict = {"email": email, "first_name": first_name, "last_name": last_name,
+                                 "picture": picture, "facebook_id": facebook_id}
+                user = create_data_in_model_without_saving(User, **creation_dict)
+                user.save()
+                return Response({"message": "User Registration", "user": user.email, "status": "registration"})
+            finally:
+                user_auth = authenticate(request, facebook_id=facebook_id,
+                                         backend="user_auth.auth_backends.FacebookIDAuthBackend")
+                if user_auth is not None:
+                    login(request, user_auth)
+                    return Response({"message": "User authorized", "status": "authorized"}, status=200)
+                else:
+                    return Response({"message": "Auth error", "status": "unauthorized"}, status=400)
 
 
 class UserViewSet(viewsets.ModelViewSet):
@@ -77,7 +113,8 @@ class UserViewSet(viewsets.ModelViewSet):
     @action(detail=False, methods=["get"], url_path="user_picture/(?P<google_id>[^/.]+)")
     def user_picture(self, request, google_id=None):
         try:
-            user = User.objects.get(google_id=google_id)
+            #user = User.objects.get(google_id=google_id)
+            user = get_data_from_model(User, "google_id", google_id)
             serializer = self.get_serializer(user)
             return Response(serializer.data)
         except ObjectDoesNotExist:

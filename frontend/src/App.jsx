@@ -1,5 +1,6 @@
 import './App.css'
 import { Routes, Route } from "react-router-dom";
+import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute.jsx';
 import Football from './pages/Footbal/Football'
 import Basketball from './pages/Basketball/Basketball';
 import Tennis from './pages/Tennis/Tennis';
@@ -11,6 +12,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy.jsx';
 import { ModalProvider } from './contexts/SigninContext.jsx';
 import { LogoutProvider } from './contexts/LogoutContext.jsx';
 import { LogoutConfirmProvider } from './contexts/LogoutConfirmContext.jsx';
+import Profile  from "./pages/Profile/Profile.jsx";
 
 function App() {
 
@@ -26,6 +28,11 @@ function App() {
             <Route path="/terms-and-conditions" element={<Terms />} />
             <Route path="/cookies-policy" element={<Cookies />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/user/profile" element={
+              <ProtectedRoute>
+                <Profile />
+              </ProtectedRoute>
+          } />
           </Routes>
           <Footer />
         </LogoutConfirmProvider>
