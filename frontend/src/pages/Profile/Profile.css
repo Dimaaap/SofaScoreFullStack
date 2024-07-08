@@ -2,17 +2,137 @@
     display: flex;
     flex: 1;
     gap: 5%;
-    width: 100%;
-    padding-left: 1%;
-    padding-right: 1%;
+    width: 90%;
+    padding-left: 8%;
 }
 
 .profile-page .profile-section {
-    background-color: red;
     width: 25%;
+    justify-content: center;
+    text-align: center;
 }
 
 .profile-page .right-section {
     min-width: 0px !important;
     margin: 0;
+}
+
+.profile-page .left-section {
+    margin-top: 3%;
+    border-radius: 15px;
+    border: 1px solid #f5f5f5;
+    display: block;
+}
+
+.profile-page .left-section .profile-page-header {
+    width: 100%;
+    border-radius: 15px;
+    background: linear-gradient(rgba(55, 77, 245, 0.4), 
+    rgba(55, 77, 245, 0));
+}
+
+.profile-page .left-section .user-info {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+.profile-page .user-name {
+    width: 50%;
+    font-size: 1.2rem;
+}
+
+.profile-page .change-btn-container {
+    flex: 1;
+    margin-top: 12%;
+    margin-left: -11%;
+}
+
+.profile-page .change-btn-container button {
+    outline: none;
+    box-sizing: border-box;
+    transition: background-color 200ms ease 0s,
+    box-shadow 200ms ease 0s, border-color 200ms ease 0s, 
+    color 200ms ease 0s;
+    cursor: pointer;
+    vertical-align: middle;
+    user-select: none;
+    position: relative;
+    white-space: nowrap;
+    text-transform: none;
+    letter-spacing: normal;
+    border-radius: 24px;
+    padding: 4px 12px;
+    border: 1.5px solid #374df5; 
+    color: #374df5;
+    background: transparent;
+    font-weight: semi-bold;
+}
+
+.profile-page .change-btn-container button:active:not(:disabled),
+.profile-page .change-btn-container button:focus:not(:disabled){
+    background-color: rgba(55, 77, 245, 0.25);
+    color: hsl(233, 90.5%, 53.8%);
+}
+
+.profile-page .change-btn-container button:focus {
+    box-shadow: 0 0 0 3px rgba(55, 77, 245, 0.25);
+}
+
+.profile-page .copy-block,
+.profile-page .more-details {
+    margin-top: 13%;
+    cursor: pointer;
+}
+
+.profile-page .copy-block {
+    margin-right: 1%;
+    margin-left: -2%;
+}
+
+.profile-page .left-section .note-info {
+    background-color: #F5F5F5;
+    padding: 5%;
+    width: 80%;
+    margin-left: 5%;
+    border-radius: 20px;
+}
+
+.profile-page .left-section .note-body {
+    display: flex;
+}
+
+.profile-page .left-section .note-body .icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-page .left-section .note-body #second-icon {
+    margin-top: 40%;
+}
+
+.profile-page .left-section .text {
+    font-size: 0.8rem;
+    text-align: left;
+    margin-left: 2%;
+}
+
+.profile-page .left-section .find-out-btn {
+    border: none;
+    background: transparent;
+    color: hsl(233, 90.5%, 53.8%);
+    font-weight: 500;
+    margin-left: -30%;
+    padding: 2%;
+    width: 50%;
+    margin-top: 0%;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.profile-page .left-section .find-out-btn .btn-icon {
+    display: inline-block;
+    margin-left: 1%;
+    vertical-align: middle;
 }

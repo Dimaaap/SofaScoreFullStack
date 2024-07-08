@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import "./UserAvatar.css";
 
-const UserAvatar = () => {
+const UserAvatar = ({size}) => {
 
     const [userPicture, setUserPicture] = useState(null);
     const googleId = localStorage.getItem("googleId");
@@ -28,7 +28,9 @@ const UserAvatar = () => {
 
   return (
     <div>
-      <img src={userPicture} alt="" width={30} height={30} 
+      <img src={userPicture} alt="" 
+      width={size === "small"? 30 : 90} 
+      height={size === "small" ? 30 : 90} 
       className="user-avatar"/>
     </div>
   )
