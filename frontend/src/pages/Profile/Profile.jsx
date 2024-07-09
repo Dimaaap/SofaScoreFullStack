@@ -10,7 +10,9 @@ import { IoIosMore } from "react-icons/io";
 import { SiFastapi } from "react-icons/si";
 import { PiPencil } from "react-icons/pi";
 import { IoIosInformationCircleOutline } from "react-icons/io"
+import TimeLeft from '../../components/TimeLeft/TimeLeft';
 import Predictions from '../../components/Predictions/Predictions';
+import Leaderboards from '../../components/Leaderboards/Leaderboards';
 
 const Profile = () => {
 
@@ -99,7 +101,8 @@ const Profile = () => {
                 <Predictions />
             </div>
             <div className="profile-section right-section">
-                Right Section
+                <TimeLeft />
+                <Leaderboards />
             </div>
         </div>
     </div>
