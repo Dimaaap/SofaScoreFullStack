@@ -11,7 +11,7 @@ const Leaderboards = () => {
             </h5>
             <div className="btn-row">
                 <div className="btn-container">
-                   <button className="leader-btn"
+                   <button className="leader-btn active"
                     type="button">
                         Топ прогнозисти
                     </button> 
@@ -30,13 +30,14 @@ const Leaderboards = () => {
                 </div>
             </div>
         </div>
+        <hr />
         <div className="page-body">
             <button type="button" className="more-info">
-                <IoMdInformationCircleOutline size={20} />
+                <IoMdInformationCircleOutline size={25} />
             </button>
             <div className="leaders-top">
                 <a href="#">
-                    <div className="second-place user-place">
+                    <div className="second-place user-place-block">
                         <img src="https://userimage.sofascore.com/310644463920ab0f31d00c6c3c84a06a.jpg" 
                         width={30} height={30}/>
                         <div className="user-place">
@@ -53,7 +54,7 @@ const Leaderboards = () => {
                     </div>
                 </a>
                 <a href="#">
-                    <div className="first-place user-place">
+                    <div className="first-place user-place-block">
                         <img src="https://lh3.googleusercontent.com/a/ACg8ocI-2ZK-2vaXQYcR63vnwOp0YjiUzBGTEobAY3SwBD7i=s96-c" 
                         width={30} height={30} />
                         <div className="user-place">
@@ -70,7 +71,7 @@ const Leaderboards = () => {
                     </div>
                 </a>
                 <a href="#">
-                    <div className="third-place user-place">
+                    <div className="third-place user-place-block">
                         <img src="https://userimage.sofascore.com/682217ada74d50f4accd157a4f28b39d.jpg" 
                          width={30} height={30} />
                         <div className="user-place">

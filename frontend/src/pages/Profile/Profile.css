@@ -13,8 +13,10 @@
 }
 
 .profile-page .right-section {
-    min-width: 0px !important;
     margin: 0;
+    flex-direction: column;
+    gap: 8px;
+
 }
 
 .profile-page .left-section {

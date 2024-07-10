@@ -18,19 +18,10 @@ class BaseAuthBackend(BaseBackend):
 class GoogleIDAuthBackend(BaseAuthBackend):
 
     def authenticate(self, request, google_id=None, **kwargs):
+        print("in class authenticate method")
         try:
             user = get_data_from_model(self.user_model, "google_id", google_id)
             return user
         except ObjectDoesNotExist:
             return None
 
-
-class FacebookIDAuthBackend(BaseAuthBackend):
-    user_model = get_user_model()
-
-    def authenticate(self, request, facebook_id=None, **kwargs):
-        try:
-            user = get_data_from_model(self.user_model, "facebook_id", facebook_id)
-            return user
-        except ObjectDoesNotExist:
-            return None

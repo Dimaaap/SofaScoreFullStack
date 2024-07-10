@@ -53,12 +53,8 @@ class GoogleLogin(APIView):
                     "second_name": second_name, "picture": picture,
                     "google_id": google_id
                 }
-                # user = User.objects.create(email=email, first_name=first_name,
-                #                            second_name=second_name, picture=picture,
-                #                            google_id=google_id)
-                # user.save()
-                create_data_in_model_with_saving(User, **saving_dict)
-
+                user = User.objects.create(**saving_dict)
+                user.save()
                 return Response({'message': 'User Registration', 'user': user.email, "status": "registration"})
             finally:
                 user_auth = authenticate(request, google_id=google_id)
