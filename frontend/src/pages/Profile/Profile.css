@@ -4,6 +4,7 @@
     gap: 5%;
     width: 90%;
     padding-left: 8%;
+    overflow-x: hidden;
 }
 
 .profile-page .profile-section {
@@ -24,6 +25,7 @@
     border-radius: 15px;
     border: 1px solid #f5f5f5;
     display: block;
+    min-width: 20%;
 }
 
 .profile-page .left-section .profile-page-header {
@@ -137,4 +139,8 @@
     display: inline-block;
     margin-left: 1%;
     vertical-align: middle;
+}
+
+.profile-page .center-section {
+    min-width: 30%;
 }

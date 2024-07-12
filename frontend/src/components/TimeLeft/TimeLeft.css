@@ -1,9 +1,10 @@
 .time-left {
     display: block;
-    margin-top: 5.5%;
+    margin-top: 8%;
     border: 2px solid #f5f5f5;
     border-radius: 15px;
-    min-width: 70%;
+    max-width: 65%;
+    margin-left: -8%;
 }
 
 .time-left .section-header {

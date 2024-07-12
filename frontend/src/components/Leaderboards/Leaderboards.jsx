@@ -35,64 +35,44 @@ const Leaderboards = () => {
             <button type="button" className="more-info">
                 <IoMdInformationCircleOutline size={25} />
             </button>
-            <div className="leaders-top">
-                <a href="#">
-                    <div className="second-place user-place-block">
-                        <img src="https://userimage.sofascore.com/310644463920ab0f31d00c6c3c84a06a.jpg" 
-                        width={30} height={30}/>
-                        <div className="user-place">
-                            2
+            <div className="leaderboards">
+                <div className="user rank-1">
+                    <span className="place">1</span>
+                    <img src="https://userimage.sofascore.com/33714f959019ad547a3d45ee49379d1c.jpg"
+                    alt="" width={50} height={50} />
+                    <div className="details">
+                        <div className="name">
+                            Oumar Nama Dembele
                         </div>
-                        <div className="user-box">
-                            <h6 className="user-name">
-                                rafank
-                            </h6>
-                            <p className="user-rating">
-                                +58.16
-                            </p>
-                        </div>
+                        <div className="score">+55.49</div>
                     </div>
-                </a>
-                <a href="#">
-                    <div className="first-place user-place-block">
-                        <img src="https://lh3.googleusercontent.com/a/ACg8ocI-2ZK-2vaXQYcR63vnwOp0YjiUzBGTEobAY3SwBD7i=s96-c" 
-                        width={30} height={30} />
-                        <div className="user-place">
-                            1
+                </div>
+                <div className="user rank-2">
+                    <span className="place">2</span>
+                    <img src="https://lh3.googleusercontent.com/a/ACg8ocJ69teA0U2akZ9cnw3qOO1bzPtSpQZIDv6lMzOps6tn27PP9g=s96-c" 
+                    alt="" width={50} height={50} />
+                    <div className="details">
+                        <div className="name">
+                            Degny Eraste
                         </div>
-                        <div className="user-box">
-                            <h6 className="user-name">
-                                Md Akash Md Akash
-                            </h6>
-                            <p className="user-rating">
-                                +58.55
-                            </p>
-                        </div>
+                        <div className="score">+54.18</div>
                     </div>
-                </a>
-                <a href="#">
-                    <div className="third-place user-place-block">
-                        <img src="https://userimage.sofascore.com/682217ada74d50f4accd157a4f28b39d.jpg" 
-                         width={30} height={30} />
-                        <div className="user-place">
-                            3
-                        </div>
-                        <div className="user-box">
-                            <h6 className="user-name">
-                                what God can`t do not exist
-                            </h6>
-                            <p className="user-rating">
-                                <p>+57.52</p>
-                            </p>
-                        </div>
+                </div>
+                <div className="user rank-3">
+                    <span className="place">3</span>
+                    <img src="https://userimage.sofascore.com/310644463920ab0f31d00c6c3c84a06a.jpg" 
+                    alt="" width={50} height={50} />
+                    <div className="details">
+                        <div className="name">Rafank</div>
+                        <div className="score">+53.39</div>
                     </div>
-                </a>
+                </div>
             </div>
             <div className="leaders-table">
                 <div className="table-header">
                     <div className="table-left">
                         <button type="button" 
-                        class="change-nums prev">
+                        className="change-nums prev disabled">
                             &lt;
                         </button>
                     </div>
@@ -110,10 +90,18 @@ const Leaderboards = () => {
                     <thead>
                         <tr>
                             <th>#</th>
-                            <th>Username</th>
-                            <th>Голоси</th>
-                            <th>Корекція</th>
-                            <th>VROI</th>
+                            <th id="second-col">
+                                Username
+                            </th>
+                            <th id="third-col">
+                                Голоси
+                            </th>
+                            <th id="fourth-col">
+                                Корекція
+                            </th>
+                            <th id="fifth-col">
+                                VROI
+                            </th>
                         </tr>
                     </thead>
                     <tbody>
