@@ -13,11 +13,13 @@ import { IoIosInformationCircleOutline } from "react-icons/io"
 import TimeLeft from '../../components/TimeLeft/TimeLeft';
 import Predictions from '../../components/Predictions/Predictions';
 import Leaderboards from '../../components/Leaderboards/Leaderboards';
+import ChangeUserData from '../../components/popups/ChangeUserData/ChangeUserData';
 
 const Profile = () => {
 
     const [userData, setUserData] = useState(null);
     const googleId = localStorage.getItem("googleId");
+    const [isChangeUserDataOpen, setIsChangeUserDataOpen] = useState(false);
 
     useEffect(() => {
         const fetchUserData = async () => {
@@ -45,6 +47,7 @@ const Profile = () => {
     <div id="profile-page">
         <TopHeader />
         <BottomHeader />
+        { isChangeUserDataOpen && <ChangeUserData /> }
         <div className="profile-page">
             <div className="profile-section left-section">
                 <div className="profile-page-header">
@@ -55,14 +58,15 @@ const Profile = () => {
                        <h5>{ first_name }</h5> 
                     </div>
                     <div className="change-btn-container">
-                      <button type="button" className="change-btn">
+                      <button type="button" className="change-btn"
+                      onClick={() => setIsChangeUserDataOpen(!isChangeUserDataOpen)}>
                         Редактувати
                         </button>  
                     </div>
-                    <div className="copy-block">
+                    <div className="block-btn copy-block">
                         <IoShareSocial size={20} />
                     </div>
-                    <div className="more-details">
+                    <div className="block-btn more-details">
                         <IoIosMore size={20} />
                     </div>
                 </div>

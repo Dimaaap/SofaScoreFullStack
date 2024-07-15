@@ -89,7 +89,7 @@ const Leaderboards = () => {
                 <table className="user-rating">
                     <thead>
                         <tr>
-                            <th>#</th>
+                            <th id="first-col">#</th>
                             <th id="second-col">
                                 Username
                             </th>
@@ -131,7 +131,7 @@ const Leaderboards = () => {
                             <td>
                                 <div className="user-info">
                                     <img src="https://www.sofascore.com/static/images/placeholders/player.svg"
-                                    width={15} height={15} />
+                                    width={25} height={25} />
                                     <span>Guest42517</span>
                                 </div>
                             </td>
@@ -145,7 +145,7 @@ const Leaderboards = () => {
                                     <bdi className="user-position">
                                         5
                                     </bdi>
-                                    <div className="user-stading">
+                                    <div className="user-standing">
                                         <span className="count">
                                             1
                                         </span>

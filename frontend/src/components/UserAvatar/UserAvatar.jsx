@@ -14,6 +14,8 @@ const UserAvatar = ({size}) => {
                     if(response.ok) {
                         const data = await response.json();
                         setUserPicture(data.picture);
+                        console.log(data.picture);
+                        console.log(userPicture)
                     } else {
                         console.error("Error fetching user: ", response.statusText);
                     }
@@ -29,8 +31,8 @@ const UserAvatar = ({size}) => {
   return (
     <div>
       <img src={userPicture} alt="" 
-      width={size === "small"? 30 : 90} 
-      height={size === "small" ? 30 : 90} 
+      width={size} 
+      height={size} 
       className="user-avatar"/>
     </div>
   )

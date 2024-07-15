@@ -63,7 +63,7 @@ const TopHeader = () => {
                 }>
                   { 
                   authStatus === "authorized" ? 
-                  <UserAvatar size="small" /> : 
+                  <UserAvatar size={30} /> : 
                   <img className="player-icon" src={player} /> 
                   }
                 </li>

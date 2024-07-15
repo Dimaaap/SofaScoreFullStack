@@ -1,0 +1,38 @@
+.change-user-data-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.change-user-content {
+    background-color: white;
+    border-radius: 10px;
+    max-width: 350px;
+    justify-content: center;
+    text-align: center;
+}
+
+.change-user-form {
+    margin-top: 5%;
+    justify-content: center;
+    text-align: center;
+}
+
+.change-user-form input {
+    display: inline-block;
+}
+
+.change-user-form label {
+    display: inline-block;
+}
+
+.change-user-form input:first-child {
+    margin-left: 25%;
+}

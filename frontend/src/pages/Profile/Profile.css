@@ -50,7 +50,8 @@
 .profile-page .change-btn-container {
     flex: 1;
     margin-top: 12%;
-    margin-left: -11%;
+    margin-left: -1%;
+    margin-right: 5%;
 }
 
 .profile-page .change-btn-container button {
@@ -88,6 +89,12 @@
 .profile-page .more-details {
     margin-top: 13%;
     cursor: pointer;
+    margin-right: 5%;
+}
+
+.profile-page .block-btn {
+    display: inline-block;
+    margin-left: 5%;
 }
 
 .profile-page .copy-block {
@@ -127,9 +134,9 @@
     background: transparent;
     color: hsl(233, 90.5%, 53.8%);
     font-weight: 500;
-    margin-left: -30%;
+    margin-left: -10%;
     padding: 2%;
-    width: 50%;
+    width: 100%;
     margin-top: 0%;
     cursor: pointer;
     vertical-align: middle;
@@ -137,8 +144,9 @@
 
 .profile-page .left-section .find-out-btn .btn-icon {
     display: inline-block;
-    margin-left: 1%;
+    margin-left: 2%;
     vertical-align: middle;
+    margin-top: 2%;
 }
 
 .profile-page .center-section {
