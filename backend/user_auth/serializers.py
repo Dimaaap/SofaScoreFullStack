@@ -14,3 +14,9 @@ class UserAvatarSerializer(serializers.ModelSerializer):
         if obj.picture and obj.picture.url.startswith('/media/'):
             return obj.picture.url.replace('/media/', '').replace("https%3A", "https://")
         return obj.picture.url if obj.picture else None
+
+
+class UploadAvatarSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = CustomUser
+        fields = ("picture", )

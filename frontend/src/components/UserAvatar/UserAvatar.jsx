@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import "./UserAvatar.css";
+import { UserPictureContext  } from '../../contexts/UserPicture';
 
 const UserAvatar = ({size}) => {
 
-    const [userPicture, setUserPicture] = useState(null);
+    const { userPicture, setUserPicture } = useContext(UserPictureContext)
     const googleId = localStorage.getItem("googleId");
 
     useEffect(() => {
@@ -14,8 +15,6 @@ const UserAvatar = ({size}) => {
                     if(response.ok) {
                         const data = await response.json();
                         setUserPicture(data.picture);
-                        console.log(data.picture);
-                        console.log(userPicture)
                     } else {
                         console.error("Error fetching user: ", response.statusText);
                     }

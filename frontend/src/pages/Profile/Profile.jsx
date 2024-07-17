@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useContext } from 'react'
 import TopHeader from '../../components/TopHeader/TopHeader';
 import BottomHeader from '../../components/BottomHeader/BottomHeader';
 import "./Profile.css";
@@ -14,12 +14,13 @@ import TimeLeft from '../../components/TimeLeft/TimeLeft';
 import Predictions from '../../components/Predictions/Predictions';
 import Leaderboards from '../../components/Leaderboards/Leaderboards';
 import ChangeUserData from '../../components/popups/ChangeUserData/ChangeUserData';
+import { ChangeUserDataContext } from '../../contexts/ChangeUserDataModel';
 
 const Profile = () => {
 
     const [userData, setUserData] = useState(null);
     const googleId = localStorage.getItem("googleId");
-    const [isChangeUserDataOpen, setIsChangeUserDataOpen] = useState(false);
+    const { isChangeUserDataOpen, setIsChangeUserDataOpen } = useContext(ChangeUserDataContext)
 
     useEffect(() => {
         const fetchUserData = async () => {
@@ -47,7 +48,7 @@ const Profile = () => {
     <div id="profile-page">
         <TopHeader />
         <BottomHeader />
-        { isChangeUserDataOpen && <ChangeUserData /> }
+        { isChangeUserDataOpen && <ChangeUserData userName={ first_name } /> }
         <div className="profile-page">
             <div className="profile-section left-section">
                 <div className="profile-page-header">

@@ -5,10 +5,9 @@ from rest_framework import permissions, viewsets, status
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from rest_framework.permissions import IsAuthenticated
 import requests
 
-from .serializers import UserAvatarSerializer
+from .serializers import UserAvatarSerializer, UploadAvatarSerializer
 from .db_operations import *
 
 User = get_user_model()
@@ -17,7 +16,6 @@ User = get_user_model()
 class UserProfileView(APIView):
     def get(self, request, google_id):
         try:
-            print("here")
             user = get_data_from_model(User, "google_id", google_id)
             user_data = {
                 "first_name": user.first_name,
@@ -128,3 +126,15 @@ class LogoutUser(APIView):
         return Response({"error": "Only POST method is allowed."},
                         status=status.HTTP_400_BAD_REQUEST)
 
+
+class AvatarUploadView(APIView):
+    def post(self, request, google_id=None, *args, **kwargs):
+        try:
+            user_profile = get_data_from_model(User, "google_id", google_id)
+        except ObjectDoesNotExist:
+            return Response({"error": "User not found"}, status=status.HTTP_404_NOT_FOUND)
+        file_serializer = UploadAvatarSerializer(user_profile, data=request.data, partial=True)
+        if file_serializer.is_valid():
+            file_serializer.save()
+            return Response(file_serializer.data, status=status.HTTP_201_CREATED)
+        return Response(file_serializer.errors, status=status.HTTP_400_BAD_REQUEST)

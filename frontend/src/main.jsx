@@ -5,6 +5,8 @@ import { BrowserRouter } from "react-router-dom";
 import './index.css'
 import { GoogleOAuthProvider } from "@react-oauth/google";
 import { AuthProvider } from './contexts/AuthContext.jsx';
+import { ChangeUserDataProvider } from './contexts/ChangeUserDataModel.jsx';
+import { UserPictureProvider } from './contexts/UserPicture.jsx';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -12,7 +14,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
       <BrowserRouter>
         <AuthProvider>
-          <App />
+          <ChangeUserDataProvider>
+            <UserPictureProvider>
+              <App />
+            </UserPictureProvider>
+          </ChangeUserDataProvider>
         </AuthProvider>
       </BrowserRouter>
     </React.StrictMode>

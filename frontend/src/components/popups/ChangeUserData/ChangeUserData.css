@@ -17,6 +17,8 @@
     max-width: 350px;
     justify-content: center;
     text-align: center;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 .change-user-form {
@@ -31,8 +33,77 @@
 
 .change-user-form label {
     display: inline-block;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 1%;
+    margin-top: 5%;
+}
+
+.change-user-form .form-text-field{
+    height: 40px;
+    width: 100%;
+    border-radius: 7px;
+    background-color: #F5F5F5;
+    outline: none;
+    border: 1px solid rgb(176, 176, 176);
+    margin-bottom: 5%;
+    padding: 1%;
 }
 
 .change-user-form input:first-child {
     margin-left: 25%;
+}
+
+.change-user-form{
+    margin-top: 1%;
+    justify-content: left;
+    text-align: left;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.change-user-content .btns-container {
+    margin-bottom: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.change-user-content .btns-container button {
+    background-color: transparent;
+    border: none;
+    margin-right: 14%;
+    text-transform: uppercase;
+    color: #374df5;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 3%;
+    border-radius: 7px;
+    transition: 0.2s ease-in-out;
+}
+
+.change-user-content .btns-container button:hover {
+    background-color: hsl(233, 90.5%, 90%);
+}
+
+.change-user-content .btns-container button:last-child {
+    margin-right: 5%;
+}
+
+.change-user-form #file-upload {
+    display: none;
+}
+
+.change-user-form .custom-file-upload-btn {
+    color: #374df5;
+    display: inline-block;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    margin-left: 20%;
+}
+
+.change-user-form .avatar-container {
+    background-color: red;
 }
