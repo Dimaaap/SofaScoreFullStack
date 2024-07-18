@@ -5,79 +5,41 @@ import { ChangeUserDataContext } from '../../../contexts/ChangeUserDataModel.jsx
 import { UserPictureContext } from '../../../contexts/UserPicture.jsx'
 
 const ChangeUserData = ({ userName }) => {
-
+  const GOOGLE_ID = localStorage.getItem("googleId");
+  const fileInputRef = useRef(null);
   const { setIsChangeUserDataOpen } = useContext(ChangeUserDataContext);
   const { userPicture, setUserPicture } = useContext(UserPictureContext);
-  const fileInputRef = useRef(null);
-  const [selectedImage, setSelectedImage] = useState(null);
-  const [uploadStatus, setUploadStatus] = useState("");
- 
-  const handleButtonClick = () => {
-    fileInputRef.current.click();
-  }
+  const [ currentAvatar, setCurrentAvatar ] = useState(null);
 
-  const handleFileChange = (event) => {
-    const file = event.target.files[0];
-    if(file) {
-      const reader = new FileReader();
-      reader.onloadend = () => {
-        setSelectedImage(reader.result);
-      }
-      reader.readAsDataURL(file);
-      uploadFile(file);
+  // userPicture containes current user avatar and I 
+  // should change it after clicking "Save" button on 
+  // popup
+
+  const onNewFileUpload = (event) => {
+    try {
+      var uploadedFile = event.target.files[0]
+    } catch( {name, message} ){
+      return;
     }
-  }
-
-  const uploadFile = (file) => {
-    const formData = new FormData();
-    formData.append("file", file);
-
-    const GOOGLE_ID = localStorage.getItem("googleId");
-
-    fetch(`http://localhost:8000/auth/api/v1/upload-avatar/${GOOGLE_ID}`, {
-      method: "POST",
-      body: formData,
-    })
-    .then(response => response.json())
-    .then(data => {
-      setUploadStatus("Success");
-      console.log(data);
-    })
-    .catch(error => {
-      setUploadStatus("Error");
-      console.log("Error: ", error);
-    }
-    )
-
-  }
-
-  const changeUserData = ({ userName, avatar }) => {
-
+    setCurrentAvatar(uploadedFile);
+    console.log(currentAvatar);
   }
 
   return (
     <div className="change-user-data-overlay">
       <div className="change-user-content">
         <div className="avatar-container">
-          { selectedImage ? (
-              <img src={selectedImage} alt="" 
-              width={120} height={120} 
-              className="temp-user-image"
-              style={{
-                borderRadius:"50%",
-                display: "inline-block",
-                marginTop: "10%"
-              }} />
-          ): <UserAvatar size={120} /> } 
+          <UserAvatar size={120} />
         </div>
         <form className="change-user-form">
           <label className="custom-file-upload-btn" 
-          htmlFor='file-upload' onClick={handleButtonClick}>
+          htmlFor='file-upload'>
             Змінити зображення профілю
           </label>
           <input type="file" name="user-avatar" id="file-upload" 
           accept=".jpg,.jpeg,.gif,.png" 
-          onChange={handleFileChange}/>
+          ref={fileInputRef} 
+          onChange={onNewFileUpload}/>
           <label className="form-label" htmlFor="username">
             Ім'я користувача (так вас бачать інші)
           </label>
@@ -91,8 +53,7 @@ const ChangeUserData = ({ userName }) => {
           }>
             Відміна
           </button>
-          <button type="button" className="popup-btn" 
-          onClick={handleFileChange}>
+          <button type="button" className="popup-btn">
             Зберегти
           </button>
         </div>

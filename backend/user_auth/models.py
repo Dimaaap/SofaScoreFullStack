@@ -16,13 +16,17 @@ class CustomUser(AbstractBaseUser):
     google_id = models.CharField(max_length=50, default="", null=True)
     facebook_id = models.CharField(max_length=50, default="", null=True)
     sign_in_date = models.DateTimeField(auto_now=True)
+    last_updated_date = models.DateTimeField(auto_now_add=True, null=True, blank=True)
 
     objects = CustomUserManager()
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = ["first_name", "second_name"]
 
     def save(self, *args, **kwargs):
-        self.sign_in_date = timezone.now()
+        if not self.sign_in_date:
+            self.sign_in_date = timezone.now()
+        else:
+            self.last_updated_date = timezone.now()
         return super(CustomUser, self).save(*args, **kwargs)
 
     def __str__(self):

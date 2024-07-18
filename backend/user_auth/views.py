@@ -129,12 +129,4 @@ class LogoutUser(APIView):
 
 class AvatarUploadView(APIView):
     def post(self, request, google_id=None, *args, **kwargs):
-        try:
-            user_profile = get_data_from_model(User, "google_id", google_id)
-        except ObjectDoesNotExist:
-            return Response({"error": "User not found"}, status=status.HTTP_404_NOT_FOUND)
-        file_serializer = UploadAvatarSerializer(user_profile, data=request.data, partial=True)
-        if file_serializer.is_valid():
-            file_serializer.save()
-            return Response(file_serializer.data, status=status.HTTP_201_CREATED)
-        return Response(file_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        pass
