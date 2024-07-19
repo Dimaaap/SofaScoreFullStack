@@ -15,10 +15,12 @@ import Predictions from '../../components/Predictions/Predictions';
 import Leaderboards from '../../components/Leaderboards/Leaderboards';
 import ChangeUserData from '../../components/popups/ChangeUserData/ChangeUserData';
 import { ChangeUserDataContext } from '../../contexts/ChangeUserDataModel';
+import { UserDataContext } from '../../contexts/UserDataContext';
 
 const Profile = () => {
 
-    const [userData, setUserData] = useState(null);
+    //const [userData, setUserData] = useState(null);
+    const { userData, setUserData } = useContext(UserDataContext)
     const googleId = localStorage.getItem("googleId");
     const { isChangeUserDataOpen, setIsChangeUserDataOpen } = useContext(ChangeUserDataContext)
 
@@ -27,7 +29,6 @@ const Profile = () => {
             try {
                 const response = await fetch(`http://127.0.0.1:8000/auth/api/v1/user/profile/${googleId}/`);
                 if(response.ok){
-                    console.log(response)
                     const data = await response.json()
                     setUserData(data);
                 } else {
@@ -52,7 +53,7 @@ const Profile = () => {
         <div className="profile-page">
             <div className="profile-section left-section">
                 <div className="profile-page-header">
-                    <UserAvatar size="large"></UserAvatar>
+                    <UserAvatar size={80}></UserAvatar>
                 </div>
                 <div className="user-info">
                     <div className="user-name">
