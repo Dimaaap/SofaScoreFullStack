@@ -8,6 +8,7 @@ import { UserDataContext } from '../../../contexts/UserDataContext.jsx'
 const ChangeUserData = ({ userName }) => {
   const GOOGLE_ID = localStorage.getItem("googleId");
   const UPLOAD_AVATAR_BACKEND_URL = `http://127.0.0.1:8000/auth/api/v1/upload-avatar/${GOOGLE_ID}`;
+  const CHANGE_USER_NAME_BACKEND_URL = `http://127.0.0.1:8000/auth/api/v1/change-username/${GOOGLE_ID}`;
   const fileInputRef = useRef(null);
   const { setIsChangeUserDataOpen } = useContext(ChangeUserDataContext);
   const { userPicture, setUserPicture } = useContext(UserPictureContext);
@@ -28,7 +29,6 @@ const ChangeUserData = ({ userName }) => {
       const previewUrl = URL.createObjectURL(uploadedFile);
       setSelectedImage(previewUrl);
       setCurrentFile(uploadedFile);
-      setUserPicture(previewUrl);
     }
   }
 
@@ -41,19 +41,45 @@ const ChangeUserData = ({ userName }) => {
       formData.append("file", selectedFile);
       sendDataToBackend(formData);
       setIsChangeUserDataOpen(false);
+      setUserPicture(selectedImage);
+    }
+  }
+
+  const saveNewUserName = () => {
+    let newUserName = changedUserName;
+    if (!newUserName){
+      return;
+    } else {
+      const formData = new FormData();
+      formData.append("username", newUserName);
+      fetch(CHANGE_USER_NAME_BACKEND_URL, {
+        method: "POST",
+        body: formData
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log(userData)
+        setUserData((prev) => ({
+          ...prev,
+          first_name: newUserName
+        }));
+      })
+      .catch(error => {
+        console.error(error)
+      })
     }
   }
 
   const saveChanges = () => {
     saveSelectedFile();
-
+    saveNewUserName();
+    setIsChangeUserDataOpen(prev => !prev);
   }
 
 
   const updateUserName = (event) => {
-    changesName = event.current;
-    console.log(changesName)
-    setChangedUserName(changesName)
+    let changesName = event.target.value;
+    setChangedUserName(changesName);
   }
 
   const sendDataToBackend = (formData) => {
@@ -64,13 +90,16 @@ const ChangeUserData = ({ userName }) => {
     .then(response => response.json())
     .then(data => {
       setUploadStatus(1);
-      console.log("Server response: ", data)
     })
     .catch(error => {
       setUploadStatus(0);
-      console.error("Server Error: ", error);
     })
   }
+
+  useEffect(() => {
+    console.log(selectedImage);
+    console.log(userPicture);
+  }, []);
 
   return (
     <div className="change-user-data-overlay">
@@ -106,7 +135,7 @@ const ChangeUserData = ({ userName }) => {
             Відміна
           </button>
           <button type="button" className="popup-btn" 
-          onClick={saveSelectedFile}>
+          onClick={saveChanges}>
             Зберегти
           </button>
         </div>

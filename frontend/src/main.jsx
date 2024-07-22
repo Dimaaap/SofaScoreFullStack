@@ -8,6 +8,7 @@ import { AuthProvider } from './contexts/AuthContext.jsx';
 import { ChangeUserDataProvider } from './contexts/ChangeUserDataModel.jsx';
 import { UserPictureProvider } from './contexts/UserPicture.jsx';
 import { UserDataProvider } from './contexts/UserDataContext.jsx';
+import { FindOutPopupProvider } from './contexts/FindOutPopupOpen.jsx';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -18,7 +19,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <ChangeUserDataProvider>
             <UserPictureProvider>
               <UserDataProvider>
-                <App />
+                <FindOutPopupProvider>
+                  <App />
+                </FindOutPopupProvider>
               </UserDataProvider>
             </UserPictureProvider>
           </ChangeUserDataProvider>

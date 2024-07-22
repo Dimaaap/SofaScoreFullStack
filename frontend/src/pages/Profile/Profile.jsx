@@ -16,13 +16,15 @@ import Leaderboards from '../../components/Leaderboards/Leaderboards';
 import ChangeUserData from '../../components/popups/ChangeUserData/ChangeUserData';
 import { ChangeUserDataContext } from '../../contexts/ChangeUserDataModel';
 import { UserDataContext } from '../../contexts/UserDataContext';
+import { FindOutPopupContext } from '../../contexts/FindOutPopupOpen';
+import FindOutPopup from '../../components/popups/FindOutPopup/FindOutPopup';
 
 const Profile = () => {
 
-    //const [userData, setUserData] = useState(null);
     const { userData, setUserData } = useContext(UserDataContext)
     const googleId = localStorage.getItem("googleId");
     const { isChangeUserDataOpen, setIsChangeUserDataOpen } = useContext(ChangeUserDataContext)
+    const { isFindOutPopupOpen, setIsFindOutPopupOpen } = useContext(FindOutPopupContext);
 
     useEffect(() => {
         const fetchUserData = async () => {
@@ -45,11 +47,14 @@ const Profile = () => {
         return <div>Loading...</div>
     }
     const{first_name, last_name, email} = userData;
+
+
   return (
     <div id="profile-page">
         <TopHeader />
         <BottomHeader />
         { isChangeUserDataOpen && <ChangeUserData userName={ first_name } /> }
+        { isFindOutPopupOpen && <FindOutPopup /> }
         <div className="profile-page">
             <div className="profile-section left-section">
                 <div className="profile-page-header">
@@ -66,7 +71,7 @@ const Profile = () => {
                         </button>  
                     </div>
                     <div className="block-btn copy-block">
-                        <IoShareSocial size={20} />
+                        <IoShareSocial size={20}/>
                     </div>
                     <div className="block-btn more-details">
                         <IoIosMore size={20} />
@@ -89,7 +94,8 @@ const Profile = () => {
                             бейджі для вашого профілю
                         </div>
                     </div>
-                    <button className="find-out-btn" type="button">
+                    <button className="find-out-btn" type="button" 
+                    onClick={() => setIsFindOutPopupOpen(prev => !prev)}>
                         Дізнатись як 
                         <span className="btn-icon">
                             <IoIosInformationCircleOutline size={15} />

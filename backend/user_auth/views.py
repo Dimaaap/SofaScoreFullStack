@@ -67,12 +67,13 @@ class GoogleLogin(APIView):
 
 
 class FacebookLogin(APIView):
-    permission_classes = (permissions.AllowAny, )
+    permission_classes = (permissions.AllowAny,)
 
     def post(self, request):
         access_token = request.data.get("access_token")
         print(access_token)
-        response = requests.get(f"https://graph.facebook.com/me?fields=id,name,email,first_name,last_name,picture&access_token={access_token}")
+        response = requests.get(
+            f"https://graph.facebook.com/me?fields=id,name,email,first_name,last_name,picture&access_token={access_token}")
 
         if response.status_code == 200:
             data = response.json()
@@ -107,7 +108,7 @@ class UserViewSet(viewsets.ModelViewSet):
     @action(detail=False, methods=["get"], url_path="user_picture/(?P<google_id>[^/.]+)")
     def user_picture(self, request, google_id=None):
         try:
-            #user = User.objects.get(google_id=google_id)
+            # user = User.objects.get(google_id=google_id)
             user = get_data_from_model(User, "google_id", google_id)
             serializer = self.get_serializer(user)
             return Response(serializer.data)
@@ -129,7 +130,6 @@ class LogoutUser(APIView):
 
 class AvatarUploadView(APIView):
     def post(self, request, google_id=None, *args, **kwargs):
-        print(request.data)
         try:
             user_profile = get_data_from_model(User, "google_id", google_id)
         except ObjectDoesNotExist:
@@ -140,7 +140,6 @@ class AvatarUploadView(APIView):
         if not file:
             return Response({"error": "No file provided"}, status=status.HTTP_400_BAD_REQUEST)
         file_serializer = UploadAvatarSerializer(user_profile, data=request.data, partial=True)
-        print("FILE:", file)
         if file_serializer.is_valid():
             user_profile.picture = file
             try:
@@ -150,4 +149,33 @@ class AvatarUploadView(APIView):
         return Response({
             "message": "Avatar uploaded successfull",
             "user_profile": file_serializer.data
+        }, status=status.HTTP_200_OK)
+
+
+def is_valid_username_service(username: str) -> bool:
+    forbid_symbols = {"#", "@", "$", "%", "^", "&", "*", "/", "|", "\\", ","}
+    USERNAME_MIN_LEN = 4
+    USERNAME_MAX_LEN = 100
+    if USERNAME_MIN_LEN > len(username) > USERNAME_MAX_LEN:
+        return False
+    if set(username) & forbid_symbols:
+        return False
+    return True
+
+
+class ChangeUsernameView(APIView):
+    def post(self, request, google_id=None, *args, **kwargs):
+        try:
+            user_profile = get_data_from_model(User, "google_id", google_id)
+        except ObjectDoesNotExist:
+            return Response({"error": "User not found"}, status=status.HTTP_404_NOT_FOUND)
+        first_name = dict(request.data).get("username")[0]
+        if is_valid_username_service(first_name):
+            user_profile.first_name = first_name
+            try:
+                user_profile.save()
+            except Exception as e:
+                return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        return Response({
+            "message": "Username changed",
         }, status=status.HTTP_200_OK)

@@ -1,0 +1,70 @@
+.find-out-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.find-out-popup{
+    background-color: white;
+    border-radius: 10px;
+    max-width: 350px;
+    justify-content: center;
+    text-align: center;
+    padding-left: 1%;
+    padding-right: 1%;
+    position: relative;
+}
+
+.find-out-popup .image-container {
+    position: absolute;
+    top: 7%;
+    left: 35%;
+}
+
+.find-out-popup .image-container{
+    background-color: none;
+}
+
+.find-out-popup .text-container {
+    margin-top: 35%;
+}
+
+.find-out-popup .first-box {
+    border: none;
+}
+
+.find-out-popup #second-box {
+    margin-left: 70%;
+    margin-top: -50%;
+}
+
+.find-out-popup .btn-container {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    justify-content: right;
+}
+
+.find-out-popup .btn-container button {
+    background: transparent;
+    border: none;
+    color: #374df5;
+    font-size: 1.1rem;
+    justify-content: right;
+    display: inline-block;
+    margin-left: 50%;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    padding: 2% 3%;
+    border-radius: 5px;
+}
+
+.find-out-popup .btn-container button:hover {
+    background-color: #b4bbf7;
+}
