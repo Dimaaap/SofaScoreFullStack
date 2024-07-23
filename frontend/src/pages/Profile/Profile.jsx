@@ -17,11 +17,17 @@ import ChangeUserData from '../../components/popups/ChangeUserData/ChangeUserDat
 import { ChangeUserDataContext } from '../../contexts/ChangeUserDataModel';
 import { UserDataContext } from '../../contexts/UserDataContext';
 import { FindOutPopupContext } from '../../contexts/FindOutPopupOpen';
+import { CancelSubscriptionContext } from '../../contexts/CancelSubscription';
 import FindOutPopup from '../../components/popups/FindOutPopup/FindOutPopup';
+import MoreUserProfileSettings from '../../components/popups/MoreUserProfileSettings/MoreUserProfileSettings';
+import CancelSubscription from '../../components/popups/CancelSubsription/CancelSubscription';
+import LogoutConfirm from "../../components/popups/LogoutConfirm/LogoutConfirm";
 
 const Profile = () => {
 
     const { userData, setUserData } = useContext(UserDataContext)
+    const { isCancelPopupOpen } = useContext(CancelSubscriptionContext); 
+    const [ isMoreUserProfileOpen, setIsMoreUserProfileOpen ] = useState(false);
     const googleId = localStorage.getItem("googleId");
     const { isChangeUserDataOpen, setIsChangeUserDataOpen } = useContext(ChangeUserDataContext)
     const { isFindOutPopupOpen, setIsFindOutPopupOpen } = useContext(FindOutPopupContext);
@@ -55,6 +61,7 @@ const Profile = () => {
         <BottomHeader />
         { isChangeUserDataOpen && <ChangeUserData userName={ first_name } /> }
         { isFindOutPopupOpen && <FindOutPopup /> }
+        { isCancelPopupOpen && <CancelSubscription /> }
         <div className="profile-page">
             <div className="profile-section left-section">
                 <div className="profile-page-header">
@@ -73,7 +80,9 @@ const Profile = () => {
                     <div className="block-btn copy-block">
                         <IoShareSocial size={20}/>
                     </div>
-                    <div className="block-btn more-details">
+                    { isMoreUserProfileOpen && <MoreUserProfileSettings /> }
+                    <div className="block-btn more-details" 
+                    onClick={() => setIsMoreUserProfileOpen(prev => !prev)}>
                         <IoIosMore size={20} />
                     </div>
                 </div>

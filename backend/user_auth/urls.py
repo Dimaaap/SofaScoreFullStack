@@ -9,5 +9,6 @@ urlpatterns = [
     path("api/v1/user/profile/<str:google_id>/", UserProfileView.as_view(), name="user_profile"),
     path("api/v1/user_picture/<str:google_id>", UserViewSet.as_view({"get": "user_picture"}), name="user_picture"),
     path("api/v1/upload-avatar/<str:google_id>", AvatarUploadView.as_view(), name="upload_avatar"),
-    path("api/v1/change-username/<str:google_id>", ChangeUsernameView.as_view(), name="change_username")
+    path("api/v1/change-username/<str:google_id>", ChangeUsernameView.as_view(), name="change_username"),
+    path("api/v1/cancel-subscription/<str:google_id>", CancelSubscriptionView.as_view(), name="cancel-subscription")
 ]

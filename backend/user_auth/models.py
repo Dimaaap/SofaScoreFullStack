@@ -17,6 +17,7 @@ class CustomUser(AbstractBaseUser):
     facebook_id = models.CharField(max_length=50, default="", null=True)
     sign_in_date = models.DateTimeField(auto_now=True)
     last_updated_date = models.DateTimeField(auto_now_add=True, null=True, blank=True)
+    is_spam_subscribe = models.BooleanField(default=True)
 
     objects = CustomUserManager()
     USERNAME_FIELD = "email"

@@ -179,3 +179,20 @@ class ChangeUsernameView(APIView):
         return Response({
             "message": "Username changed",
         }, status=status.HTTP_200_OK)
+
+
+class CancelSubscriptionView(APIView):
+    def post(self, request, google_id=None, *args, **kwargs):
+        try:
+            user_profile = get_data_from_model(User, "google_id", google_id)
+        except ObjectDoesNotExist:
+            return Response({"error": "User not found"}, status=status.HTTP_404_NOT_FOUND)
+        user_profile.is_spam_subscribe = False
+        try:
+            user_profile.save()
+        except Exception as e:
+            return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        return Response({
+            "message": "Status changed"
+        }, status=status.HTTP_200_OK)
+

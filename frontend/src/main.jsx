@@ -9,6 +9,7 @@ import { ChangeUserDataProvider } from './contexts/ChangeUserDataModel.jsx';
 import { UserPictureProvider } from './contexts/UserPicture.jsx';
 import { UserDataProvider } from './contexts/UserDataContext.jsx';
 import { FindOutPopupProvider } from './contexts/FindOutPopupOpen.jsx';
+import { CancelSubscriptionProvider } from './contexts/CancelSubscription.jsx';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -20,7 +21,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <UserPictureProvider>
               <UserDataProvider>
                 <FindOutPopupProvider>
-                  <App />
+                  <CancelSubscriptionProvider>
+                    <App />
+                  </CancelSubscriptionProvider>
                 </FindOutPopupProvider>
               </UserDataProvider>
             </UserPictureProvider>

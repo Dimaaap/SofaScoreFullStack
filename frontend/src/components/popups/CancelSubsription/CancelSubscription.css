@@ -1,0 +1,51 @@
+.cancel-subscription-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.cancel-subscription-popup {
+    background-color: white;
+    border-radius: 10px;
+    max-width: 250px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.cancel-subscription-popup .modal-title {
+    text-align: left;
+    font-size: 1rem;
+}
+
+.cancel-subscription-popup .btns-container {
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: flex-between;
+}
+
+.cancel-subscription-popup .btns-container button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #374df5;
+    padding: 2%;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.cancel-subscription-popup .btns-container button:hover {
+    background-color: #bdc4fe;
+
+}
+
+.cancel-subscription-popup .second-btn {
+    margin-left: 22%;
+}
