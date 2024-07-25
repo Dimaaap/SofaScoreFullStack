@@ -5,6 +5,7 @@ import Football from './pages/Footbal/Football'
 import Basketball from './pages/Basketball/Basketball';
 import Tennis from './pages/Tennis/Tennis';
 import Footer from './components/Footer/Footer';
+import Favorites from './pages/Favorites/Favorites.jsx';
 import GDPR from './pages/GDPR/GDPR.jsx';
 import Terms from "./pages/Terms/Terms.jsx";
 import Cookies from "./pages/Cookies/Cookies.jsx"
@@ -28,6 +29,7 @@ function App() {
             <Route path="/terms-and-conditions" element={<Terms />} />
             <Route path="/cookies-policy" element={<Cookies />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/favorites" element={<Favorites />} />
             <Route path="/user/profile" element={
               <ProtectedRoute>
                 <Profile />

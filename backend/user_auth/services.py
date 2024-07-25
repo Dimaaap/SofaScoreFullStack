@@ -32,3 +32,13 @@ def add_user_to_db(data, *, email=None, google_id=None):
     user.save()
     return user
 
+
+def is_valid_username_service(username: str) -> bool:
+    forbid_symbols = {"#", "@", "$", "%", "^", "&", "*", "/", "|", "\\", ","}
+    USERNAME_MIN_LEN = 4
+    USERNAME_MAX_LEN = 100
+    if USERNAME_MIN_LEN > len(username) > USERNAME_MAX_LEN:
+        return False
+    if set(username) & forbid_symbols:
+        return False
+    return True

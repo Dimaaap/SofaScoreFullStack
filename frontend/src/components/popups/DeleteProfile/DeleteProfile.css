@@ -1,0 +1,71 @@
+.delete-profile-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.delete-profile-content {
+    background-color: white;
+    border-radius: 10px;
+    max-width: 350px;
+    justify-content: center;
+    text-align: center;
+}
+
+.delete-profile-content h5 {
+    font-size: 1rem;
+    text-align: left;
+    margin-left: 5%;
+}
+
+.delete-profile-content .text-body {
+    text-align: left;
+    margin-left: 5%;
+}
+
+.delete-profile-content .btns-container {
+    justify-content: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.delete-profile-content button {
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    padding: 2%;
+    border-radius: 5px;
+    letter-spacing: 0.7px;
+}
+
+.delete-profile-content button:first-child {
+    margin-right: 25%;
+}
+
+.delete-profile-content .delete-btn {
+    color: #c2c2c2;
+    font-weight: 600;
+}
+
+.delete-profile-content .delete-btn:hover {
+    background-color: #e8ecf3;
+}
+
+.delete-profile-content .cancel-btn {
+    color: white;
+    background-color: #374df5;
+    font-weight: 600;
+}
+
+.delete-profile-content .cancel-btn:hover {
+    background-color: hsl(233, 90.5%, 63.8%);
+}

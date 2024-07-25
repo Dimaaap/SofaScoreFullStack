@@ -18,6 +18,7 @@ class CustomUser(AbstractBaseUser):
     sign_in_date = models.DateTimeField(auto_now=True)
     last_updated_date = models.DateTimeField(auto_now_add=True, null=True, blank=True)
     is_spam_subscribe = models.BooleanField(default=True)
+    is_deleted = models.BooleanField(default=False)
 
     objects = CustomUserManager()
     USERNAME_FIELD = "email"
@@ -42,3 +43,4 @@ class CustomUser(AbstractBaseUser):
     @property
     def is_staff(self):
         return self.is_admin
+

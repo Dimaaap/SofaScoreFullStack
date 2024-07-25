@@ -21,9 +21,6 @@ const ProtectedRoute = ({component: Component, ...rest}) => {
 
     return (
         <>
-            {console.log("here")}
-            {console.log(showModal)}
-            { console.log({Component}) }
             {showModal ? <SignInPopup /> : <Profile />}
         </>
     )

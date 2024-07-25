@@ -17,22 +17,29 @@ import ChangeUserData from '../../components/popups/ChangeUserData/ChangeUserDat
 import { ChangeUserDataContext } from '../../contexts/ChangeUserDataModel';
 import { UserDataContext } from '../../contexts/UserDataContext';
 import { FindOutPopupContext } from '../../contexts/FindOutPopupOpen';
+import { LogoutConfirmContext } from '../../contexts/LogoutConfirmContext';
 import { CancelSubscriptionContext } from '../../contexts/CancelSubscription';
 import FindOutPopup from '../../components/popups/FindOutPopup/FindOutPopup';
 import MoreUserProfileSettings from '../../components/popups/MoreUserProfileSettings/MoreUserProfileSettings';
 import CancelSubscription from '../../components/popups/CancelSubsription/CancelSubscription';
 import LogoutConfirm from "../../components/popups/LogoutConfirm/LogoutConfirm";
+import DeleteProfile from '../../components/popups/DeleteProfile/DeleteProfile';
+import { DeleteProfilePopupContext } from '../../contexts/DeleteProfileContext';
 
 const Profile = () => {
 
+    const { isLogoutConfirm } = useContext(LogoutConfirmContext);
     const { userData, setUserData } = useContext(UserDataContext)
     const { isCancelPopupOpen } = useContext(CancelSubscriptionContext); 
     const [ isMoreUserProfileOpen, setIsMoreUserProfileOpen ] = useState(false);
     const googleId = localStorage.getItem("googleId");
-    const { isChangeUserDataOpen, setIsChangeUserDataOpen } = useContext(ChangeUserDataContext)
+    const { isChangeUserDataOpen, setIsChangeUserDataOpen } = useContext(ChangeUserDataContext);
     const { isFindOutPopupOpen, setIsFindOutPopupOpen } = useContext(FindOutPopupContext);
+    const { isDeleteProfilePopupOpen } = useContext(DeleteProfilePopupContext)
+
 
     useEffect(() => {
+
         const fetchUserData = async () => {
             try {
                 const response = await fetch(`http://127.0.0.1:8000/auth/api/v1/user/profile/${googleId}/`);
@@ -59,6 +66,8 @@ const Profile = () => {
     <div id="profile-page">
         <TopHeader />
         <BottomHeader />
+        { isDeleteProfilePopupOpen && <DeleteProfile /> }
+        { isLogoutConfirm && <LogoutConfirm /> }
         { isChangeUserDataOpen && <ChangeUserData userName={ first_name } /> }
         { isFindOutPopupOpen && <FindOutPopup /> }
         { isCancelPopupOpen && <CancelSubscription /> }

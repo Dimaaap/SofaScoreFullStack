@@ -1,5 +1,4 @@
 from django.contrib.auth import get_user_model, authenticate, login, logout
-from django.core.exceptions import ObjectDoesNotExist
 
 from rest_framework import permissions, viewsets, status
 from rest_framework.decorators import action
@@ -9,6 +8,7 @@ import requests
 
 from .serializers import UserAvatarSerializer, UploadAvatarSerializer
 from .db_operations import *
+from .services import is_valid_username_service
 
 User = get_user_model()
 
@@ -152,16 +152,6 @@ class AvatarUploadView(APIView):
         }, status=status.HTTP_200_OK)
 
 
-def is_valid_username_service(username: str) -> bool:
-    forbid_symbols = {"#", "@", "$", "%", "^", "&", "*", "/", "|", "\\", ","}
-    USERNAME_MIN_LEN = 4
-    USERNAME_MAX_LEN = 100
-    if USERNAME_MIN_LEN > len(username) > USERNAME_MAX_LEN:
-        return False
-    if set(username) & forbid_symbols:
-        return False
-    return True
-
 
 class ChangeUsernameView(APIView):
     def post(self, request, google_id=None, *args, **kwargs):
@@ -195,4 +185,5 @@ class CancelSubscriptionView(APIView):
         return Response({
             "message": "Status changed"
         }, status=status.HTTP_200_OK)
+
 

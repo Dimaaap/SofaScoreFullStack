@@ -1,0 +1,26 @@
+.subscribe-editor .section-title {
+    font-size: 1rem;
+    text-align: left;
+    margin-top: 2%;
+    margin-left: 4%;
+}
+
+.subscribe-editor .header-container {
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    margin-top: -7%;
+    margin-left: 4%;
+}
+
+.subscribe-editor .header-container .header-btn {
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    color: #9ca7f8;
+}
+
+.subscribe-editor .header-container .active-link {
+    color: #374df5;
+    border-bottom: 2px solid #374df5; 
+}
